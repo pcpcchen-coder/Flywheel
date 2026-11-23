@@ -1,0 +1,224 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 01｜PROBLEM
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 傳統功率分流只回答「誰出功率」，沒有回答「重構時是否安全」
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 03 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: left-title
+  elementType: text
+  bounds:
+  - 60
+  - 145
+  - 350
+  - 28
+  content:
+    text: 既有 HESS 的成熟主線
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: left-body
+  elementType: text
+  bounds:
+  - 60
+  - 188
+  - 350
+  - 150
+  content:
+    text: '• 高頻給飛輪、低頻給電池
+
+      • 飛輪 SOC 自恢復
+
+      • 容量最佳化與調頻控制
+
+      • 以效率、波動率或延壽評估'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.6
+    wrap: true
+- elementId: split
+  elementType: line
+  bounds:
+  - 445
+  - 142
+  - 2
+  - 280
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: right-title
+  elementType: text
+  bounds:
+  - 485
+  - 145
+  - 415
+  - 28
+  content:
+    text: 本計畫必須新增的四個問題
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: right-body
+  elementType: text
+  bounds:
+  - 485
+  - 188
+  - 415
+  - 190
+  content:
+    text: '• 拓撲切換時，母線缺口與湧流多大？
+
+      • 模組故障後，飛輪能橋接多久？
+
+      • EIS 量測是否仍維持對外服務？
+
+      • 診斷結果如何即時改變拓撲？'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.55
+    wrap: true
+- elementId: conclusion
+  elementType: shape
+  bounds:
+  - 60
+  - 412
+  - 840
+  - 52
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+- elementId: conclusion-text
+  elementType: text
+  bounds:
+  - 80
+  - 425
+  - 800
+  - 26
+  content:
+    text: 研究價值＝時間域功率掩護 × 空間域模組重構，而非再做一次功率分配模擬。
+    fontSize: 18
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.1
+    wrap: true

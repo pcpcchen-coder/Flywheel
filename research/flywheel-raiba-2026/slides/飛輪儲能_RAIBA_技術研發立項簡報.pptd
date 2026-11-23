@@ -1,0 +1,69 @@
+version: v2
+title: 飛輪儲能 × RAIBA 可重構電池系統技術研發立項簡報
+size:
+- 960
+- 540
+customFonts:
+- family: MiSans
+  src: https://statics.kimi.ai/neo-design-static/p-font/MiSans.ttf
+- family: Liter
+  src: https://statics.kimi.ai/neo-design-static/p-font/Liter.ttf
+theme:
+  colors:
+    paper: '#F7F4ED'
+    ink: '#22302E'
+    teal: '#183F3B'
+    teal2: '#245C57'
+    copper: '#B65D38'
+    gray: '#6B756F'
+    line: '#D8D2C5'
+    pale: '#E7ECE7'
+    white: '#FFFFFF'
+    soft: '#EEE8DC'
+  textStyles:
+    title:
+      fontSize: 28
+      color: $teal
+      bold: true
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+    body:
+      fontSize: 18
+      color: $ink
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+      lineHeight: 1.25
+    note:
+      fontSize: 10
+      color: $gray
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+  tableStyles: {}
+pages:
+- pages/01_cover.page
+- pages/02_decision.page
+- pages/03_problem.page
+- pages/04_complementarity.page
+- pages/05_evidence.page
+- pages/06_timeline.page
+- pages/07_direct_prior.page
+- pages/08_eis_prior.page
+- pages/09_modes.page
+- pages/10_architectures.page
+- pages/11_target_architecture.page
+- pages/12_transient.page
+- pages/13_fault_bridge.page
+- pages/14_eis_loop.page
+- pages/15_measurement.page
+- pages/16_topics.page
+- pages/17_kpi.page
+- pages/18_matrix.page
+- pages/19_mvp.page
+- pages/20_scaleup.page
+- pages/21_global_industry.page
+- pages/22_china_taiwan.page
+- pages/23_applications.page
+- pages/24_final.page

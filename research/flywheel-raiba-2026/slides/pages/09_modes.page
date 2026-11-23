@@ -1,0 +1,127 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 03｜OPERATING MODES
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 同一套系統必須通過正常、重構、診斷與故障四種模式
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 09 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: modes
+  elementType: image
+  bounds:
+  - 90
+  - 128
+  - 780
+  - 339
+  src: media/fig2_modes.png
+  fit:
+    mode: contain
+- elementId: mode-note
+  elementType: text
+  bounds:
+  - 120
+  - 467
+  - 720
+  - 18
+  content:
+    text: 四種模式共享健康度、功率與保護狀態；不能各自開發、各自驗收。
+    fontSize: 12
+    color: $gray
+    bold: false
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true

@@ -36,6 +36,17 @@ AI 訓練機房（AIDC）的用電不是一條平線：數萬張 GPU 在「計�
 | [`skill/aidc-flywheel-3d/`](skill/) | 給其他 LLM（qwen3.8-27b-fp8）重製 3D 模型的 skill：引擎、模板、設定、腳本 |
 | [`data/`](data/) | 營運風險比較與事故案例 CSV |
 | [`research/flywheel-landscape-2026/`](research/flywheel-landscape-2026/) | **全球飛輪技術全景研究**：26 頁報告、32 頁簡報、文獻／專利／產品／專案、鋰電／氫能整合與五年情境 |
+| [`research/flywheel-raiba-2026/`](research/flywheel-raiba-2026/) | **飛輪 × RAIBA 技術研發立項**：24 頁完整報告、24 頁可編輯簡報、12 項研發議題、KPI／停止條件、B0–B3 實驗矩陣與 12 個月 MVP |
+
+## 飛輪 × RAIBA 技術研發立項（2026）
+
+研究截點為 **2026-11-23**。主題是「飛輪功率掩護下之 RAIBA 可重構電池系統」，聚焦重構暫態穩定、故障功率橋接、服務不間斷 EIS 與診斷驅動重構：
+
+- [24 頁完整立項報告（DOCX）](research/flywheel-raiba-2026/report/飛輪儲能_RAIBA_技術研發立項完整報告.docx)：十二章、12 項研發議題、19 項主要來源，含架構選擇、工作包、KPI、停止條件、經費與 RFI 清單。
+- [24 頁立項審查簡報（PPTD）](research/flywheel-raiba-2026/slides/飛輪儲能_RAIBA_技術研發立項簡報.pptd)：保留 `pages/` 與 `media/` 即可編輯；另有逐頁 PNG。
+- [研究說明與證據邊界](research/flywheel-raiba-2026/README.md)｜[報告預覽](research/flywheel-raiba-2026/preview/報告全頁總覽.png)｜[簡報全頁預覽](research/flywheel-raiba-2026/preview/簡報全頁總覽.png)｜[驗證紀錄](research/flywheel-raiba-2026/VALIDATION.md)。
+
+建議決策是**有條件通過 12 個月 MVP，不直接核准 MW 級全功能系統**。飛輪負責時間域的功率掩護，RAIBA 負責空間域的模組重構；核心研究缺口是兩者在重構暫態、故障隔離與診斷回授上的開關級實驗閉環，而不是再宣稱傳統功率分流或共 DC-link 組合為首創。
 
 ## 全球飛輪技術全景研究（2026）
 

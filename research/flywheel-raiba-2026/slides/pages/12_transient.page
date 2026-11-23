@@ -1,0 +1,417 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 04｜TRANSIENT & STABILITY
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 重構安全需要「預測缺口 → 飛輪前饋 → 安全切換 → 阻尼收斂」
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 12 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 146
+  - 45
+  - 28
+  content:
+    text: '01'
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: s0
+  elementType: text
+  bounds:
+  - 60
+  - 185
+  - 180
+  - 58
+  content:
+    text: 估計母線能量缺口
+    fontSize: 18
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: a0
+  elementType: line
+  bounds:
+  - 235
+  - 163
+  - 35
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $copper
+  arrow:
+  - null
+  - stealth
+- elementId: n1
+  elementType: text
+  bounds:
+  - 275
+  - 146
+  - 45
+  - 28
+  content:
+    text: '02'
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: s1
+  elementType: text
+  bounds:
+  - 275
+  - 185
+  - 180
+  - 58
+  content:
+    text: 飛輪功率前饋
+    fontSize: 18
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: a1
+  elementType: line
+  bounds:
+  - 450
+  - 163
+  - 35
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $copper
+  arrow:
+  - null
+  - stealth
+- elementId: n2
+  elementType: text
+  bounds:
+  - 490
+  - 146
+  - 45
+  - 28
+  content:
+    text: '03'
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: s2
+  elementType: text
+  bounds:
+  - 490
+  - 185
+  - 180
+  - 58
+  content:
+    text: 執行組態白名單切換
+    fontSize: 18
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: a2
+  elementType: line
+  bounds:
+  - 665
+  - 163
+  - 35
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $copper
+  arrow:
+  - null
+  - stealth
+- elementId: n3
+  elementType: text
+  bounds:
+  - 705
+  - 146
+  - 45
+  - 28
+  content:
+    text: '04'
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: s3
+  elementType: text
+  bounds:
+  - 705
+  - 185
+  - 180
+  - 58
+  content:
+    text: 主動阻尼與功率重收斂
+    fontSize: 18
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: kpi-rule
+  elementType: line
+  bounds:
+  - 60
+  - 269
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: kpi-title
+  elementType: text
+  bounds:
+  - 60
+  - 292
+  - 180
+  - 28
+  content:
+    text: 建議驗收目標
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: kpi1
+  elementType: text
+  bounds:
+  - 60
+  - 337
+  - 250
+  - 64
+  content:
+    text: '＜2 pu／＜1 ms
+
+      重構湧流'
+    fontSize: 24
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: kpi2
+  elementType: text
+  bounds:
+  - 350
+  - 337
+  - 250
+  - 64
+  content:
+    text: '＜5%／＜10 ms
+
+      DC-link 缺口'
+    fontSize: 24
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: kpi3
+  elementType: text
+  bounds:
+  - 650
+  - 337
+  - 250
+  - 64
+  content:
+    text: '＜2%
+
+      PCS 功率擾動'
+    fontSize: 24
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: kpi-note
+  elementType: text
+  bounds:
+  - 60
+  - 430
+  - 840
+  - 30
+  content:
+    text: 全部為立項建議；需在最不利電壓差、SOC、負載與允許拓撲下驗證。
+    fontSize: 14
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://doi.org/10.1109/IFEEC.2013.6687490">技術方法與邊界見 Word 報告第五、六章</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

@@ -1,0 +1,342 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 02｜PRIOR ART
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 直接前案已覆蓋共 DC、RBS-EIS 與 FESS＋DRBN 調度
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 06 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: timeline
+  elementType: line
+  bounds:
+  - 85
+  - 260
+  - 790
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 3
+    color: $teal
+- elementId: dot0
+  elementType: shape
+  bounds:
+  - 95
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: dot1
+  elementType: shape
+  bounds:
+  - 255
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: dot2
+  elementType: shape
+  bounds:
+  - 400
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: dot3
+  elementType: shape
+  bounds:
+  - 535
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: dot4
+  elementType: shape
+  bounds:
+  - 675
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: dot5
+  elementType: shape
+  bounds:
+  - 810
+  - 251
+  - 18
+  - 18
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: y2013
+  elementType: text
+  bounds:
+  - 60
+  - 175
+  - 120
+  - 56
+  content:
+    text: '2013
+
+      共 DC-bus 實測'
+    fontSize: 16
+    color: $teal
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: y2016
+  elementType: text
+  bounds:
+  - 215
+  - 295
+  - 130
+  - 64
+  content:
+    text: '2016
+
+      RBS 系統綜述'
+    fontSize: 16
+    color: $teal
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: y2020
+  elementType: text
+  bounds:
+  - 350
+  - 165
+  - 145
+  - 72
+  content:
+    text: '2020
+
+      RBS 線上阻抗估計'
+    fontSize: 16
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: y2024
+  elementType: text
+  bounds:
+  - 500
+  - 295
+  - 130
+  - 64
+  content:
+    text: '2024
+
+      16 芯 MSPWM EIS'
+    fontSize: 16
+    color: $teal
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: y2026a
+  elementType: text
+  bounds:
+  - 625
+  - 155
+  - 145
+  - 82
+  content:
+    text: '2026
+
+      切換暫態萃取阻抗'
+    fontSize: 16
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: y2026b
+  elementType: text
+  bounds:
+  - 765
+  - 295
+  - 150
+  - 76
+  content:
+    text: '2026
+
+      FESS＋DRBN 階層 MPC'
+    fontSize: 16
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: gap
+  elementType: shape
+  bounds:
+  - 120
+  - 399
+  - 720
+  - 48
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+- elementId: gap-text
+  elementType: text
+  bounds:
+  - 140
+  - 411
+  - 680
+  - 26
+  content:
+    text: 剩余缺口：開關暫態＋故障橋接＋服務不間斷 EIS＋診斷回授的完整實驗閉環
+    fontSize: 17
+    color: $teal
+    bold: true
+    align:
+    - center
+    - middle
+    lineHeight: 1.2
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://doi.org/10.1109/IFEEC.2013.6687490">Hu 2013</a>；<a href="https://doi.org/10.1109/IECON43393.2020.9254515">Kersten 2020</a>；<a href="https://doi.org/10.1109/TTE.2024.3350878">Chen
+      2024</a>；<a href="https://doi.org/10.1109/TPEL.2025.3600334">Peng 2026</a>；<a href="https://arxiv.org/abs/2603.21651">Paizulamu 2026</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

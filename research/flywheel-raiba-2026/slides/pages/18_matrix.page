@@ -1,0 +1,127 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 05｜EXPERIMENT DESIGN
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: B0–B3 的 2×2 對照，才能辨識飛輪與重構的交互綜效
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 18 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: matrix
+  elementType: image
+  bounds:
+  - 70
+  - 123
+  - 820
+  - 349
+  src: media/fig5_experiment_matrix.png
+  fit:
+    mode: contain
+- elementId: formula
+  elementType: text
+  bounds:
+  - 100
+  - 467
+  - 760
+  - 18
+  content:
+    text: Δinteraction＝Y(B3)－Y(B2)－Y(B1)＋Y(B0)｜需重複實驗與不確定性分析
+    fontSize: 12
+    color: $gray
+    bold: false
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true

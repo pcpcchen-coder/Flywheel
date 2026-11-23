@@ -1,0 +1,306 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 07｜CHINA & TAIWAN
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 中國與台灣對標：DRBN 工程與中壓飛輪 UPS 都已存在
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 22 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: drbn-title
+  elementType: text
+  bounds:
+  - 60
+  - 137
+  - 430
+  - 28
+  content:
+    text: 清華慈松 DRBN｜直接工程 benchmark
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: drbn-metrics
+  elementType: text
+  bounds:
+  - 60
+  - 182
+  - 410
+  - 72
+  content:
+    text: 94.84%　84.06%　99.3%
+    fontSize: 28
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: drbn-labels
+  elementType: text
+  bounds:
+  - 60
+  - 247
+  - 420
+  - 56
+  content:
+    text: '電池簇直流側效率｜系統綜合效率｜可用係數
+
+      2025 年 1 月投運；相容 5 種模組'
+    fontSize: 15
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: rui-title
+  elementType: text
+  bounds:
+  - 60
+  - 330
+  - 420
+  - 26
+  content:
+    text: 芮城混合儲能｜100 MW／50.41 MWh
+    fontSize: 18
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: rui-body
+  elementType: text
+  bounds:
+  - 60
+  - 367
+  - 420
+  - 64
+  content:
+    text: '飛輪 50 MW／0.41 MWh
+
+      LFP 50 MW／50 MWh｜政府併網資料'
+    fontSize: 16
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: split
+  elementType: line
+  bounds:
+  - 515
+  - 140
+  - 2
+  - 300
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: delta-title
+  elementType: text
+  bounds:
+  - 555
+  - 137
+  - 345
+  - 54
+  content:
+    text: '台達 × 泓慧
+
+      SST＋飛輪 10 kV 中壓 UPS'
+    fontSize: 21
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: delta-metric
+  elementType: text
+  bounds:
+  - 555
+  - 219
+  - 345
+  - 52
+  content:
+    text: 1–24 MW
+    fontSize: 34
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: delta-body
+  elementType: text
+  bounds:
+  - 555
+  - 278
+  - 345
+  - 78
+  content:
+    text: '企業新聞稿所列產品範圍。
+
+      效率等性能屬企業宣稱，需第三方驗證。'
+    fontSize: 16
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.4
+    wrap: true
+- elementId: benchmark
+  elementType: shape
+  bounds:
+  - 555
+  - 388
+  - 345
+  - 54
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+- elementId: benchmark-text
+  elementType: text
+  bounds:
+  - 572
+  - 400
+  - 312
+  - 30
+  content:
+    text: RAIBA 不能只對標固定串併聯電池。
+    fontSize: 16
+    color: $teal
+    bold: true
+    align:
+    - left
+    - middle
+    lineHeight: 1.2
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://www.eea.tsinghua.edu.cn/info/1038/6726.htm">清華 DRBN 驗收</a>；<a href="https://www.shanxi.gov.cn/zfxxgk/zfxxgkzl/fdzdgknr/zdxm/202507/t20250725_9924573.shtml">芮城｜山西省政府</a>；<a
+      href="https://www.prnasia.com/story/529703-1.shtml">台達×泓慧</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

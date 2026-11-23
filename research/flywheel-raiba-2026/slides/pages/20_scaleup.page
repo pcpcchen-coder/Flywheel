@@ -1,0 +1,278 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 06｜SCALE-UP & FALLBACK
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 放大不是既定時程，而是由證據、場域與認證共同觸發
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 20 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: y2
+  elementType: text
+  bounds:
+  - 60
+  - 137
+  - 180
+  - 30
+  content:
+    text: 第 2 年
+    fontSize: 22
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: y2-title
+  elementType: text
+  bounds:
+  - 60
+  - 177
+  - 260
+  - 30
+  content:
+    text: 50–100 kW 工程驗證
+    fontSize: 20
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: y2-body
+  elementType: text
+  bounds:
+  - 60
+  - 219
+  - 350
+  - 112
+  content:
+    text: '• 真實功率元件、熱與 EMI
+
+      • 保護選擇性與長時間運轉
+
+      • 有限可認證組態與維護流程
+
+      • 第三方測試與場域 LCOS'
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: scale-arrow
+  elementType: line
+  bounds:
+  - 365
+  - 174
+  - 140
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 3
+    color: $copper
+  arrow:
+  - null
+  - stealth
+- elementId: y3
+  elementType: text
+  bounds:
+  - 535
+  - 137
+  - 180
+  - 30
+  content:
+    text: 第 3 年
+    fontSize: 22
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: y3-title
+  elementType: text
+  bounds:
+  - 535
+  - 177
+  - 365
+  - 30
+  content:
+    text: 100 kW–MW 示範｜另行決策
+    fontSize: 20
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: y3-body
+  elementType: text
+  bounds:
+  - 535
+  - 219
+  - 365
+  - 112
+  content:
+    text: '• 交互綜效顯著且對誤差穩健
+
+      • 設備、場域與安規同時成立
+
+      • 需要中壓時才評估 MMC／多埠
+
+      • 以可用率與 LCOS 驗收'
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: kill-line
+  elementType: text
+  bounds:
+  - 60
+  - 337
+  - 840
+  - 30
+  content:
+    text: Kill｜B2 緩衝／預充＞省下 DC/DC 50%；EIS 中頻誤差＞10%；交互綜效＜3%；LCOS＞傳統 HESS 1.05×且無場域翻正。
+    fontSize: 11
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.15
+    wrap: true
+- elementId: fallback
+  elementType: shape
+  bounds:
+  - 60
+  - 373
+  - 840
+  - 73
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: fallback-text
+  elementType: text
+  bounds:
+  - 82
+  - 387
+  - 795
+  - 42
+  content:
+    text: 退守路線｜暫態與 EIS 同時失敗：架構 A＋RAIBA 診斷與健康管理，不進入高功率原型。
+    fontSize: 18
+    color: $white
+    bold: true
+    align:
+    - left
+    - middle
+    lineHeight: 1.25
+    wrap: true

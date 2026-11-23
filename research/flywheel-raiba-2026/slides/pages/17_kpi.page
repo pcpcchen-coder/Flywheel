@@ -1,0 +1,367 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 05｜ACCEPTANCE KPI
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 驗收必須同時看暫態、服務、診斷、效率與成本
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 17 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: kpi-table
+  elementType: table
+  bounds:
+  - 45
+  - 128
+  - 870
+  - 306
+  columnWidths:
+  - 0.18
+  - 0.49
+  - 0.33
+  rowHeights:
+  - 0.14
+  - 0.14333333333333334
+  - 0.14333333333333334
+  - 0.14333333333333334
+  - 0.14333333333333334
+  - 0.14333333333333334
+  - 0.14333333333333334
+  rows:
+  - - text: 面向
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 12 個月建議目標
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 驗收邊界
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+  - - text: 重構
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 湧流＜2 pu／＜1 ms；DC 缺口＜5%／＜10 ms
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 最不利組態與負載
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 服務
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: PCS 擾動＜2%；單模組失效輸出跌落＜5%
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 飛輪能量足／不足分開
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 高頻電流
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: ＞0.1 Hz 分量相對無飛輪衰減≥20 dB
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 同 trace／頻譜／窗函數
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: EIS
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 中頻＜5%；低頻＜10%；＜60 s
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 指定 SOC／溫度／參考儀器
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 即時／HIL
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: EMS＜10 ms；暫態誤差＜10%；故障≥50 例
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 最壞執行時間／同事件
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 效率
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 架構 B 全工況淨增益目標≥1.5%
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 含待機與輔助功耗
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  style:
+    cellStyle:
+      border:
+        style: solid
+        width: 0.6
+        color: $line
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+- elementId: kpi-warning
+  elementType: shape
+  bounds:
+  - 60
+  - 452
+  - 840
+  - 26
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: kpi-warning-text
+  elementType: text
+  bounds:
+  - 76
+  - 457
+  - 810
+  - 16
+  content:
+    text: 所有 KPI 都是立項建議，不是現有成果；M0–M2 依設備與場域正式凍結。
+    fontSize: 12
+    color: $white
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

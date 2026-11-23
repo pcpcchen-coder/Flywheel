@@ -1,0 +1,246 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: DECISION SUMMARY
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 建議有條件通過 12 個月 MVP，不直接核准 MW 全功能系統
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 02 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: decision
+  elementType: text
+  bounds:
+  - 60
+  - 145
+  - 290
+  - 92
+  content:
+    text: 有條件通過
+    fontSize: 36
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.1
+    wrap: true
+- elementId: decision-sub
+  elementType: text
+  bounds:
+  - 60
+  - 242
+  - 275
+  - 96
+  content:
+    text: 先證明對照可信、暫態安全與診斷有效，再談效率、延壽與放大。
+    fontSize: 19
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.4
+    wrap: true
+- elementId: decision-axis
+  elementType: line
+  bounds:
+  - 375
+  - 142
+  - 2
+  - 290
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 3
+    color: $copper
+- elementId: d1
+  elementType: text
+  bounds:
+  - 410
+  - 140
+  - 480
+  - 58
+  content:
+    text: <p><strong>主攻架構 B</strong>｜共 DC-link＋選擇性雙向 DC/DC＋RAIBA</p>
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: d2
+  elementType: text
+  bounds:
+  - 410
+  - 205
+  - 480
+  - 58
+  content:
+    text: <p><strong>架構 A 保底</strong>｜固定 DC-link／AC 耦合，先完成診斷與故障實證</p>
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: d3
+  elementType: text
+  bounds:
+  - 410
+  - 270
+  - 480
+  - 58
+  content:
+    text: <p><strong>B2 可停止</strong>｜可變 DC-link 直接耦合，不列 12 個月必成</p>
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: d4
+  elementType: text
+  bounds:
+  - 410
+  - 335
+  - 480
+  - 76
+  content:
+    text: <p><strong>三條主軸</strong>｜重構暫態、故障功率橋接、EIS／SOH 驅動重構</p>
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: bottom-band
+  elementType: shape
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 28
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: bottom-text
+  elementType: text
+  bounds:
+  - 76
+  - 451
+  - 805
+  - 18
+  content:
+    text: 四組對照 B0–B3 與暫態／EIS 雙 Gate 是核准前提；KPI 全部是待驗證目標。
+    fontSize: 13
+    color: $white
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

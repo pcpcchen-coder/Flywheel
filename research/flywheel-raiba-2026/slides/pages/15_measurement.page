@@ -1,0 +1,275 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 04｜MEASUREMENT QUALITY
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 多電芯 EIS 的成敗先在量測可信度，再才是估計演算法
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 15 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: left-title
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 360
+  - 28
+  content:
+    text: 三種激勵同機比較
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: modes
+  elementType: text
+  bounds:
+  - 60
+  - 185
+  - 370
+  - 112
+  content:
+    text: '• MSPWM 型激勵
+
+      • RAIBA 切換暫態激勵
+
+      • 混合激勵＋飛輪功率掩護'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.55
+    wrap: true
+- elementId: control-title
+  elementType: text
+  bounds:
+  - 60
+  - 330
+  - 360
+  - 26
+  content:
+    text: 必要控制組
+    fontSize: 19
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: controls
+  elementType: text
+  bounds:
+  - 60
+  - 366
+  - 370
+  - 70
+  content:
+    text: '無飛輪｜不同步取樣｜不同雜訊
+
+      不同負載｜不同 SOC／溫度'
+    fontSize: 16
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: split
+  elementType: line
+  bounds:
+  - 465
+  - 142
+  - 2
+  - 300
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: right-title
+  elementType: text
+  bounds:
+  - 505
+  - 140
+  - 395
+  - 28
+  content:
+    text: 四個常見失真來源
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: risks
+  elementType: text
+  bounds:
+  - 505
+  - 185
+  - 395
+  - 160
+  content:
+    text: '• 串聯電流與單模組電壓時間差
+
+      • 多模組頻率碰撞與頻譜污染
+
+      • 濾波器相位、插值與窗函數差異
+
+      • 非線性、溫漂與負載變動'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.5
+    wrap: true
+- elementId: gate
+  elementType: shape
+  bounds:
+  - 505
+  - 382
+  - 395
+  - 58
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: gate-text
+  elementType: text
+  bounds:
+  - 522
+  - 395
+  - 360
+  - 32
+  content:
+    text: G1 未通過：先修量測，禁止進入性能比較。
+    fontSize: 17
+    color: $white
+    bold: true
+    align:
+    - left
+    - middle
+    lineHeight: 1.2
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://doi.org/10.1109/TTE.2024.3350878">EIS 前案｜Chen 2024</a>；<a href="https://doi.org/10.1109/TPEL.2025.3600334">Peng 2026</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

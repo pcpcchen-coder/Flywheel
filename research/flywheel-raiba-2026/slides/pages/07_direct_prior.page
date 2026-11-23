@@ -1,0 +1,265 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 02｜DIRECT PRIOR ART
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: FESS＋DRBN 已有直接前案：新穎性必須降到開關與量測層
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 07 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: paper
+  elementType: text
+  bounds:
+  - 60
+  - 137
+  - 490
+  - 54
+  content:
+    text: Paizulamu et al.｜Full Timescale Hierarchical MPC-MTIP
+    fontSize: 19
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: paper-body
+  elementType: text
+  bounds:
+  - 60
+  - 198
+  - 490
+  - 105
+  content:
+    text: '模型同時納入 FESS、DRBN、CAES 與氫—甲醇儲能，覆蓋全時間尺度調度。
+
+      證據類型：論文模擬／預印本。'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: metric-split
+  elementType: line
+  bounds:
+  - 585
+  - 140
+  - 2
+  - 220
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: m1
+  elementType: text
+  bounds:
+  - 625
+  - 142
+  - 275
+  - 52
+  content:
+    text: 97.4%
+    fontSize: 38
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: m1-label
+  elementType: text
+  bounds:
+  - 625
+  - 198
+  - 275
+  - 42
+  content:
+    text: 特定模擬之淨負載平抑率
+    fontSize: 15
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: m2
+  elementType: text
+  bounds:
+  - 625
+  - 254
+  - 275
+  - 52
+  content:
+    text: 62.2%
+    fontSize: 38
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: m2-label
+  elementType: text
+  bounds:
+  - 625
+  - 310
+  - 275
+  - 42
+  content:
+    text: 特定模擬之綜合循環效率
+    fontSize: 15
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: boundary
+  elementType: shape
+  bounds:
+  - 60
+  - 375
+  - 840
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: boundary-text
+  elementType: text
+  bounds:
+  - 82
+  - 390
+  - 795
+  - 46
+  content:
+    text: 可防守缺口：單體／模組開關暫態、共 DC-link 阻抗、故障功率橋接、EIS 品質與 HIL／台架整合。
+    fontSize: 19
+    color: $white
+    bold: true
+    align:
+    - left
+    - middle
+    lineHeight: 1.25
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://arxiv.org/abs/2603.21651">arXiv:2603.21651｜97.4% 與 62.2% 不是通用工程實績</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

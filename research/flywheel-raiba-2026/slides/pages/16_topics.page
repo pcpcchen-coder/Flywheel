@@ -1,0 +1,525 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 05｜R&D PORTFOLIO
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 十二項議題：六項主計畫、三項放大、兩項基礎、一項高風險
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 16 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: topics
+  elementType: table
+  bounds:
+  - 90
+  - 127
+  - 780
+  - 340
+  columnWidths:
+  - 0.08
+  - 0.7
+  - 0.22
+  rowHeights:
+  - 0.1
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  - 0.075
+  rows:
+  - - text: '#'
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 研發議題
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 定位
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 12
+      align:
+      - left
+      - middle
+  - - text: '01'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 共 DC-link 阻抗與小信號穩定
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 主計畫
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '02'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 重構暫態、湧流與環流抑制
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 主計畫
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '03'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 飛輪功率掩護下服務不間斷 EIS
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 核心創新
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '04'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: EIS／SOH 驅動診斷—重構閉環
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 核心創新
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '05'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 模組故障隔離與飛輪功率橋接
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 核心創新
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '06'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 即時 HIL／PHIL 與故障注入
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 主計畫
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '07'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 重構期間構網與虛擬慣量連續性
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 放大驗證
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 08
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 多時間尺度 EMS 與飛輪 SOC 自恢復
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 基礎必要
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 09
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 異質／退役電池不對稱老化管理
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: RAIBA 主場
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '10'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 可變母線下 PMSM 弱磁／共模／軸承電流
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: B2 高風險
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '11'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: DC 短路保護、選擇性與認證組態
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 安全必成
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: '12'
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: LCOS、開關網成本、損耗與可靠度
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 商業必要
+      fontSize: 12
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  style:
+    cellStyle:
+      border:
+        style: solid
+        width: 0.6
+        color: $line
+      fontFamily:
+        latin: Liter
+        ea: MiSans

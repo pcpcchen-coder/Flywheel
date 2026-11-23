@@ -1,0 +1,127 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 04｜DIAGNOSTIC-DRIVEN RECONFIGURATION
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: EIS 的價值不在產生報表，而在即時改變功率限制與拓撲
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 14 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: eis-loop
+  elementType: image
+  bounds:
+  - 70
+  - 124
+  - 820
+  - 339
+  src: media/fig4_eis_loop.png
+  fit:
+    mode: contain
+- elementId: eis-kpi
+  elementType: text
+  bounds:
+  - 95
+  - 466
+  - 770
+  - 20
+  content:
+    text: 建議目標｜中頻幅值誤差＜5%、低頻＜10%；量測＜60 s；對外功率擾動＜2%
+    fontSize: 13
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true

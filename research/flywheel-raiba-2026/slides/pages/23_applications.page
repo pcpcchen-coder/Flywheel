@@ -1,0 +1,254 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 08｜APPLICATION & PARTNERS
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 先選能同時評價功率、連續性與維修的場域，再組合作資料鏈
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 23 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: apps-title
+  elementType: text
+  bounds:
+  - 60
+  - 137
+  - 350
+  - 26
+  content:
+    text: 應用優先級
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: app1
+  elementType: text
+  bounds:
+  - 60
+  - 180
+  - 350
+  - 64
+  content:
+    text: <p><strong>1｜AIDC／半導體／關鍵製程</strong></p><p>瞬時功率＋服務連續＋長時備電</p>
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: app2
+  elementType: text
+  bounds:
+  - 60
+  - 262
+  - 350
+  - 64
+  content:
+    text: <p><strong>2｜工業微電網／弱電網快充</strong></p><p>高功率脈衝與電網容量限制</p>
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: app3
+  elementType: text
+  bounds:
+  - 60
+  - 344
+  - 350
+  - 64
+  content:
+    text: <p><strong>3｜調頻／風光平抑</strong></p><p>適合落地，不宜作主要新穎性</p>
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: split
+  elementType: line
+  bounds:
+  - 450
+  - 142
+  - 2
+  - 285
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: partners-title
+  elementType: text
+  bounds:
+  - 490
+  - 137
+  - 410
+  - 26
+  content:
+    text: 合作不是只借設備，而是取得可驗證資料
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: partners
+  elementType: text
+  bounds:
+  - 490
+  - 180
+  - 410
+  - 192
+  content:
+    text: '• 工研院／RAIBA：背景 IP、切換序列與原始測試
+
+      • 飛輪供應商：全轉速模型、效率、故障與安全
+
+      • DRBN 生態系：成熟工程效率與可用率對標
+
+      • UPS／PCS／SST：關鍵電力介面與認證
+
+      • 學研＋場域：HIL、真實 trace 與停機成本'
+    fontSize: 16
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: partner-rule
+  elementType: shape
+  bounds:
+  - 490
+  - 403
+  - 410
+  - 38
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: partner-rule-text
+  elementType: text
+  bounds:
+  - 505
+  - 412
+  - 380
+  - 20
+  content:
+    text: 資料權利、改良 IP 與公開授權須先約定。
+    fontSize: 14
+    color: $white
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

@@ -1,0 +1,356 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 03｜ARCHITECTURE CHOICE
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 架構 A 保底、B 主攻、B2 可停止、C 留給中長期放大
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 10 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: arch-table
+  elementType: table
+  bounds:
+  - 45
+  - 136
+  - 870
+  - 286
+  columnWidths:
+  - 0.25
+  - 0.26
+  - 0.32
+  - 0.17
+  rowHeights:
+  - 0.14
+  - 0.215
+  - 0.215
+  - 0.215
+  - 0.215
+  rows:
+  - - text: 架構
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+    - text: 工程價值
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+    - text: 主要代價
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+    - text: 角色
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+  - - text: A｜固定 DC-link／AC 耦合
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 邊界清楚、改造快
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 轉換級較多；功率分流新穎性低
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: MVP 保底
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: B｜共 DC＋選擇性 DC/DC
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 可研究重構暫態、阻抗與診斷
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 湧流、環流、控制耦合
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 主研究
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: B2｜可變 DC 直接耦合
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 有機會減少主功率級
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 離散階躍、PCS／PMSM／保護受限
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 高風險子題
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: C｜MMC／多埠／TAB／MAB
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 中壓與 MW 擴展
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 磁件、控制、認證最複雜
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 2–3 年後
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  style:
+    cellStyle:
+      border:
+        style: solid
+        width: 0.6
+        color: $line
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+- elementId: choice
+  elementType: shape
+  bounds:
+  - 60
+  - 440
+  - 840
+  - 32
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+- elementId: choice-text
+  elementType: text
+  bounds:
+  - 78
+  - 447
+  - 805
+  - 20
+  content:
+    text: B2 的省轉換級主張不得成為主計畫成功的必要條件。
+    fontSize: 15
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

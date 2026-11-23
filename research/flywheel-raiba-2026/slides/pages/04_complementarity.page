@@ -1,0 +1,278 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 01｜SYSTEM CONCEPT
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 飛輪管時間域、RAIBA 管空間域；健康度與保護負責耦合
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 04 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: time-label
+  elementType: text
+  bounds:
+  - 60
+  - 142
+  - 350
+  - 30
+  content:
+    text: 時間域｜飛輪功率掩護
+    fontSize: 21
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: time-axis
+  elementType: line
+  bounds:
+  - 80
+  - 207
+  - 310
+  - 4
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 4
+    color: $teal
+  arrow:
+  - null
+  - stealth
+- elementId: time-events
+  elementType: text
+  bounds:
+  - 65
+  - 228
+  - 340
+  - 76
+  content:
+    text: 'ms　　重構／故障　　　秒級橋接
+
+      快速雙向功率｜高循環｜能量有限'
+    fontSize: 16
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: space-label
+  elementType: text
+  bounds:
+  - 540
+  - 142
+  - 360
+  - 30
+  content:
+    text: 空間域｜RAIBA 模組路由
+    fontSize: 21
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: space-body
+  elementType: text
+  bounds:
+  - 540
+  - 190
+  - 350
+  - 126
+  content:
+    text: '• 模組串併聯與旁路
+
+      • 故障隔離與降額拓撲
+
+      • 依 SOH／溫度輪替模組
+
+      • 提供診斷激勵與工作點自由度'
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: bridge
+  elementType: line
+  bounds:
+  - 395
+  - 182
+  - 140
+  - 60
+  viewBox:
+  - 100
+  - 100
+  points: 0,80 100,20
+  curve: sharp
+  border:
+    style: solid
+    width: 2.4
+    color: $copper
+  arrow:
+  - null
+  - stealth
+- elementId: bridge-label
+  elementType: text
+  bounds:
+  - 385
+  - 252
+  - 160
+  - 44
+  content:
+    text: '功率前饋
+
+      拓撲回授'
+    fontSize: 14
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: shared
+  elementType: shape
+  bounds:
+  - 160
+  - 354
+  - 640
+  - 82
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: shared-text
+  elementType: text
+  bounds:
+  - 185
+  - 370
+  - 590
+  - 48
+  content:
+    text: 共享狀態：功率需求｜飛輪可用能量｜模組 V/I/T/EIS/SOH｜保護與組態白名單
+    fontSize: 18
+    color: $white
+    bold: true
+    align:
+    - center
+    - middle
+    lineHeight: 1.25
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://www.usenix.org/conference/atc18/presentation/chiueh">RAIBA｜USENIX ATC 2018</a>；<a href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=13_content&SiteID=1&MmmID=1036233405427625204&Trt_idx=6074">工研院技轉資料</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

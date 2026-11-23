@@ -1,0 +1,161 @@
+pageType: cover
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: spine
+  elementType: shape
+  bounds:
+  - 0
+  - 0
+  - 18
+  - 540
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: cover-img
+  elementType: image
+  bounds:
+  - 625
+  - 0
+  - 335
+  - 540
+  src: media/8_Enel_will_put_Amber_Kinetics_long.png
+  fit:
+    mode: cover
+- elementId: image-caption-bg
+  elementType: shape
+  bounds:
+  - 625
+  - 458
+  - 335
+  - 82
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: image-caption
+  elementType: text
+  bounds:
+  - 645
+  - 474
+  - 295
+  - 48
+  content:
+    text: '長時飛輪代表產品｜Amber Kinetics
+
+      圖像僅作產業案例辨識'
+    fontSize: 11
+    color: $white
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.25
+    wrap: true
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 58
+  - 500
+  - 24
+  content:
+    text: 研發立項完整簡報｜V1.0
+    fontSize: 13
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 112
+  - 520
+  - 116
+  content:
+    text: 飛輪儲能 × RAIBA
+    fontSize: 44
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.1
+    wrap: true
+- elementId: title2
+  elementType: text
+  bounds:
+  - 60
+  - 226
+  - 520
+  - 88
+  content:
+    text: '可重構電池系統
+
+      技術研發議題'
+    fontSize: 32
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: cover-rule
+  elementType: line
+  bounds:
+  - 60
+  - 338
+  - 500
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 3
+    color: $copper
+- elementId: subtitle
+  elementType: text
+  bounds:
+  - 60
+  - 362
+  - 520
+  - 58
+  content:
+    text: '重構暫態穩定｜故障功率橋接
+
+      服務不間斷診斷｜全壽命最佳化'
+    fontSize: 18
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: date
+  elementType: text
+  bounds:
+  - 60
+  - 476
+  - 500
+  - 20
+  content:
+    text: 資料檢索截止 2026.11.23｜立項審查用
+    fontSize: 11
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true

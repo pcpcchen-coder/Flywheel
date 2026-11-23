@@ -1,0 +1,300 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 02｜EVIDENCE
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 先分證據層級，才能避免把模擬、企業宣稱與立項目標寫成實績
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 05 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: evidence-table
+  elementType: table
+  bounds:
+  - 60
+  - 137
+  - 840
+  - 220
+  columnWidths:
+  - 0.25
+  - 0.75
+  rowHeights:
+  - 0.14
+  - 0.172
+  - 0.172
+  - 0.172
+  - 0.172
+  - 0.172
+  rows:
+  - - text: 證據類型
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+    - text: 本簡報如何使用
+      bold: true
+      color: $white
+      fill:
+        type: solid
+        color: $teal
+      fontSize: 13
+      align:
+      - left
+      - middle
+  - - text: 論文－實測
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 只適用於原型、負載與測試條件
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 論文－模擬
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 不得視為工程實績或通用性能
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 工程事實
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 作為成熟度與 benchmark，仍看量測邊界
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 企業宣稱
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: 需第三方或原始測試確認
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $paper
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  - - text: 立項建議
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+    - text: KPI、Gate 與架構全部待驗證
+      fontSize: 13
+      color: $ink
+      fill:
+        type: solid
+        color: $white
+      align:
+      - left
+      - middle
+      lineHeight: 1.15
+  style:
+    cellStyle:
+      border:
+        style: solid
+        width: 0.6
+        color: $line
+      fontFamily:
+        latin: Liter
+        ea: MiSans
+- elementId: redline-title
+  elementType: text
+  bounds:
+  - 60
+  - 385
+  - 180
+  - 26
+  content:
+    text: 查新紅線
+    fontSize: 19
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: redlines
+  elementType: text
+  bounds:
+  - 250
+  - 380
+  - 650
+  - 74
+  content:
+    text: '不得宣稱「全球首次飛輪＋可重構電池」
+
+      不得宣稱「首次 RBS 無額外電源做 EIS」'
+    fontSize: 18
+    color: $ink
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.5
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://github.com/pcpcchen-coder/RAIBA">證據邊界與完整引用見 Word 報告第一、三章</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

@@ -1,0 +1,331 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 02｜EIS PRIOR ART
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: RBS-EIS 也有三個直接前案：差異應放在飛輪掩護與服務連續性
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 08 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: eis-axis
+  elementType: line
+  bounds:
+  - 120
+  - 150
+  - 3
+  - 255
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 3
+    color: $line
+- elementId: n2020
+  elementType: shape
+  bounds:
+  - 108
+  - 156
+  - 26
+  - 26
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: t2020
+  elementType: text
+  bounds:
+  - 60
+  - 195
+  - 125
+  - 25
+  content:
+    text: '2020'
+    fontSize: 18
+    color: $teal
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: k2020
+  elementType: text
+  bounds:
+  - 175
+  - 150
+  - 310
+  - 82
+  content:
+    text: 'Kersten｜IECON
+
+      RBS／多階逆變器線上阻抗估計'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: n2024
+  elementType: shape
+  bounds:
+  - 108
+  - 245
+  - 26
+  - 26
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: t2024
+  elementType: text
+  bounds:
+  - 60
+  - 284
+  - 125
+  - 25
+  content:
+    text: '2024'
+    fontSize: 18
+    color: $teal
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: k2024
+  elementType: text
+  bounds:
+  - 175
+  - 239
+  - 310
+  - 82
+  content:
+    text: 'Chen｜IEEE TTE
+
+      16 芯 MSPWM 線上 EIS，無額外可程式電源'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: n2026
+  elementType: shape
+  bounds:
+  - 108
+  - 334
+  - 26
+  - 26
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: t2026
+  elementType: text
+  bounds:
+  - 60
+  - 373
+  - 125
+  - 25
+  content:
+    text: '2026'
+    fontSize: 18
+    color: $copper
+    bold: true
+    align:
+    - center
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: k2026
+  elementType: text
+  bounds:
+  - 175
+  - 328
+  - 310
+  - 82
+  content:
+    text: 'Peng｜IEEE TPEL
+
+      以 RBS 切換暫態同步萃取電芯阻抗'
+    fontSize: 18
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: right-split
+  elementType: line
+  bounds:
+  - 535
+  - 145
+  - 2
+  - 270
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 1.2
+    color: $line
+- elementId: new-title
+  elementType: text
+  bounds:
+  - 575
+  - 150
+  - 325
+  - 30
+  content:
+    text: 本計畫新增的可驗證問題
+    fontSize: 20
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: new-body
+  elementType: text
+  bounds:
+  - 575
+  - 198
+  - 325
+  - 168
+  content:
+    text: '• 飛輪吸收激勵功率，對外服務不間斷
+
+      • 多電芯頻譜解混與時間同步校正
+
+      • EIS／SOH 結果即時改變拓撲與功率限制
+
+      • 在實測雜訊下設定明確停止條件'
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.45
+    wrap: true
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 482
+  - 840
+  - 20
+  content:
+    text: 資料來源｜<a href="https://doi.org/10.1109/IECON43393.2020.9254515">Kersten 2020</a>；<a href="https://doi.org/10.1109/TTE.2024.3350878">Chen 2024</a>；<a href="https://doi.org/10.1109/TPEL.2025.3600334">Peng
+      2026</a>
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true

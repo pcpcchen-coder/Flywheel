@@ -1,0 +1,254 @@
+pageType: content
+background:
+  type: solid
+  color: $paper
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 60
+  - 18
+  - 700
+  - 18
+  content:
+    text: 09｜FINAL DECISION
+    fontSize: 10
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 43
+  - 840
+  - 45
+  content:
+    text: 核准的是一套可證偽的研發計畫，不是一組未驗證的性能承諾
+    fontSize: 28
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.05
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 60
+  - 99
+  - 64
+  - 4
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: footer-rule
+  elementType: line
+  bounds:
+  - 60
+  - 508
+  - 840
+  - 2
+  viewBox:
+  - 100
+  - 100
+  points: 0,50 100,50
+  curve: sharp
+  border:
+    style: solid
+    width: 0.8
+    color: $line
+- elementId: footer-left
+  elementType: text
+  bounds:
+  - 60
+  - 516
+  - 420
+  - 14
+  content:
+    text: FESS × RAIBA｜研發立項審查
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: footer-page
+  elementType: text
+  bounds:
+  - 820
+  - 516
+  - 80
+  - 14
+  content:
+    text: 24 / 24
+    fontSize: 9
+    color: $gray
+    bold: false
+    align:
+    - right
+    - top
+    lineHeight: 1.0
+    wrap: true
+- elementId: decision
+  elementType: text
+  bounds:
+  - 60
+  - 137
+  - 350
+  - 54
+  content:
+    text: 有條件通過
+    fontSize: 34
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: decision-sub
+  elementType: text
+  bounds:
+  - 60
+  - 200
+  - 350
+  - 88
+  content:
+    text: 12 個月完成可信對照、暫態安全、故障橋接與診斷閉環；通過後再決定放大。
+    fontSize: 19
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.4
+    wrap: true
+- elementId: split
+  elementType: line
+  bounds:
+  - 445
+  - 140
+  - 2
+  - 285
+  viewBox:
+  - 100
+  - 100
+  points: 50,0 50,100
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $copper
+- elementId: conditions-title
+  elementType: text
+  bounds:
+  - 485
+  - 137
+  - 415
+  - 26
+  content:
+    text: 四個核准條件
+    fontSize: 20
+    color: $teal
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: conditions
+  elementType: text
+  bounds:
+  - 485
+  - 178
+  - 415
+  - 160
+  content:
+    text: '• B0–B3 四組對照不可刪
+
+      • 暫態與 EIS 設獨立 Gate
+
+      • 效率／延壽／可用率不得先寫成成果
+
+      • B2 未過成本與暫態門檻即停止'
+    fontSize: 17
+    color: $ink
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.5
+    wrap: true
+- elementId: data-title
+  elementType: text
+  bounds:
+  - 485
+  - 365
+  - 415
+  - 24
+  content:
+    text: 立項前必收
+    fontSize: 17
+    color: $copper
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.2
+    wrap: true
+- elementId: data
+  elementType: text
+  bounds:
+  - 485
+  - 398
+  - 415
+  - 54
+  content:
+    text: 'RAIBA 開關與失效資料｜飛輪全轉速模型
+
+      真實負載 trace｜異質老化資料｜IP／認證邊界'
+    fontSize: 14
+    color: $gray
+    bold: false
+    align:
+    - left
+    - top
+    lineHeight: 1.35
+    wrap: true
+- elementId: final-band
+  elementType: shape
+  bounds:
+  - 60
+  - 460
+  - 840
+  - 26
+  shapeName: rect
+  fill:
+    type: solid
+    color: $teal
+- elementId: final-text
+  elementType: text
+  bounds:
+  - 75
+  - 465
+  - 810
+  - 16
+  content:
+    text: 主計畫名稱｜飛輪功率掩護下之 RAIBA：重構暫態穩定、故障功率橋接與診斷驅動重構
+    fontSize: 12
+    color: $white
+    bold: true
+    align:
+    - left
+    - top
+    lineHeight: 1.0
+    wrap: true
