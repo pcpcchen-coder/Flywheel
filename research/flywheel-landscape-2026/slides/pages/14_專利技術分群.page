@@ -1,0 +1,507 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 專利版圖
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 專利壁壘從轉子與真空，擴展到陣列調度與混合控制
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：天眼查、Justia、Google Patents 代表性抽樣；不是全球專利普查或 FTO 法律意見。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 14 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: pc0
+  elementType: text
+  bounds:
+  - 44
+  - 124
+  - 130
+  - 24
+  content:
+    text: 轉子／輪轂
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb0
+  elementType: text
+  bounds:
+  - 184
+  - 124
+  - 422
+  - 38
+  content:
+    text: 複材纏繞、疊片鋼、纖維方向與接合
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp0
+  elementType: text
+  bounds:
+  - 632
+  - 124
+  - 284
+  - 38
+  content:
+    text: US12078221B2｜US11362558B2
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr0
+  elementType: shape
+  bounds:
+  - 44
+  - 170
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pc1
+  elementType: text
+  bounds:
+  - 44
+  - 181
+  - 130
+  - 24
+  content:
+    text: 磁軸承
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb1
+  elementType: text
+  bounds:
+  - 184
+  - 181
+  - 422
+  - 38
+  content:
+    text: 磁卸載、超導、五自由度與電機磁路整合
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp1
+  elementType: text
+  bounds:
+  - 632
+  - 181
+  - 284
+  - 38
+  content:
+    text: US9892839B2｜CN122678386A
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr1
+  elementType: shape
+  bounds:
+  - 44
+  - 227
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pc2
+  elementType: text
+  bounds:
+  - 44
+  - 238
+  - 130
+  - 24
+  content:
+    text: 真空／熱
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb2
+  elementType: text
+  bounds:
+  - 184
+  - 238
+  - 422
+  - 38
+  content:
+    text: 密封、分子泵、輻射與熱管散熱
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp2
+  elementType: text
+  bounds:
+  - 632
+  - 238
+  - 284
+  - 38
+  content:
+    text: US11085420B2｜CN108900039B
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr2
+  elementType: shape
+  bounds:
+  - 44
+  - 284
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pc3
+  elementType: text
+  bounds:
+  - 44
+  - 295
+  - 130
+  - 24
+  content:
+    text: 電機／變流
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb3
+  elementType: text
+  bounds:
+  - 184
+  - 295
+  - 422
+  - 38
+  content:
+    text: 定子常壓、高速電機、高壓直流
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp3
+  elementType: text
+  bounds:
+  - 632
+  - 295
+  - 284
+  - 38
+  content:
+    text: US11682943B2｜CN122338713A
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr3
+  elementType: shape
+  bounds:
+  - 44
+  - 341
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pc4
+  elementType: text
+  bounds:
+  - 44
+  - 352
+  - 130
+  - 24
+  content:
+    text: 陣列／構網
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb4
+  elementType: text
+  bounds:
+  - 184
+  - 352
+  - 422
+  - 38
+  content:
+    text: 地埋陣列、健康調用、風電耦合
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp4
+  elementType: text
+  bounds:
+  - 632
+  - 352
+  - 284
+  - 38
+  content:
+    text: CN122512415A｜CN122823458B
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr4
+  elementType: shape
+  bounds:
+  - 44
+  - 398
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pc5
+  elementType: text
+  bounds:
+  - 44
+  - 409
+  - 130
+  - 24
+  content:
+    text: 混合／氫能
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pb5
+  elementType: text
+  bounds:
+  - 184
+  - 409
+  - 422
+  - 38
+  content:
+    text: 電池損傷分配、飛輪增量制氫
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pp5
+  elementType: text
+  bounds:
+  - 632
+  - 409
+  - 284
+  - 38
+  content:
+    text: CN122697432A｜CN116040917A
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pr5
+  elementType: shape
+  bounds:
+  - 44
+  - 455
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: patent-note
+  elementType: text
+  bounds:
+  - 44
+  - 474
+  - 872
+  - 18
+  content:
+    text: 申請公開 ≠ 授權；授權 ≠ 持續有效；專利存在 ≠ 商業化。
+    fontSize: 11.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

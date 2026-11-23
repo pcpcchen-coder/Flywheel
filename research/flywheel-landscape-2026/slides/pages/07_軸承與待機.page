@@ -1,0 +1,317 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 關鍵部件
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 待機損耗會改寫商業模型，必須把輔機納入效率邊界
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Amiryar & Pullen 2020；Venturini 2024；Liu et al. 2026。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 07 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: bearing
+  elementType: table
+  bounds:
+  - 44
+  - 126
+  - 872
+  - 184
+  columnWidths:
+  - 0.19
+  - 0.23
+  - 0.3
+  - 0.28
+  rowHeights:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  rows:
+  - - text: 方案
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 優勢
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 失效／維護重點
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 採購判斷
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+  - - text: 機械／陶瓷軸承
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 簡單、無主動懸浮功耗
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 高速發熱、潤滑與定期更換
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 適合成熟 UPS；算入維護成本
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 被動磁／永磁卸載
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 降低接觸負載
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 剛度、阻尼、渦流與退磁
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 無接觸不等於零損耗
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 主動磁軸承
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 五自由度、適合高速
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 放大器、感測、控制與備援落地
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 要求整機功耗與故障測試
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 超導磁軸承
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 穩定被動懸浮
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 低溫、冷卻、磁通蠕變與失超
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 把冷卻功耗與可靠度納入
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: loss-title
+  elementType: text
+  bounds:
+  - 44
+  - 336
+  - 250
+  - 24
+  content:
+    text: 待機損耗的四個來源
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: losses
+  elementType: text
+  bounds:
+  - 44
+  - 372
+  - 410
+  - 84
+  content:
+    text: '風損｜隨真空度與轉速非線性變化
+
+      磁軸承｜偏置、銅損、鐵損與放大器
+
+      電機｜高速空載與鐵損
+
+      輔機｜真空、冷卻、控制與站用電'
+    fontSize: 12.2
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: v
+  elementType: shape
+  bounds:
+  - 492
+  - 338
+  - 1
+  - 126
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: accept
+  elementType: text
+  bounds:
+  - 520
+  - 338
+  - 396
+  - 122
+  content:
+    text: '驗收不要只問峰值效率
+
+
+      要求 24 h／72 h 能量保持、平均待機 kW、四季站用電、真空恢復時間與輔機維護週期。'
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.3
+    align:
+    - left
+    - top
+    wrap: true

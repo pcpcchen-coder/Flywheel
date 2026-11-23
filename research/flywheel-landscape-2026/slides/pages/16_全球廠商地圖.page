@@ -1,0 +1,361 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 全球廠商
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 供應商選擇要同時看產品、資產歸屬與長期服務責任
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：公司官方資料、Langley、Calnetix、Beacon 資產公告；截至 2026-10-30。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 16 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: vendors
+  elementType: table
+  bounds:
+  - 44
+  - 122
+  - 872
+  - 314
+  columnWidths:
+  - 0.23
+  - 0.2
+  - 0.28
+  - 0.29
+  rowHeights:
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  rows:
+  - - text: 廠商／組織
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 定位
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 2026 狀態判讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 採購重點
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+  - - text: Active Power／Piller
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: UPS／關鍵電力
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 成熟產品線，Langley 體系
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 整機、旁路、發電機與服務
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: VYCON／Calnetix
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 直流母排 UPS
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 成熟產品線
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: kW·s 與單程效率不可跨口徑比
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Beacon／場站資產方
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 20 MW 調頻
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 既有場站商轉；原公司資產分拆
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 備件、軟體、保固與簽約主體
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Stornetic
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 分鐘級高功率
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: DuraStor 商業模組
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 動能／有效能量與全年輔機
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Amber Kinetics
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 4 h 長時鋼轉子
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 小規模商業部署
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: DC RTE、利用率與多場站實績
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Torus／Revterra／QuinteQ
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 混合、磁浮新創
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 早期商業化
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 待機與規格需第三方驗證
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Energiestro
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 混凝土＋玻纖
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: beta／試量產
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 材料老化、一致性與圍堵
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 中國供應商群
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 大功率調頻／UPS
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 工程化加速
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 以場站性能與服務驗證
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: ownership
+  elementType: text
+  bounds:
+  - 44
+  - 454
+  - 872
+  - 30
+  content:
+    text: 公司終止不等於資產消失；工商存續也不等於財務健全或產品通過驗收。
+    fontSize: 12.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

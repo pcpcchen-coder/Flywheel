@@ -1,0 +1,286 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 實施路線圖
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 每年都要用可觀察證據，決定是否進入下一階段投資
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告 2027–2031 觀察路線；屬前瞻假設與決策門檻，不是確定時程承諾。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 30 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: roadmap
+  elementType: table
+  bounds:
+  - 44
+  - 124
+  - 872
+  - 270
+  columnWidths:
+  - 0.12
+  - 0.3
+  - 0.29
+  - 0.29
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 期間
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: 技術焦點
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: 產業焦點
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: 決策節點
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+  - - text: '2027'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 低功耗磁軸承、陣列健康分配
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 大型專案轉向性能與收益驗證
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 全年可用率、站用電與工單是否公開
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: '2028'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 衰退導向混合、構網與故障穿越
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: UPS 與混合參考設計增加
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 中壓 UPS／構網第三方故障測試
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: '2029'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 複材老化、圍堵與長時成本優化
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 長時純飛輪可複製或維持利基
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 兩個以上獨立場站同性能
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: '2030'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 多資產 EMS、飛輪－電池－氫協調
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 氫耦合由微電網走向較大示範
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 真實電解槽與氫安全邊界驗收
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: '2031'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 全生命週期健康與可維修設計
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 服務、性能保固與供應商整併
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 融資是否接受標準化長期數據
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: gate
+  elementType: text
+  bounds:
+  - 44
+  - 424
+  - 872
+  - 40
+  content:
+    text: 投資門檻：先取得任務譜與同口徑資料，再進入場站核查、性能保固與全生命週期比較。
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true

@@ -1,0 +1,261 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 學術現況
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 研究重心已由單機部件，延伸到陣列、壽命與混合控制
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Scholar 文獻盤點；DOI 對照。完整 18 篇文獻與限制見 Word 報告第 5 章。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 11 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: literature
+  elementType: table
+  bounds:
+  - 44
+  - 124
+  - 872
+  - 304
+  columnWidths:
+  - 0.29
+  - 0.2
+  - 0.29
+  - 0.22
+  rowHeights:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  rows:
+  - - text: 時期／代表文獻
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 主題
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 可支持的結論
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 證據邊界
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+  - - text: 2007–2021｜Bolund、Amiryar、Mousavi、Olabi
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 系統與應用
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 建立轉子—軸承—電機—真空—變流框架
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 經典綜述；市場與成本資料較舊
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 2023｜Hu、Takarli、Xu
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 材料／電機／高速磁懸浮
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 部件設計與系統鏈整合更完整
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 綜述不等同產品實測
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 2024｜Venturini、Dai、Wang
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 風損、中國研發、混合調頻
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 由模型走向台架與 SOC 約束控制
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 特定台架／策略不可隨意外推
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 2026｜Liu、Hashim、Han
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 磁軸承節能、疲勞 MPC、電池衰退
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 健康與壽命進入控制目標
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 多為研究驗證，缺多年電站資料
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: trend
+  elementType: text
+  bounds:
+  - 44
+  - 452
+  - 872
+  - 28
+  content:
+    text: 判讀原則：文獻數量增加代表研究活躍，不代表商業成熟度同步提高。
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

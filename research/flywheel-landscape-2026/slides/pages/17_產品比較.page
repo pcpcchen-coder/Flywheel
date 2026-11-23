@@ -1,0 +1,417 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 代表產品
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 產品規格差異來自應用邊界，不宜用單一效率或 kWh 排名
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：各廠商官方資料表。放電時間為額定點或公開功率／能量核算；UPS 隨負載變化。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 17 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: products
+  elementType: table
+  bounds:
+  - 44
+  - 120
+  - 872
+  - 344
+  columnWidths:
+  - 0.23
+  - 0.15
+  - 0.22
+  - 0.12
+  - 0.28
+  rowHeights:
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  rows:
+  - - text: 產品
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+    - text: 功率
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+    - text: 能量（原口徑）
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+    - text: 時間
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+    - text: 效率／成熟度判讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+  - - text: Beacon Gen4
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 100 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 25 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 約 15 min
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 既有電站商轉；製造主體低度營運
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Amber M32
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 8 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 32 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 4 h
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: DC RTE >86%；小規模商業部署
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Active Power PLUS MMS
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 300–2,400 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 6.2 MJ／模組
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 最長約 2 min
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: UPS 效率口徑；定期軸承維護
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: VYCON VDC XXE
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 300 kW+
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 6,000 kW·s
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 秒級
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 直流母排 UPS；非 AC 往返效率
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: DuraStor 240
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 240 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 動能 16；有效 9.2 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 120 s
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 典型 RTE 80%（含輔機）
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: DuraStor 1000
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 1,000 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 動能 64；有效 37 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 122 s
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 典型 RTE >82%（含輔機）
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Revterra S100
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 400 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 100 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 約 15 min
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 早期商業；約 50 W 待機為開發方口徑
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Energiestro VOSS
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 約 10 kW
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 10 kWh
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 約 1 h
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: beta／試量產，非成熟量產品
+      fontSize: 10.3
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: prod-note
+  elementType: text
+  bounds:
+  - 44
+  - 474
+  - 872
+  - 18
+  content:
+    text: 完整 14 項產品、設計壽命與限制見 Word 報告第 7 章。
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

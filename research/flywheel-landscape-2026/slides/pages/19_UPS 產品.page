@@ -1,0 +1,258 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 產品案例｜UPS
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: UPS 飛輪的核心是橋接與電能品質，不是長時能量搬移
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Active Power CleanSource PLUS MMS、Piller POWERBRIDGE、VYCON VDC 官方資料；廠商規格。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 19 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: active
+  elementType: image
+  bounds:
+  - 44
+  - 130
+  - 356
+  - 224
+  src: media/active_power.png
+  fit:
+    mode: contain
+- elementId: cap
+  elementType: text
+  bounds:
+  - 44
+  - 360
+  - 356
+  - 24
+  content:
+    text: Active Power UPS 方案｜圖：官方資料
+    fontSize: 9.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: ups
+  elementType: table
+  bounds:
+  - 436
+  - 130
+  - 480
+  - 190
+  columnWidths:
+  - 0.28
+  - 0.31
+  - 0.41
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 方案
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 公開規格
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 正確解讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+  - - text: Active Power PLUS MMS
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 300–2,400 kW；6.2 MJ／模組
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 效率是 UPS 邊界；依負載核算 ride-through
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Piller POWERBRIDGE
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 3.6–60+ MJ；最高 MW 級
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 低速重型關鍵電力；與發電機／靜態開關整合
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: VYCON VDC XXE
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 300 kW+；6,000 kW·s
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 直流母排儲能；單程效率非 AC RTE
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: ups-check
+  elementType: text
+  bounds:
+  - 436
+  - 346
+  - 480
+  - 104
+  content:
+    text: '驗收五項
+
+      負載階躍｜切換與旁路｜發電機啟動銜接｜故障穿越｜軸承與備件維護'
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ups-bottom
+  elementType: text
+  bounds:
+  - 44
+  - 458
+  - 872
+  - 24
+  content:
+    text: AI 資料中心帶來新需求，但 2026 中壓 SST＋飛輪 UPS 仍需實際負載與故障測試。
+    fontSize: 11.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

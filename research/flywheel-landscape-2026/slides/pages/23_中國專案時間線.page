@@ -1,0 +1,468 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 中國專案時間線
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 中國專案由混合示範走向大陣列，里程碑用詞必須精確
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：CNESA（朔州）、長治市政府（鼎輪）、公開專案報導（文水、綿陽）；截至 2026-10-30。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 23 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: timeline
+  elementType: shape
+  bounds:
+  - 76
+  - 250
+  - 808
+  - 3
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: dot0
+  elementType: shape
+  bounds:
+  - 94
+  - 244
+  - 12
+  - 12
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: yr0
+  elementType: text
+  bounds:
+  - 48
+  - 178
+  - 104
+  - 26
+  content:
+    text: '2022'
+    fontSize: 17
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: t0
+  elementType: text
+  bounds:
+  - 20
+  - 286
+  - 160
+  - 26
+  content:
+    text: 朔州熱電
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: b0
+  elementType: text
+  bounds:
+  - 12
+  - 318
+  - 176
+  - 54
+  content:
+    text: '5 MW/5 MWh LFP
+
+      ＋2 MW/0.4 MWh 飛輪'
+    fontSize: 10.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: st0
+  elementType: text
+  bounds:
+  - 24
+  - 384
+  - 152
+  - 24
+  content:
+    text: 示範投運
+    fontSize: 11
+    color: $muted
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: dot1
+  elementType: shape
+  bounds:
+  - 320
+  - 244
+  - 12
+  - 12
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: yr1
+  elementType: text
+  bounds:
+  - 274
+  - 178
+  - 104
+  - 26
+  content:
+    text: '2024'
+    fontSize: 17
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: t1
+  elementType: text
+  bounds:
+  - 246
+  - 286
+  - 160
+  - 26
+  content:
+    text: 鼎輪長治
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: b1
+  elementType: text
+  bounds:
+  - 238
+  - 318
+  - 176
+  - 54
+  content:
+    text: '30 MW／120 台
+
+      純飛輪獨立調頻'
+    fontSize: 10.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: st1
+  elementType: text
+  bounds:
+  - 250
+  - 384
+  - 152
+  - 24
+  content:
+    text: 全容量併網
+    fontSize: 11
+    color: $muted
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: dot2
+  elementType: shape
+  bounds:
+  - 570
+  - 244
+  - 12
+  - 12
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: yr2
+  elementType: text
+  bounds:
+  - 524
+  - 178
+  - 104
+  - 26
+  content:
+    text: '2026.04'
+    fontSize: 17
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: t2
+  elementType: text
+  bounds:
+  - 496
+  - 286
+  - 160
+  - 26
+  content:
+    text: 文水
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: b2
+  elementType: text
+  bounds:
+  - 488
+  - 318
+  - 176
+  - 54
+  content:
+    text: '200 MW/100.83 MWh
+
+      400 台飛輪＋LFP'
+    fontSize: 10.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: st2
+  elementType: text
+  bounds:
+  - 500
+  - 384
+  - 152
+  - 24
+  content:
+    text: 全容量併網
+    fontSize: 11
+    color: $muted
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: dot3
+  elementType: shape
+  bounds:
+  - 820
+  - 244
+  - 12
+  - 12
+  shapeName: rect
+  fill:
+    type: solid
+    color: $copper
+- elementId: yr3
+  elementType: text
+  bounds:
+  - 774
+  - 178
+  - 104
+  - 26
+  content:
+    text: '2026'
+    fontSize: 17
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: t3
+  elementType: text
+  bounds:
+  - 746
+  - 286
+  - 160
+  - 26
+  content:
+    text: 綿陽港旗一期
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: b3
+  elementType: text
+  bounds:
+  - 738
+  - 318
+  - 176
+  - 54
+  content:
+    text: '100 MW/200 MWh
+
+      ＋15 MW/0.525 MWh'
+    fontSize: 10.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: st3
+  elementType: text
+  bounds:
+  - 750
+  - 384
+  - 152
+  - 24
+  content:
+    text: 商轉報導
+    fontSize: 11
+    color: $muted
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: timeline-note
+  elementType: text
+  bounds:
+  - 44
+  - 446
+  - 872
+  - 36
+  content:
+    text: 併網、後續調試、一次調頻測試、性能驗收與正式商轉是不同證據；不能一律寫成「投運」。
+    fontSize: 12.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true

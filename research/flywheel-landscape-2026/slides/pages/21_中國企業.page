@@ -1,0 +1,361 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 中國企業
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 中國工程化加速，但工商資料不能代替履約與產品驗收
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：天眼查工商查詢（2026-10-30）；註冊資本為登記資料，風險標籤需另做信用與法律核查。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 21 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: china
+  elementType: table
+  bounds:
+  - 44
+  - 120
+  - 872
+  - 344
+  columnWidths:
+  - 0.22
+  - 0.2
+  - 0.11
+  - 0.47
+  rowHeights:
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  rows:
+  - - text: 企業
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 註冊資本
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 成立
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 技術定位／風險提示
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+  - - text: 瀋陽微控
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 17,000 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2018'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 電網調頻、UPS、磁軸承；上市輔導標籤
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 北京泓慧
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 3,500.17 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2015'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 磁懸浮飛輪、關鍵電力；上市輔導標籤
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 坎德拉
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 1,270.43 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2018'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 高倍率一次調頻、陣列與混合儲能
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 華馳動能
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 1,967.95 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2019'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 大功率全磁懸浮；單機規格需逐案驗收
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 貝肯新能源
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 6,591.29 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2017'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: Temporal 技術傳承；鼎輪 30 MW 方案
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 奇峰聚能
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 8,571.43 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2009'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 分佈式飛輪網路；另做信用風險核查
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 羅特尼克
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 1,416.66 萬美元
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2012'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 高速複材；含破產案件風險標籤
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 博鼎儲能
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 5,000 萬人民幣
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '2021'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 磁軸承與系統；公開證據較少
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: china-note
+  elementType: text
+  bounds:
+  - 44
+  - 474
+  - 872
+  - 18
+  content:
+    text: 評估順序：同任務場站 → 全年性能與工單 → 服務與備件 → 財務與法律風險。
+    fontSize: 10.8
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

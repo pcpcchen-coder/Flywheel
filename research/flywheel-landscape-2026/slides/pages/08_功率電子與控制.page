@@ -1,0 +1,490 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 電機與控制
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 電機與變流器決定功率品質，陣列 EMS 決定可用率與老化
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Takarli et al. 2023；Xu et al. 2023；代表陣列專利 CN117200282B、CN122512415A。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 08 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: grid-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 178
+  - 148
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: grid-title
+  elementType: text
+  bounds:
+  - 54
+  - 186
+  - 128
+  - 22
+  content:
+    text: 電網／關鍵負載
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: grid-body
+  elementType: text
+  bounds:
+  - 54
+  - 211
+  - 128
+  - 50
+  content:
+    text: 有功、無功、頻率與故障要求
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pcs-bg
+  elementType: shape
+  bounds:
+  - 260
+  - 178
+  - 158
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: pcs-title
+  elementType: text
+  bounds:
+  - 270
+  - 186
+  - 138
+  - 22
+  content:
+    text: 網側變流器
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pcs-body
+  elementType: text
+  bounds:
+  - 270
+  - 211
+  - 138
+  - 50
+  content:
+    text: 直流母排、併網電流與保護
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: machine-bg
+  elementType: shape
+  bounds:
+  - 486
+  - 178
+  - 158
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: machine-title
+  elementType: text
+  bounds:
+  - 496
+  - 186
+  - 138
+  - 22
+  content:
+    text: 機側變流器＋電機
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: machine-body
+  elementType: text
+  bounds:
+  - 496
+  - 211
+  - 138
+  - 50
+  content:
+    text: 轉矩、速度、四象限充放電
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: rotor-bg
+  elementType: shape
+  bounds:
+  - 712
+  - 178
+  - 160
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: rotor-title
+  elementType: text
+  bounds:
+  - 722
+  - 186
+  - 140
+  - 22
+  content:
+    text: 飛輪單元陣列
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: rotor-body
+  elementType: text
+  bounds:
+  - 722
+  - 211
+  - 140
+  - 50
+  content:
+    text: 轉速／SOC、溫度、振動與健康
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: p1
+  elementType: line
+  bounds:
+  - 192
+  - 220
+  - 68
+  - 2
+  viewBox:
+  - 68
+  - 2
+  points: 0,1.0 68,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: p2
+  elementType: line
+  bounds:
+  - 418
+  - 220
+  - 68
+  - 2
+  viewBox:
+  - 68
+  - 2
+  points: 0,1.0 68,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: p3
+  elementType: line
+  bounds:
+  - 644
+  - 220
+  - 68
+  - 2
+  viewBox:
+  - 68
+  - 2
+  points: 0,1.0 68,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: ems
+  elementType: text
+  bounds:
+  - 260
+  - 310
+  - 384
+  - 28
+  content:
+    text: 站級 EMS：依 SOC、效率、溫度、振動與累積疲勞分配功率
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: control
+  elementType: line
+  bounds:
+  - 452
+  - 282
+  - 2
+  - 28
+  viewBox:
+  - 2
+  - 28
+  points: 1.0,0 1.0,28
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $copper
+- elementId: controls
+  elementType: table
+  bounds:
+  - 44
+  - 376
+  - 872
+  - 88
+  columnWidths:
+  - 0.16
+  - 0.4
+  - 0.44
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 控制層
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 正常功能
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 異常／降級路徑
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+  - - text: 單機
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 速度／電流控制、SOC 估計、保護
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 限功率 → 受控降速 → 備援軸承
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 站級
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: AGC／一次調頻、無功、SOC 恢復
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 通訊中斷切本地 droop；故障機隔離
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 構網
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 建立電壓／頻率參考
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 必須同時標示可持續功率與能量窗口
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default

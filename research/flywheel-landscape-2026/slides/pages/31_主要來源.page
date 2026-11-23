@@ -1,0 +1,164 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 主要來源
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 主要來源以 DOI、官方產品頁、政府專案與標準為主
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：完整 86 項來源與超連結見 Word 報告附錄 B；本頁列出簡報核心證據。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 31 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: sources-left
+  elementType: text
+  bounds:
+  - 44
+  - 122
+  - 420
+  - 342
+  content:
+    text: <p><strong>學術</strong></p><p>Bolund et al. 2007｜10.1016/j.rser.2005.01.004</p><p>Amiryar & Pullen 2017｜10.3390/app7030286</p><p>Hu et al. 2023｜S2352152X2302474X</p><p>Takarli et al. 2023｜IEEE 10203021</p><p>Venturini et al. 2024｜10.1016/j.energy.2024.132641</p><p>Liu et al. 2026｜10.1063/5.0320285</p><p>Hashim et al. 2026｜10.1038/s41598-026-66926-y</p><p>Han et al. 2026｜10.1002/ese3.70656</p><p>Elkholy et al. 2024｜10.1016/j.est.2024.113771</p><p><strong>企業與專利</strong></p><p>天眼查工商／專利快照｜2026-10-30</p><p>Justia Patents｜Amber、Beacon 專利清單</p>
+    fontSize: 10.2
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.28
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: sv
+  elementType: shape
+  bounds:
+  - 488
+  - 126
+  - 1
+  - 332
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: sources-right
+  elementType: text
+  bounds:
+  - 516
+  - 122
+  - 400
+  - 342
+  content:
+    text: <p><strong>產品</strong></p><p>Stornetic｜DuraStor／EnWheel 官方規格</p><p>Active Power｜CleanSource PLUS MMS 資料表</p><p>Piller｜POWERBRIDGE 官方產品頁</p><p>VYCON／Calnetix｜VDC 系列資料</p><p>Amber Kinetics｜M32 官方資料表</p><p><strong>專案與標準</strong></p><p>美國 DOE｜Hazle 20 MW、Amber 示範</p><p>長治市政府｜鼎輪 30 MW 併網</p><p>CNESA｜朔州鋰電－飛輪混合</p><p>Leclanché／S4｜荷蘭混合專案</p><p>NRCan｜Raglan 微電網示範</p><p>GB/T 44933、44934、46372</p><p>IEC 62933｜IEEE 1547｜UL 9540／1778</p>
+    fontSize: 10.2
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.28
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: sources-note
+  elementType: text
+  bounds:
+  - 44
+  - 474
+  - 872
+  - 18
+  content:
+    text: 所有產品效率、壽命與待機規格均保留廠商口徑；引用不代表第三方驗證。
+    fontSize: 10.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

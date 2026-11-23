@@ -1,0 +1,286 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 研究缺口
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 五個證據缺口，決定哪些結論仍不能下定論
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告對公開論文、產品資料與專案揭露的交叉檢查；截至 2026-10-30。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 13 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: gaps
+  elementType: table
+  bounds:
+  - 44
+  - 126
+  - 872
+  - 296
+  columnWidths:
+  - 0.2
+  - 0.27
+  - 0.25
+  - 0.28
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 缺口
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 目前公開資料
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 為什麼重要
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 下一步證據
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+  - - text: 複材長期老化
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 多為材料與部件研究
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 影響壽命、接合與爆裂模式
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 濕熱／真空／熱循環多年任務譜
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 全尺寸圍堵
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 公開爆裂與鄰機隔離資料有限
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 決定間距、土建與救援成本
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 最壞破壞模式與第三方試驗
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 長期待機與可用率
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 峰值效率多、全年站用電少
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 低利用率場站由待機主導成本
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 逐季功耗、停機原因與維護工時
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 第三方經濟性
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 缺少同市場同任務 A/B
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 固定壽命改善倍率不可外推
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 純鋰電／純飛輪／混合全成本對照
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 大型氫能實證
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 微電網示範與模擬為主
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 電解槽動態與氫安全會改變設計
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 真實電解槽連續運轉與故障恢復
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: gap-bottom
+  elementType: text
+  bounds:
+  - 44
+  - 448
+  - 872
+  - 34
+  content:
+    text: 因此，本報告不給單一全球市場規模、統一 LCOS 排名或固定電池壽命改善倍率。
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

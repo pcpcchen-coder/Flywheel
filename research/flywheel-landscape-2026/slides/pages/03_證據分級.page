@@ -1,0 +1,449 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 研究方法
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 四層證據標籤，讓「能做」與「已商轉」不再混用
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告研究方法；Scholar、天眼查、DOI、官方產品頁與政府專案頁交叉核對。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 03 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: n0
+  elementType: text
+  bounds:
+  - 44
+  - 142
+  - 48
+  - 28
+  content:
+    text: '01'
+    fontSize: 20
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: t0
+  elementType: text
+  bounds:
+  - 104
+  - 142
+  - 160
+  - 24
+  content:
+    text: 商業運轉
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: b0
+  elementType: text
+  bounds:
+  - 270
+  - 142
+  - 300
+  - 38
+  content:
+    text: 產品銷售、併網或持續服務
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: l0
+  elementType: text
+  bounds:
+  - 600
+  - 142
+  - 316
+  - 38
+  content:
+    text: 支持特定案例商業可行性
+    fontSize: 11.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: r0
+  elementType: shape
+  bounds:
+  - 44
+  - 197
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: n1
+  elementType: text
+  bounds:
+  - 44
+  - 218
+  - 48
+  - 28
+  content:
+    text: '02'
+    fontSize: 20
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: t1
+  elementType: text
+  bounds:
+  - 104
+  - 218
+  - 160
+  - 24
+  content:
+    text: 示範／試點
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: b1
+  elementType: text
+  bounds:
+  - 270
+  - 218
+  - 300
+  - 38
+  content:
+    text: 特定系統整合已實作
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: l1
+  elementType: text
+  bounds:
+  - 600
+  - 218
+  - 316
+  - 38
+  content:
+    text: 不支持量產成本與長期可靠度
+    fontSize: 11.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: r1
+  elementType: shape
+  bounds:
+  - 44
+  - 273
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: n2
+  elementType: text
+  bounds:
+  - 44
+  - 294
+  - 48
+  - 28
+  content:
+    text: '03'
+    fontSize: 20
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: t2
+  elementType: text
+  bounds:
+  - 104
+  - 294
+  - 160
+  - 24
+  content:
+    text: 模擬／概念
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: b2
+  elementType: text
+  bounds:
+  - 270
+  - 294
+  - 300
+  - 38
+  content:
+    text: 比較控制、容量與物理機制
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: l2
+  elementType: text
+  bounds:
+  - 600
+  - 294
+  - 316
+  - 38
+  content:
+    text: 不支持實測效率、壽命或收益
+    fontSize: 11.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: r2
+  elementType: shape
+  bounds:
+  - 44
+  - 349
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: n3
+  elementType: text
+  bounds:
+  - 44
+  - 370
+  - 48
+  - 28
+  content:
+    text: '04'
+    fontSize: 20
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: t3
+  elementType: text
+  bounds:
+  - 104
+  - 370
+  - 160
+  - 24
+  content:
+    text: 前瞻假設
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: b3
+  elementType: text
+  bounds:
+  - 270
+  - 370
+  - 300
+  - 38
+  content:
+    text: 建立情境與觀察指標
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: l3
+  elementType: text
+  bounds:
+  - 600
+  - 370
+  - 316
+  - 38
+  content:
+    text: 不是市場承諾或確定預測
+    fontSize: 11.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: r3
+  elementType: shape
+  bounds:
+  - 44
+  - 425
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: method
+  elementType: text
+  bounds:
+  - 44
+  - 458
+  - 872
+  - 28
+  content:
+    text: 專利為代表性抽樣，不是全球普查或 FTO；工商存續不等同產品通過驗收。
+    fontSize: 12
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

@@ -1,0 +1,90 @@
+version: v2
+title: 飛輪儲能技術全景簡報
+size:
+- 960
+- 540
+customFonts:
+- family: MiSans
+  src: https://statics.kimi.ai/neo-design-static/p-font/MiSans.ttf
+theme:
+  colors:
+    dark: '#183B36'
+    primary: '#24534C'
+    copper: '#A85F36'
+    text: '#27312F'
+    muted: '#65716D'
+    line: '#D6DDD9'
+    pale: '#EDF2EF'
+    warm: '#F5F1EA'
+    white: '#FFFFFF'
+  textStyles:
+    body:
+      fontSize: 14
+      color: $text
+      fontFamily: MiSans
+      lineHeight: 1.22
+  tableStyles:
+    default:
+      cellStyle:
+        fontFamily: MiSans
+        fontSize: 11.5
+        color: $text
+        border:
+        - style: solid
+          width: 0.6
+          color: $line
+        - null
+        - style: solid
+          width: 0.6
+          color: $line
+        - null
+        align:
+        - left
+        - middle
+      firstRowStyle:
+        fill:
+          type: solid
+          color: $dark
+        color: '#FFFFFF'
+        bold: true
+      bodyStyles:
+      - fill:
+          type: solid
+          color: '#FFFFFF'
+      - fill:
+          type: solid
+          color: $pale
+      rowOverColumn: true
+pages:
+- pages/01_封面.page
+- pages/02_決策摘要.page
+- pages/03_證據分級.page
+- pages/04_產品定位圖.page
+- pages/05_系統架構.page
+- pages/06_轉子取捨.page
+- pages/07_軸承與待機.page
+- pages/08_功率電子與控制.page
+- pages/09_規格比較口徑.page
+- pages/10_安全圍堵.page
+- pages/11_學術文獻地圖.page
+- pages/12_研究前沿.page
+- pages/13_研究缺口.page
+- pages/14_專利技術分群.page
+- pages/15_代表專利.page
+- pages/16_全球廠商地圖.page
+- pages/17_產品比較.page
+- pages/18_Stornetic 產品案例.page
+- pages/19_UPS 產品.page
+- pages/20_長時與新創產品.page
+- pages/21_中國企業.page
+- pages/22_全球專案.page
+- pages/23_中國專案時間線.page
+- pages/24_應用成熟度.page
+- pages/25_鋰電混合架構.page
+- pages/26_鋰電專案與控制.page
+- pages/27_氫能架構與證據.page
+- pages/28_標準與採購.page
+- pages/29_五年情境.page
+- pages/30_實施路線圖.page
+- pages/31_主要來源.page
+- pages/32_決策結論.page

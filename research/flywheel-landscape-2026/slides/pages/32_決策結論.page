@@ -1,0 +1,266 @@
+pageType: final
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 決策結論
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 從任務譜出發，把性能、風險與原始數據交付寫進決策
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告綜合判斷；完整 90 天盡調流程與供應商資料清單見 Word 報告第 14 章及附錄 A。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 32 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: final-lead
+  elementType: text
+  bounds:
+  - 44
+  - 122
+  - 872
+  - 42
+  content:
+    text: 先決定需要多少功率、能量與循環，再選擇純飛輪、飛輪－鋰電或飛輪－氫能。
+    fontSize: 17
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: final
+  elementType: table
+  bounds:
+  - 44
+  - 184
+  - 872
+  - 204
+  columnWidths:
+  - 0.23
+  - 0.32
+  - 0.45
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 目標
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+    - text: 優先方案
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+    - text: 不可省略的驗收
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+  - - text: 關鍵電力
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 成熟 UPS 整機與服務
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 負載階躍、旁路、發電機銜接、維護
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 高頻調頻
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 純飛輪或飛輪－鋰電
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 市場訊號、SOC 恢復、待機與可用率
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 降低鋰電衰退
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 混合系統＋同場 A/B
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 吞吐、C-rate、溫度、容量／內阻與混合 RTE
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 風光制氫
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 飛輪平滑＋氫長時
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 真實電解槽動態、氫安全與連續運轉
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 4 h 以上能量搬移
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 與其他長時技術同邊界比較
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 多場站、多年、第三方性能與維護資料
+      fontSize: 11.5
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: final-action
+  elementType: text
+  bounds:
+  - 44
+  - 420
+  - 872
+  - 44
+  content:
+    text: 下一步：用同一份供應商資料模板收齊有效能量、含輔機效率、待機、圍堵、維護與場站原始數據，再進入技術與商務評分。
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - center
+    - top
+    wrap: true

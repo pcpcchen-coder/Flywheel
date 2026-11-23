@@ -1,0 +1,482 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 飛輪＋鋰電
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 飛輪吃高頻微循環，鋰電保留小時級能量與 SOC 裕度
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Wang 2024；Barelli 2019；Han 2026。左圖為架構整理，右圖為合成訊號，非專案實測。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 25 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: renew-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 142
+  - 150
+  - 72
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: renew-title
+  elementType: text
+  bounds:
+  - 54
+  - 150
+  - 130
+  - 22
+  content:
+    text: 電網／再生能源
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: renew-body
+  elementType: text
+  bounds:
+  - 54
+  - 175
+  - 130
+  - 34
+  content:
+    text: 高頻＋低頻功率指令
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: split-bg
+  elementType: shape
+  bounds:
+  - 260
+  - 142
+  - 150
+  - 72
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: split-title
+  elementType: text
+  bounds:
+  - 270
+  - 150
+  - 130
+  - 22
+  content:
+    text: 混合 EMS
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: split-body
+  elementType: text
+  bounds:
+  - 270
+  - 175
+  - 130
+  - 34
+  content:
+    text: 頻譜分解＋SOC 約束
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fly-bg
+  elementType: shape
+  bounds:
+  - 486
+  - 122
+  - 150
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: fly-title
+  elementType: text
+  bounds:
+  - 496
+  - 130
+  - 130
+  - 22
+  content:
+    text: 飛輪
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fly-body
+  elementType: text
+  bounds:
+  - 496
+  - 155
+  - 130
+  - 26
+  content:
+    text: 高頻、秒至分鐘
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: bat-bg
+  elementType: shape
+  bounds:
+  - 486
+  - 210
+  - 150
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: bat-title
+  elementType: text
+  bounds:
+  - 496
+  - 218
+  - 130
+  - 22
+  content:
+    text: 鋰電
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: bat-body
+  elementType: text
+  bounds:
+  - 496
+  - 243
+  - 130
+  - 26
+  content:
+    text: 低頻、小時級能量
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: output-bg
+  elementType: shape
+  bounds:
+  - 712
+  - 142
+  - 160
+  - 72
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: output-title
+  elementType: text
+  bounds:
+  - 722
+  - 150
+  - 140
+  - 22
+  content:
+    text: 併網點
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: output-body
+  elementType: text
+  bounds:
+  - 722
+  - 175
+  - 140
+  - 34
+  content:
+    text: 完成調度＋電能品質
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ha1
+  elementType: line
+  bounds:
+  - 194
+  - 178
+  - 66
+  - 2
+  viewBox:
+  - 66
+  - 2
+  points: 0,1.0 66,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: ha2
+  elementType: line
+  bounds:
+  - 410
+  - 158
+  - 76
+  - 2
+  viewBox:
+  - 76
+  - 2
+  points: 0,1.0 76,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: ha3
+  elementType: line
+  bounds:
+  - 410
+  - 220
+  - 76
+  - 2
+  viewBox:
+  - 76
+  - 2
+  points: 0,1.0 76,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: ha4
+  elementType: line
+  bounds:
+  - 636
+  - 158
+  - 76
+  - 2
+  viewBox:
+  - 76
+  - 2
+  points: 0,1.0 76,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: ha5
+  elementType: line
+  bounds:
+  - 636
+  - 220
+  - 76
+  - 2
+  viewBox:
+  - 76
+  - 2
+  points: 0,1.0 76,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: hybrid
+  elementType: image
+  bounds:
+  - 44
+  - 310
+  - 560
+  - 158
+  src: media/hybrid_split.png
+  fit:
+    mode: contain
+- elementId: hybrid-note
+  elementType: text
+  bounds:
+  - 640
+  - 318
+  - 276
+  - 132
+  content:
+    text: '控制由簡到繁
+
+      固定濾波 → SOC 約束 → MPC → 衰退導向
+
+
+      飛輪 SOC 必須恢復，否則高頻吸收能力會逐漸耗盡。'
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.3
+    align:
+    - left
+    - top
+    wrap: true

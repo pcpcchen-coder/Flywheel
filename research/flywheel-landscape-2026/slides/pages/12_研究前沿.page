@@ -1,0 +1,449 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 研究前沿
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 2024–2026 的前沿，集中於低損耗、健康感知與衰退導向
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Liu 2026；Hashim 2026；Wang 2024；Han 2026；Venturini 2024。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 12 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: fnum0
+  elementType: text
+  bounds:
+  - 44
+  - 130
+  - 40
+  - 26
+  content:
+    text: '01'
+    fontSize: 18
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ft0
+  elementType: text
+  bounds:
+  - 96
+  - 130
+  - 196
+  - 26
+  content:
+    text: 低功耗磁軸承
+    fontSize: 14
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fb0
+  elementType: text
+  bounds:
+  - 304
+  - 130
+  - 330
+  - 50
+  content:
+    text: 永磁偏置、銅損／鐵損與控制功耗聯合降低
+    fontSize: 11.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fk0
+  elementType: text
+  bounds:
+  - 664
+  - 130
+  - 252
+  - 50
+  content:
+    text: 驗收：整機待機 kW，而非軸承本體摩擦
+    fontSize: 11.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fr0
+  elementType: shape
+  bounds:
+  - 44
+  - 192
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: fnum1
+  elementType: text
+  bounds:
+  - 44
+  - 212
+  - 40
+  - 26
+  content:
+    text: '02'
+    fontSize: 18
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ft1
+  elementType: text
+  bounds:
+  - 96
+  - 212
+  - 196
+  - 26
+  content:
+    text: 風損實測
+    fontSize: 14
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fb1
+  elementType: text
+  bounds:
+  - 304
+  - 212
+  - 330
+  - 50
+  content:
+    text: 自然降速與非侵入式量測校準模型
+    fontSize: 11.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fk1
+  elementType: text
+  bounds:
+  - 664
+  - 212
+  - 252
+  - 50
+  content:
+    text: 驗收：長時間能量保持曲線
+    fontSize: 11.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fr1
+  elementType: shape
+  bounds:
+  - 44
+  - 274
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: fnum2
+  elementType: text
+  bounds:
+  - 44
+  - 294
+  - 40
+  - 26
+  content:
+    text: '03'
+    fontSize: 18
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ft2
+  elementType: text
+  bounds:
+  - 96
+  - 294
+  - 196
+  - 26
+  content:
+    text: 疲勞壽命感知 MPC
+    fontSize: 14
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fb2
+  elementType: text
+  bounds:
+  - 304
+  - 294
+  - 330
+  - 50
+  content:
+    text: 把轉子與軸承健康納入控制
+    fontSize: 11.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fk2
+  elementType: text
+  bounds:
+  - 664
+  - 294
+  - 252
+  - 50
+  content:
+    text: 驗收：實際任務譜、振動與維護工單校準
+    fontSize: 11.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fr2
+  elementType: shape
+  bounds:
+  - 44
+  - 356
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: fnum3
+  elementType: text
+  bounds:
+  - 44
+  - 376
+  - 40
+  - 26
+  content:
+    text: '04'
+    fontSize: 18
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ft3
+  elementType: text
+  bounds:
+  - 96
+  - 376
+  - 196
+  - 26
+  content:
+    text: 混合衰退控制
+    fontSize: 14
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fb3
+  elementType: text
+  bounds:
+  - 304
+  - 376
+  - 330
+  - 50
+  content:
+    text: SOC 約束、模糊 PI、電池損傷成本
+    fontSize: 11.8
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fk3
+  elementType: text
+  bounds:
+  - 664
+  - 376
+  - 252
+  - 50
+  content:
+    text: 驗收：同場純鋰電基準與容量／內阻衰退
+    fontSize: 11.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: fr3
+  elementType: shape
+  bounds:
+  - 44
+  - 438
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: front-note
+  elementType: text
+  bounds:
+  - 44
+  - 466
+  - 872
+  - 22
+  content:
+    text: 研究方向正確，但研究控制器不能替代多年場站可靠度與第三方性能。
+    fontSize: 11.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

@@ -1,0 +1,361 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 代表專利
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 法律狀態必須逐件核查，新案與舊案不能用同一把尺解讀
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Google Patents、Justia；法律狀態為 2026-10-30 抽樣快照，後續可能改變。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 15 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: patents
+  elementType: table
+  bounds:
+  - 44
+  - 122
+  - 872
+  - 326
+  columnWidths:
+  - 0.19
+  - 0.31
+  - 0.18
+  - 0.32
+  rowHeights:
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  - 0.1111111111111111
+  rows:
+  - - text: 公開號
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 主題／申請人
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 狀態
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 技術判讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+  - - text: US12078221B2
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 全複材纏繞轉子｜Clegern
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 授權 2024
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: FEA 與幾何設計，不代表產品運轉
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN108869543B
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 混合超導磁軸承｜中科院電工所
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 2024 年費終止
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 曾授權不等於權利仍有效；查同族
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN108900039B
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 真空轉子散熱｜工程熱物理所
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 授權 2024
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 輻射散熱與熱管，連接待機與熱設計
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: US10693342B2
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 地埋式飛輪陣列｜Amber
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 授權 2020
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 多單元配置與安全容納
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN122512415A
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 健康感知陣列調用｜坎德拉
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 實質審查
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 由單機控制走向可用度／健康調度
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN122823458B
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 構網風電耦合｜內蒙古工業大學等
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 授權 2026-10-27
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 飛輪與構網型風電參數協同
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN122697432A
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 電池損傷導向分配｜瀋陽微控
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 實質審查
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 把衰退成本納入混合功率分配
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: CN116040917A
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 飛輪增量電解制氫｜浙江榮越
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 實質審查
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 研發布局，不是商業部署證據
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: fto
+  elementType: text
+  bounds:
+  - 44
+  - 464
+  - 872
+  - 24
+  content:
+    text: 正式產品開發仍需逐國、逐權利項检查同族、延續、轉讓、無效與訴訟。
+    fontSize: 11.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

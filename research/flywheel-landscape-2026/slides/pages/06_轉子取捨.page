@@ -1,0 +1,266 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 關鍵部件
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 轉子設計比的是有效能量與安全裕度，不是最高 rpm
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Hu et al. 2023；Dragoni 2019。右圖依 E∝ω² 計算，非特定產品實測。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 06 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: rotor
+  elementType: table
+  bounds:
+  - 44
+  - 126
+  - 500
+  - 242
+  columnWidths:
+  - 0.25
+  - 0.25
+  - 0.31
+  - 0.19
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 路線
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 優勢
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 主要風險
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 適用情境
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+  - - text: 高強鋼／疊片鋼
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 加工與大尺寸成熟
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 質量、臨界轉速、疊片與渦流
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 長時／UPS
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 碳纖維複材
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 高比強度、高速
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 接合、蠕變、疲勞與爆裂
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 高頻／緊湊
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 混凝土＋玻纖
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 材料成本低
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 固化、裂縫、檢測與一致性
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 長時概念
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: speed
+  elementType: image
+  bounds:
+  - 574
+  - 124
+  - 342
+  - 246
+  src: media/speed_window.png
+  fit:
+    mode: contain
+- elementId: formula
+  elementType: text
+  bounds:
+  - 44
+  - 394
+  - 500
+  - 44
+  content:
+    text: '可用能量比例＝1−(ωmin／ωmax)²
+
+      最低轉速 50% → 理想可用能量 75%'
+    fontSize: 15
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: checks
+  elementType: text
+  bounds:
+  - 574
+  - 394
+  - 342
+  - 66
+  content:
+    text: 採購必看：額定／最高／最低轉速、材料批次、疲勞任務譜、超速與全尺寸圍堵試驗。
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

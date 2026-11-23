@@ -1,0 +1,304 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 規格比較
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 先統一能量與效率口徑，產品比較才有意義
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Stornetic、Active Power、VYCON、Amber 官方資料。換算：1 kWh＝3.6 MJ＝3,600 kW·s。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 09 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: conversion
+  elementType: text
+  bounds:
+  - 44
+  - 126
+  - 872
+  - 46
+  content:
+    text: 6,000 kW·s ≈ 1.67 kWh　｜　6.2 MJ ≈ 1.72 kWh　｜　動能 ≠ 有效放電能
+    fontSize: 19
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: metrics
+  elementType: table
+  bounds:
+  - 44
+  - 192
+  - 872
+  - 236
+  columnWidths:
+  - 0.18
+  - 0.3
+  - 0.23
+  - 0.29
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 欄位
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 正確比較
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 常見誤讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+    - text: 本報告處理
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+  - - text: 功率 kW／MW
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 持續、過載與併網點分開
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 峰值當持續
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 保留時間與配置條件
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 能量 kWh／MJ
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 先換算，再確認有效／動能
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 最高轉速動能當可用能
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 保留原單位與有效能量
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 放電時間
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 指定功率與負載曲線
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 能量÷功率套用全部負載
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: UPS 明示依負載變化
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 效率
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: DC／AC／UPS／含輔機分開
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 單程當 AC 往返
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 不做跨口徑效率排名
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 壽命／循環
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: true
+    - text: DoD、任務譜、維護一起比
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 設計壽命當保固
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 標示設計目標與廠商口徑
+      fontSize: 11.2
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: takeaway
+  elementType: text
+  bounds:
+  - 44
+  - 450
+  - 872
+  - 28
+  content:
+    text: 同場驗收應以「有效能量＋含輔機效率＋待機 kW」三項一起比。
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

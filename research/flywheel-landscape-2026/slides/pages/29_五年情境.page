@@ -1,0 +1,238 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 2027–2031 情境
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 未來五年的基準情境是混合化與場景深化，不是全面取代鋰電
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告情境分析；屬前瞻假設，不是市場承諾。未採用未核實單一 CAGR 作為核心結論。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 29 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: scenarios
+  elementType: table
+  bounds:
+  - 44
+  - 126
+  - 872
+  - 236
+  columnWidths:
+  - 0.13
+  - 0.36
+  - 0.27
+  - 0.24
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 情境
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+    - text: 可能演變
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+    - text: 觸發條件
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+    - text: 觀察指標
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+  - - text: 保守
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: UPS 穩定；調頻區域型；長時與氫耦合慢
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 收益不足、待機高、可靠度與融資證據少
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 新場站少、備件問題、收益依賴單一政策
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 基準
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: UPS／調頻／鋰電混合增長；長時少量複製
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 標準落地、A/B 增加、站用電下降
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 全年性能、商轉驗收、電池衰退與 SLA
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 樂觀
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 低待機、新材料、構網與資料中心規模化
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 全尺寸安全、多年運轉、成本下降
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 長時多次複製、大型氫項目連續運轉
+      fontSize: 11.3
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: watch
+  elementType: text
+  bounds:
+  - 44
+  - 392
+  - 872
+  - 70
+  content:
+    text: '真正的突破判準
+
+      同安全裕度下更高有效能量｜更低待機｜可量產一致性｜可維護性｜第三方全年數據'
+    fontSize: 14
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.4
+    align:
+    - center
+    - top
+    wrap: true

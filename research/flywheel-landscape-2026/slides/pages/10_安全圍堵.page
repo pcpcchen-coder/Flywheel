@@ -1,0 +1,488 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 安全與圍堵
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 無燃燒不等於無風險：高速機械能需要獨立安全論證
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Pichot 1997；Sandia flywheel safe design practices；Amber 地埋陣列專利。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 10 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: hazard
+  elementType: text
+  bounds:
+  - 44
+  - 126
+  - 220
+  - 28
+  content:
+    text: 危險源
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: prevention
+  elementType: text
+  bounds:
+  - 370
+  - 126
+  - 220
+  - 28
+  content:
+    text: 預防與降速
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: mitigation
+  elementType: text
+  bounds:
+  - 696
+  - 126
+  - 220
+  - 28
+  content:
+    text: 後果控制
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: h1-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 174
+  - 220
+  - 92
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: h1-title
+  elementType: text
+  bounds:
+  - 54
+  - 182
+  - 200
+  - 22
+  content:
+    text: 過速／材料缺陷
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: h1-body
+  elementType: text
+  bounds:
+  - 54
+  - 207
+  - 200
+  - 54
+  content:
+    text: 高能碎片、腔體破裂、軸向與徑向載荷
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: p1-bg
+  elementType: shape
+  bounds:
+  - 370
+  - 154
+  - 220
+  - 70
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: p1-title
+  elementType: text
+  bounds:
+  - 380
+  - 162
+  - 200
+  - 22
+  content:
+    text: 材料與疲勞裕度
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: p1-body
+  elementType: text
+  bounds:
+  - 380
+  - 187
+  - 200
+  - 32
+  content:
+    text: 批次檢測、任務譜與 NDT
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: p2-bg
+  elementType: shape
+  bounds:
+  - 370
+  - 238
+  - 220
+  - 70
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: p2-title
+  elementType: text
+  bounds:
+  - 380
+  - 246
+  - 200
+  - 22
+  content:
+    text: 獨立超速保護
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: p2-body
+  elementType: text
+  bounds:
+  - 380
+  - 271
+  - 200
+  - 32
+  content:
+    text: 限功率、受控降速、備援軸承
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: m1-bg
+  elementType: shape
+  bounds:
+  - 696
+  - 174
+  - 220
+  - 92
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: m1-title
+  elementType: text
+  bounds:
+  - 706
+  - 182
+  - 200
+  - 22
+  content:
+    text: 圍堵與單元隔離
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: m1-body
+  elementType: text
+  bounds:
+  - 706
+  - 207
+  - 200
+  - 54
+  content:
+    text: 全尺寸破壞模式、鄰機間距與救援程序
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: a1
+  elementType: line
+  bounds:
+  - 264
+  - 218
+  - 106
+  - 2
+  viewBox:
+  - 106
+  - 2
+  points: 0,1.0 106,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: a2
+  elementType: line
+  bounds:
+  - 590
+  - 218
+  - 106
+  - 2
+  viewBox:
+  - 106
+  - 2
+  points: 0,1.0 106,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: safety-tests
+  elementType: table
+  bounds:
+  - 44
+  - 352
+  - 872
+  - 110
+  columnWidths:
+  - 0.25
+  - 0.39
+  - 0.36
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 故障注入
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 必須觀察
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 通過條件
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+  - - text: 磁軸承斷電／放大器失效
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 位移、振動、備援落地與陣列重分配
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 單元安全隔離，不擴大為整站事故
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 真空喪失／冷卻失效
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 風損、溫升、降功率與自然降速
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 在材料與軸承限值內受控停機
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 通訊中斷／錯誤指令
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 本地安全控制、重連與資料留存
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 不持續滿功率追逐錯誤指令
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default

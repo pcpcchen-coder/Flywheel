@@ -1,0 +1,270 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 標準與採購
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 標準解決測試邊界，採購還要把待機與故障注入寫進驗收
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：GB/T 44933、44934、46372；IEC 62933、IEEE 1547、UL 9540、UL 1778。適用性依產品邊界與司法管轄區。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 28 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: standards
+  elementType: table
+  bounds:
+  - 44
+  - 122
+  - 872
+  - 148
+  columnWidths:
+  - 0.44
+  - 0.22
+  - 0.34
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 標準
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: 時間
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: 用途
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+  - - text: GB/T 44933-2024｜系統技術規範
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 2025-07-01 實施
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 200 kW 及以上交流併網系統
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: GB/T 44934-2024｜儲能單元技術規範
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 2025-07-01 實施
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 飛輪儲能單元設計、性能與試驗
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: GB/T 46372-2025｜電站調試導則
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 2026-05-01 實施
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 併網、調試與驗收程序
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: procure-title
+  elementType: text
+  bounds:
+  - 44
+  - 296
+  - 300
+  - 24
+  content:
+    text: 技術規格書的最小資料集
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: procure
+  elementType: text
+  bounds:
+  - 44
+  - 330
+  - 496
+  - 128
+  content:
+    text: '① 有效能量、持續／短時功率、轉速窗口
+
+      ② AC／DC 效率邊界、輔機清單、待機 kW
+
+      ③ 24／72 h 能量保持與四季站用電
+
+      ④ 超速、圍堵、備援軸承、真空與熱
+
+      ⑤ AGC／一次調頻、無功、故障穿越
+
+      ⑥ 可用率、維護、備件、軟體與資料所有權'
+    fontSize: 11.7
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: pv
+  elementType: shape
+  bounds:
+  - 572
+  - 300
+  - 1
+  - 154
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: standard-note
+  elementType: text
+  bounds:
+  - 600
+  - 300
+  - 316
+  - 154
+  content:
+    text: 'UL 9540 的電池熱失控要求，不能直接當成飛輪完整安全證明。
+
+
+      飛輪仍需機械超速、圍堵、真空與軸承失效評估。'
+    fontSize: 12.2
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true

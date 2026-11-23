@@ -1,0 +1,210 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 技術定位
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: UPS、分鐘級調頻與小時級能量型是三條不同賽道
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：各廠商官方規格；對數座標。能量與放電時間口徑不同，圖用於定位而非性能排名。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 04 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: map
+  elementType: image
+  bounds:
+  - 44
+  - 122
+  - 610
+  - 342
+  src: media/product_map.png
+  fit:
+    mode: contain
+- elementId: split
+  elementType: shape
+  bounds:
+  - 678
+  - 132
+  - 1
+  - 318
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: read-title
+  elementType: text
+  bounds:
+  - 702
+  - 132
+  - 214
+  - 24
+  content:
+    text: 讀圖後的三個判斷
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: read1
+  elementType: text
+  bounds:
+  - 702
+  - 176
+  - 214
+  - 68
+  content:
+    text: ① UPS 以秒級高功率橋接為核心，kWh 小不代表技術低階。
+    fontSize: 12.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: read2
+  elementType: text
+  bounds:
+  - 702
+  - 258
+  - 214
+  - 68
+  content:
+    text: ② 調頻重視高循環、反應與 SOC 恢復，收益不是單看效率。
+    fontSize: 12.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: read3
+  elementType: text
+  bounds:
+  - 702
+  - 340
+  - 214
+  - 74
+  content:
+    text: ③ 4 h 飛輪需獨立評估待機、成本、量產與長期實績。
+    fontSize: 12.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: note
+  elementType: text
+  bounds:
+  - 44
+  - 474
+  - 872
+  - 20
+  content:
+    text: 產品規格優先保留原廠單位與量測邊界；不對不同效率口徑做單一排名。
+    fontSize: 10.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

@@ -1,0 +1,266 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 決策摘要
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 飛輪的價值在功率與循環，不在取代所有長時儲能
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告綜合 DOE、官方產品資料、Scholar 文獻與專案資料；截至 2026-10-30。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 02 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: lead
+  elementType: text
+  bounds:
+  - 44
+  - 119
+  - 872
+  - 42
+  content:
+    text: 2026 年最可採購的主軸是 UPS、調頻與飛輪－鋰電；小時級純飛輪和氫能耦合要逐案驗證。
+    fontSize: 16
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: summary-table
+  elementType: table
+  bounds:
+  - 44
+  - 178
+  - 872
+  - 260
+  columnWidths:
+  - 0.25
+  - 0.37
+  - 0.38
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 判斷
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 證據
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12
+      align:
+      - left
+      - middle
+    - text: 決策含義
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12
+      align:
+      - left
+      - middle
+  - - text: UPS／關鍵電力最成熟
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: true
+    - text: Active Power、Piller、VYCON 長期產品線
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 按負載橋接與維護驗收，而非比 kWh
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 20–30 MW 調頻陣列可行
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: true
+    - text: Beacon 兩站、鼎輪 30 MW 併網
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 收益取決市場規則、可用率與待機電費
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 飛輪－鋰電已多國部署
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 荷蘭 FCR、中國朔州／綿陽／文水
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 以電池衰退和混合效率做同場驗證
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 長時純飛輪仍是利基
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: true
+    - text: Amber 4 h；新創路線成熟度不一
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 要求多場站、多年、第三方實績
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 飛輪－氫能以示範／模擬為主
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: true
+    - text: Raglan、Utsira；2024–2025 研究
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 飛輪做平滑與故障支撐，不提供季節能量
+      fontSize: 12
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: bottom
+  elementType: text
+  bounds:
+  - 44
+  - 455
+  - 872
+  - 32
+  content:
+    text: 選型順序：任務譜 → 有效能量與功率 → 待機與維護 → 安全圍堵 → 市場收益。
+    fontSize: 14
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

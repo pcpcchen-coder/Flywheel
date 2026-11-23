@@ -1,0 +1,233 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 應用成熟度
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 應用成熟度由商業證據決定，不由技術吸引力決定
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：本報告依產品與專案證據整理；成熟度為定性判斷，不代表市場規模。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 24 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: maturity
+  elementType: image
+  bounds:
+  - 44
+  - 126
+  - 548
+  - 306
+  src: media/maturity.png
+  fit:
+    mode: contain
+- elementId: app
+  elementType: table
+  bounds:
+  - 624
+  - 126
+  - 292
+  - 250
+  columnWidths:
+  - 0.58
+  - 0.42
+  rowHeights:
+  - 0.14285714285714285
+  - 0.14285714285714285
+  - 0.14285714285714285
+  - 0.14285714285714285
+  - 0.14285714285714285
+  - 0.14285714285714285
+  - 0.14285714285714285
+  rows:
+  - - text: 應用
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 2026 判斷
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+  - - text: UPS／關鍵電力
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 成熟商業
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 電網調頻
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 已有商業場站
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 工業電能品質
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 商業／項目型
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 飛輪＋鋰電
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 多國商業部署
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 小時級純飛輪
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 早期商業／利基
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 飛輪＋氫能
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 示範／模擬為主
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: maturity-note
+  elementType: text
+  bounds:
+  - 44
+  - 452
+  - 872
+  - 30
+  content:
+    text: 氫能混合的研究價值高，但目前不能與 UPS 或調頻使用同一成熟度敘事。
+    fontSize: 12.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

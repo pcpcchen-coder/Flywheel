@@ -1,0 +1,278 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 全球專案證據
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 商業場站證明陣列可行，示範專案則只支持整合可行性
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：美國 DOE、長治市政府、Leclanché／S4、EU CORDIS、Natural Resources Canada。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 22 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: project-img
+  elementType: image
+  bounds:
+  - 560
+  - 126
+  - 356
+  - 196
+  src: media/dinglun.png
+  fit:
+    mode: cover
+- elementId: cap
+  elementType: text
+  bounds:
+  - 560
+  - 326
+  - 356
+  - 24
+  content:
+    text: 鼎輪 30 MW 專案｜併網證據不等同全年性能
+    fontSize: 9.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: projects
+  elementType: table
+  bounds:
+  - 44
+  - 126
+  - 480
+  - 250
+  columnWidths:
+  - 0.36
+  - 0.42
+  - 0.22
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 專案
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 規模／架構
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 證據層級
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+  - - text: Stephentown／Hazle
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 20 MW／站；純飛輪
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 商業運轉
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 鼎輪長治
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 30 MW；120 台
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 2024 併網
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Almelo／Heerhugowaard
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 約 10 MW 級；飛輪＋鋰電
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 商業運轉
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Schwungrad／EirGrid
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 早期 160 kW 級；混合
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 示範
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Raglan
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 風＋200 kW 飛輪＋氫＋電池
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 2014–2019 示範
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: project-take
+  elementType: text
+  bounds:
+  - 44
+  - 404
+  - 872
+  - 62
+  content:
+    text: '場站證據要拆成：併網 → 調試 → 性能驗收 → 正式商轉 → 市場結算。
+
+      公司或技術供應商狀態改變，不代表既有資產停止運轉。'
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true

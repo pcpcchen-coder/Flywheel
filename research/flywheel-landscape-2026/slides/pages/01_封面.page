@@ -1,0 +1,160 @@
+pageType: cover
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: left
+  elementType: shape
+  bounds:
+  - 0
+  - 0
+  - 534
+  - 540
+  shapeName: rect
+  fill:
+    type: solid
+    color: $dark
+- elementId: cover-img
+  elementType: image
+  bounds:
+  - 534
+  - 0
+  - 426
+  - 540
+  src: media/dinglun.png
+  fit:
+    mode: cover
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 52
+  - 52
+  - 420
+  - 20
+  content:
+    text: 技術・產業・證據整合
+    fontSize: 12
+    color: '#D7B79F'
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: cover-rule
+  elementType: shape
+  bounds:
+  - 52
+  - 92
+  - 74
+  - 3
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#D7B79F'
+- elementId: cover-title
+  elementType: text
+  bounds:
+  - 52
+  - 126
+  - 430
+  - 116
+  content:
+    text: '飛輪儲能
+
+      技術全景'
+    fontSize: 39
+    color: '#FFFFFF'
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.08
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: cover-sub
+  elementType: text
+  bounds:
+  - 52
+  - 260
+  - 420
+  - 80
+  content:
+    text: '學術研究、專利版圖、代表廠商與商業產品
+
+      鋰電／氫能整合及 2027–2031 發展情境'
+    fontSize: 17
+    color: '#E6ECE9'
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: cover-date
+  elementType: text
+  bounds:
+  - 52
+  - 418
+  - 420
+  - 22
+  content:
+    text: 研究截點｜2026 年 10 月 30 日
+    fontSize: 12
+    color: '#D7B79F'
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: cover-note
+  elementType: text
+  bounds:
+  - 52
+  - 452
+  - 420
+  - 36
+  content:
+    text: 商業運轉・示範／試點・學術模擬・前瞻假設分層呈現
+    fontSize: 10.5
+    color: '#E6ECE9'
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: img-caption-bg
+  elementType: shape
+  bounds:
+  - 548
+  - 490
+  - 398
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#183B36CC'
+- elementId: img-caption
+  elementType: text
+  bounds:
+  - 558
+  - 499
+  - 380
+  - 16
+  content:
+    text: 圖：鼎輪 30 MW 飛輪專案｜Energy-Storage.news
+    fontSize: 8.5
+    color: '#FFFFFF'
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false

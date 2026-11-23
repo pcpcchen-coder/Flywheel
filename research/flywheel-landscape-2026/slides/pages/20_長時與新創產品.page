@@ -1,0 +1,291 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 長時與新創
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 長時純飛輪有技術差異化，但商業證據強度不一
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Amber M32 官方資料表；Revterra／Greentown Labs；Energiestro 技術報導；QuinteQ 公司資料。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 20 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: amber
+  elementType: image
+  bounds:
+  - 44
+  - 130
+  - 330
+  - 216
+  src: media/amber.png
+  fit:
+    mode: contain
+- elementId: cap
+  elementType: text
+  bounds:
+  - 44
+  - 352
+  - 330
+  - 24
+  content:
+    text: Amber Kinetics 長時飛輪｜圖：公開專題資料
+    fontSize: 9.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: long
+  elementType: table
+  bounds:
+  - 410
+  - 130
+  - 506
+  - 224
+  columnWidths:
+  - 0.24
+  - 0.25
+  - 0.2
+  - 0.31
+  rowHeights:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  rows:
+  - - text: 路線
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 公開定位
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 成熟判斷
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+    - text: 待驗證
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+  - - text: Amber M32
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 8 kW／32 kWh；4 h
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 小規模商業
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 多場站利用率、DC／AC 邊界與待機
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Revterra S100
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 400 kW／100 kWh
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 早期商業
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 約 50 W 待機、超導穩定與服務體系
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Energiestro VOSS
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 約 10 kW／10 kWh
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: beta／試量產
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 混凝土老化、製造一致性與圍堵
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: QuinteQ
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 100 kW／5 kWh
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 初期商業
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 低溫冷卻、待機與長期運維
+      fontSize: 10.7
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: long-take
+  elementType: text
+  bounds:
+  - 44
+  - 406
+  - 872
+  - 58
+  content:
+    text: '採購門檻：至少兩個獨立場站、可核查全年性能、完整維護工單與同邊界長時技術比較。
+
+      技術可行、第三方測試、量產能力與運轉年數必須分開評分。'
+    fontSize: 12.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true

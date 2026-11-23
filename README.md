@@ -35,6 +35,17 @@ AI 訓練機房（AIDC）的用電不是一條平線：數萬張 GPU 在「計�
 | [`sim/`](sim/) | 6 個互動 3D 情境（單一 HTML，可離線開啟）＋截圖 |
 | [`skill/aidc-flywheel-3d/`](skill/) | 給其他 LLM（qwen3.8-27b-fp8）重製 3D 模型的 skill：引擎、模板、設定、腳本 |
 | [`data/`](data/) | 營運風險比較與事故案例 CSV |
+| [`research/flywheel-landscape-2026/`](research/flywheel-landscape-2026/) | **全球飛輪技術全景研究**：26 頁報告、32 頁簡報、文獻／專利／產品／專案、鋰電／氫能整合與五年情境 |
+
+## 全球飛輪技術全景研究（2026）
+
+除了 AIDC 控制方案，本 repo 也收錄一份獨立的產業與學術盤點，研究截點為 **2026-10-30**：
+
+- [26 頁完整技術報告（DOCX）](research/flywheel-landscape-2026/report/飛輪儲能技術全景報告.docx)：14 章、86 項來源，涵蓋 18 篇核心文獻、17 件代表專利、14 項產品與 10 個專案。
+- [32 頁完整技術簡報（PPTD）](research/flywheel-landscape-2026/slides/飛輪儲能技術全景簡報.pptd)：含全部頁面、媒體與可重現來源。
+- [研究說明與證據口徑](research/flywheel-landscape-2026/README.md)｜[報告預覽](research/flywheel-landscape-2026/preview/報告全頁總覽.png)｜[簡報全頁預覽](research/flywheel-landscape-2026/preview/簡報全頁總覽.jpg)。
+
+核心結論：飛輪最明確的價值是 **UPS、調頻與高循環功率型應用**；飛輪－鋰電已有多國商業部署，飛輪－氫能則仍以微電網示範與模擬為主。所有產品規格保留來源、年份、單位與量測邊界，不把廠商宣稱當成第三方實證。
 
 ## 快速開始
 

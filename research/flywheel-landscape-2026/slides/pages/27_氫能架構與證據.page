@@ -1,0 +1,567 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 飛輪＋氫能
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 飛輪可支撐電解槽電功率，但不能解決氫儲能的低效率
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Raglan、Utsira、Elkholy 2024、Baldinelli 2019、Popova 2025；示範與模擬分層。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 27 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: wind-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 142
+  - 146
+  - 72
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: wind-title
+  elementType: text
+  bounds:
+  - 54
+  - 150
+  - 126
+  - 22
+  content:
+    text: 風光輸入
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: wind-body
+  elementType: text
+  bounds:
+  - 54
+  - 175
+  - 126
+  - 34
+  content:
+    text: 快速波動＋長時不平衡
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: dc-bg
+  elementType: shape
+  bounds:
+  - 256
+  - 142
+  - 146
+  - 72
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: dc-title
+  elementType: text
+  bounds:
+  - 266
+  - 150
+  - 126
+  - 22
+  content:
+    text: 直流母排／EMS
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: dc-body
+  elementType: text
+  bounds:
+  - 266
+  - 175
+  - 126
+  - 34
+  content:
+    text: 電壓、爬坡與故障控制
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: flyh-bg
+  elementType: shape
+  bounds:
+  - 468
+  - 118
+  - 146
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: flyh-title
+  elementType: text
+  bounds:
+  - 478
+  - 126
+  - 126
+  - 22
+  content:
+    text: 飛輪
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: flyh-body
+  elementType: text
+  bounds:
+  - 478
+  - 151
+  - 126
+  - 26
+  content:
+    text: 次秒平滑／故障支撐
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: electro-bg
+  elementType: shape
+  bounds:
+  - 468
+  - 214
+  - 146
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: electro-title
+  elementType: text
+  bounds:
+  - 478
+  - 222
+  - 126
+  - 22
+  content:
+    text: 電解槽
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: electro-body
+  elementType: text
+  bounds:
+  - 478
+  - 247
+  - 126
+  - 26
+  content:
+    text: 最小負載／爬坡／熱待機
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: hydrogen-bg
+  elementType: shape
+  bounds:
+  - 680
+  - 214
+  - 192
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: hydrogen-title
+  elementType: text
+  bounds:
+  - 690
+  - 222
+  - 172
+  - 22
+  content:
+    text: 儲氫＋燃料電池
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: hydrogen-body
+  elementType: text
+  bounds:
+  - 690
+  - 247
+  - 172
+  - 26
+  content:
+    text: 長時能量／季節性
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: h1
+  elementType: line
+  bounds:
+  - 190
+  - 178
+  - 66
+  - 2
+  viewBox:
+  - 66
+  - 2
+  points: 0,1.0 66,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: h2
+  elementType: line
+  bounds:
+  - 402
+  - 154
+  - 66
+  - 2
+  viewBox:
+  - 66
+  - 2
+  points: 0,1.0 66,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: h3
+  elementType: line
+  bounds:
+  - 402
+  - 220
+  - 66
+  - 2
+  viewBox:
+  - 66
+  - 2
+  points: 0,1.0 66,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: h4
+  elementType: line
+  bounds:
+  - 614
+  - 246
+  - 66
+  - 2
+  viewBox:
+  - 66
+  - 2
+  points: 0,1.0 66,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: hydrogen-evidence
+  elementType: table
+  bounds:
+  - 44
+  - 320
+  - 872
+  - 134
+  columnWidths:
+  - 0.2
+  - 0.2
+  - 0.32
+  - 0.28
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  rows:
+  - - text: 證據
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 性質
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 支持的結論
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+    - text: 不能外推
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+  - - text: Raglan
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 微電網示範
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 200 kW 飛輪與風氫電池整合
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 大型電解槽專用商品化
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Elkholy 2024
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 最佳化模擬
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 模型中燃料電池 100→30 kW
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 實測電站效率或通用比例
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Popova 2025
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 故障恢復研究
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 大型電解槽需要儲能支撐
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 已完成保護與併網實測
+      fontSize: 10.5
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: hydrogen-note
+  elementType: text
+  bounds:
+  - 44
+  - 468
+  - 872
+  - 18
+  content:
+    text: 驗收：真實電解槽動態、壓縮／純化輔機、氫安全、飛輪 SOC 恢復與連續運轉。
+    fontSize: 10.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

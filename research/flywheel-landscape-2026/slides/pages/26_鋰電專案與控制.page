@@ -1,0 +1,315 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 鋰電專案與控制
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 混合系統的價值要用電池衰退與整站效率共同驗收
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：CNESA、Leclanché／S4、綿陽與文水專案資料；壽命改善為專案方或研究口徑，不能外推固定倍率。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 26 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: hybrid-projects
+  elementType: table
+  bounds:
+  - 44
+  - 124
+  - 872
+  - 188
+  columnWidths:
+  - 0.23
+  - 0.33
+  - 0.19
+  - 0.25
+  rowHeights:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  rows:
+  - - text: 專案
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 架構
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 證據
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+    - text: 決策解讀
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+  - - text: 朔州熱電
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 5 MW/5 MWh LFP＋2 MW/0.4 MWh 飛輪
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 早期示範投運
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 證明火儲聯合調頻整合可行
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: Almelo／Heerhugowaard
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 飛輪＋鋰電 FCR
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 荷蘭商業運轉
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 支持混合商業模式；壽命仍看基準
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 綿陽港旗一期
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 100 MW/200 MWh＋15 MW/0.525 MWh
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 2026 商轉報導
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 大型混合獨立儲能案例
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 文水
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 400 台 125 kW 飛輪＋LFP
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 2026 全容量併網
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 併網後性能與正式投運分開追蹤
+      fontSize: 10.8
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: ab-title
+  elementType: text
+  bounds:
+  - 44
+  - 340
+  - 300
+  - 24
+  content:
+    text: 同場 A/B 的最小資料集
+    fontSize: 15
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: ab
+  elementType: text
+  bounds:
+  - 44
+  - 376
+  - 520
+  - 88
+  content:
+    text: '純鋰電基準｜等效完整循環｜最大／平均 C-rate
+
+      SOC 擺幅｜溫度｜容量與內阻衰退｜混合 RTE
+
+      調頻性能｜站用電｜飛輪維護與備件'
+    fontSize: 12.2
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.4
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: abv
+  elementType: shape
+  bounds:
+  - 596
+  - 344
+  - 1
+  - 116
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: ab-take
+  elementType: text
+  bounds:
+  - 624
+  - 344
+  - 292
+  - 116
+  content:
+    text: '只展示功率分流圖，無法證明電池壽命或經濟收益。
+
+
+      驗收與付款應綁定原始數據交付。'
+    fontSize: 12.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true

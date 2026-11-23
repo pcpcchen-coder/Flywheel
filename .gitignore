@@ -2,3 +2,4 @@ skill/aidc-flywheel-3d/out/
 skill/aidc-flywheel-3d/work/
 __pycache__/
 .DS_Store
+node_modules/

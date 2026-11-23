@@ -1,0 +1,296 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 產品案例｜Stornetic
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: DuraStor 的規格頁，示範了「動能」與「有效能量」應分列
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Stornetic DuraStor／EnWheel 官方產品頁；規格為廠商口徑，典型 RTE 標示含輔機。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 18 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: durastor
+  elementType: image
+  bounds:
+  - 44
+  - 130
+  - 420
+  - 250
+  src: media/durastor.png
+  fit:
+    mode: contain
+- elementId: cap
+  elementType: text
+  bounds:
+  - 44
+  - 384
+  - 420
+  - 24
+  content:
+    text: DuraStor 商業模組｜圖：Stornetic
+    fontSize: 9.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: stornetic
+  elementType: table
+  bounds:
+  - 504
+  - 130
+  - 412
+  - 152
+  columnWidths:
+  - 0.4
+  - 0.3
+  - 0.3
+  rowHeights:
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  - 0.16666666666666666
+  rows:
+  - - text: 型號
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: '240'
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+    - text: '1000'
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 11
+      align:
+      - left
+      - middle
+  - - text: 額定功率
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 240 kW
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 1,000 kW
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 總動能
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 16 kWh
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 64 kWh
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 有效能量
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 9.2 kWh
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 37 kWh
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 額定放電
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 120 s
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: 122 s
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  - - text: 典型 RTE
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: true
+    - text: 80%
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+    - text: '>82%'
+      fontSize: 11
+      align:
+      - left
+      - middle
+      bold: false
+  style: $default
+- elementId: stornetic-take
+  elementType: text
+  bounds:
+  - 504
+  - 312
+  - 412
+  - 88
+  content:
+    text: '有效能量約為總動能的 57–58%。
+
+      若只拿 16／64 kWh 和其他產品的有效能量比，會高估可交付能力。'
+    fontSize: 14
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.35
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: stornetic-foot
+  elementType: text
+  bounds:
+  - 44
+  - 444
+  - 872
+  - 34
+  content:
+    text: 仍需向供應商索取全年站用電、部分負載效率、真空與冷卻維護，以及既有場站可用率。
+    fontSize: 12
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true

@@ -1,0 +1,499 @@
+pageType: content
+background:
+  type: solid
+  color: $white
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 44
+  - 20
+  - 680
+  - 16
+  content:
+    text: 系統架構
+    fontSize: 9.5
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 44
+  - 44
+  - 872
+  - 54
+  content:
+    text: 整機性能由六個子系統共同決定，故障要能在單元內隔離
+    fontSize: 25
+    color: $dark
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.1
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: title-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 101
+  - 872
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: footer-rule
+  elementType: shape
+  bounds:
+  - 44
+  - 506
+  - 872
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: source
+  elementType: text
+  bounds:
+  - 44
+  - 513
+  - 790
+  - 14
+  content:
+    text: 來源：Bolund 2007；Xu 2023；Stornetic EnWheel 官方剖面。架構為本報告整理。
+    fontSize: 8.2
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: false
+- elementId: page
+  elementType: text
+  bounds:
+  - 866
+  - 513
+  - 50
+  - 14
+  content:
+    text: 05 / 32
+    fontSize: 8.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - right
+    - top
+    wrap: false
+- elementId: enwheel
+  elementType: image
+  bounds:
+  - 584
+  - 128
+  - 332
+  - 230
+  src: media/enwheel.png
+  fit:
+    mode: contain
+- elementId: imgcap
+  elementType: text
+  bounds:
+  - 584
+  - 362
+  - 332
+  - 28
+  content:
+    text: EnWheel 剖面：轉子、磁軸承、電機與真空腔整合
+    fontSize: 9.5
+    color: $muted
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - center
+    - top
+    wrap: true
+- elementId: n0-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 140
+  - 168
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n0-title
+  elementType: text
+  bounds:
+  - 54
+  - 148
+  - 148
+  - 22
+  content:
+    text: 轉子＋圍堵
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n0-body
+  elementType: text
+  bounds:
+  - 54
+  - 173
+  - 148
+  - 40
+  content:
+    text: 儲能／超速與碎片防護
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n1-bg
+  elementType: shape
+  bounds:
+  - 232
+  - 140
+  - 168
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n1-title
+  elementType: text
+  bounds:
+  - 242
+  - 148
+  - 148
+  - 22
+  content:
+    text: 軸承＋備援
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n1-body
+  elementType: text
+  bounds:
+  - 242
+  - 173
+  - 148
+  - 40
+  content:
+    text: 支承／受控降速
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n2-bg
+  elementType: shape
+  bounds:
+  - 44
+  - 248
+  - 168
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n2-title
+  elementType: text
+  bounds:
+  - 54
+  - 256
+  - 148
+  - 22
+  content:
+    text: 真空＋熱管理
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n2-body
+  elementType: text
+  bounds:
+  - 54
+  - 281
+  - 148
+  - 40
+  content:
+    text: 降風損／散熱與漏率
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n3-bg
+  elementType: shape
+  bounds:
+  - 232
+  - 248
+  - 168
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n3-title
+  elementType: text
+  bounds:
+  - 242
+  - 256
+  - 148
+  - 22
+  content:
+    text: 電機＋變流器
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n3-body
+  elementType: text
+  bounds:
+  - 242
+  - 281
+  - 148
+  - 40
+  content:
+    text: 四象限／直流母排
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n4-bg
+  elementType: shape
+  bounds:
+  - 138
+  - 356
+  - 168
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $warm
+  border:
+    style: solid
+    width: 1
+    color: $copper
+- elementId: n4-title
+  elementType: text
+  bounds:
+  - 148
+  - 364
+  - 148
+  - 22
+  content:
+    text: EMS＋陣列控制
+    fontSize: 13
+    color: $copper
+    bold: true
+    fontFamily: MiSans
+    lineHeight: 1.22
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: n4-body
+  elementType: text
+  bounds:
+  - 148
+  - 389
+  - 148
+  - 40
+  content:
+    text: SOC、功率分配、故障隔離
+    fontSize: 10.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.18
+    align:
+    - left
+    - top
+    wrap: true
+- elementId: a1
+  elementType: line
+  bounds:
+  - 212
+  - 178
+  - 20
+  - 2
+  viewBox:
+  - 20
+  - 2
+  points: 0,1.0 20,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: a2
+  elementType: line
+  bounds:
+  - 212
+  - 286
+  - 20
+  - 2
+  viewBox:
+  - 20
+  - 2
+  points: 0,1.0 20,1.0
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: a3
+  elementType: line
+  bounds:
+  - 120
+  - 218
+  - 2
+  - 30
+  viewBox:
+  - 2
+  - 30
+  points: 1.0,0 1.0,30
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: a4
+  elementType: line
+  bounds:
+  - 308
+  - 218
+  - 2
+  - 30
+  viewBox:
+  - 2
+  - 30
+  points: 1.0,0 1.0,30
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: a5
+  elementType: line
+  bounds:
+  - 222
+  - 326
+  - 2
+  - 30
+  viewBox:
+  - 2
+  - 30
+  points: 1.0,0 1.0,30
+  curve: sharp
+  arrow:
+  - null
+  - stealth
+  border:
+    style: solid
+    width: 1.5
+    color: $primary
+- elementId: flow
+  elementType: text
+  bounds:
+  - 584
+  - 404
+  - 332
+  - 66
+  content:
+    text: '正常：指令 → 陣列分配 → 單機控制
+
+      異常：限功率 → 受控降速 → 單元隔離
+
+      恢復：原因確認後才允許重新加速'
+    fontSize: 11.5
+    color: $text
+    bold: false
+    fontFamily: MiSans
+    lineHeight: 1.3
+    align:
+    - left
+    - top
+    wrap: true
