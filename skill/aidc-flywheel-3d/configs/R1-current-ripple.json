@@ -1,0 +1,39 @@
+{
+  "engine": "ripple",
+  "kind": "ripple",
+  "eyebrow": "v2 · R1 · GPU 負載擺盪 → AC 電流漣波",
+  "title": "i_grid = i_load − i_fw：在 PCC 把電流漣波抵銷掉",
+  "lede": "GPU 同步擺盪讓 60 Hz 電流被調幅，頻譜在 60 ± k·f_iter 出現間諧波；在發電機轉子座標裡，就是 k·f_iter 的轉矩脈動，可能碰上 1 Hz 區域模態與 12 Hz 軸系扭振。飛輪 PCS 依負載電流前饋，注入反相電流，讓電網只看到平滑的平均電流。",
+  "viewAlt": "發電廠軸系、輸電線、PCC、AIDC 與飛輪的 3D 模型；三條波形帶分別代表電網、負載與飛輪電流",
+  "controls": [
+    [{ "type": "segmented", "key": "mode", "default": "fw", "options": [
+      { "label": "無補償", "value": "none" },
+      { "label": "GPU 韌體平滑", "value": "gpu", "accent": "#B48CFF" },
+      { "label": "飛輪主動補償", "value": "fw", "accent": "#FF9F43" } ] }],
+    [{ "type": "segmented", "key": "Titer", "label": "迭代週期", "default": 1.4, "small": true, "options": [
+      { "label": "1.0 s", "value": 1.0 }, { "label": "1.4 s", "value": 1.4 }, { "label": "3.0 s", "value": 3.0 } ] },
+     { "type": "segmented", "key": "bw", "label": "PCS 頻寬", "default": 500, "small": true, "options": [
+      { "label": "10", "value": 10 }, { "label": "100", "value": 100 }, { "label": "500 Hz", "value": 500 } ] },
+     { "type": "button", "action": "pause" }]
+  ],
+  "legend": [
+    { "color": "#E6EAF0", "label": "負載電流" },
+    { "color": "#FF9F43", "label": "飛輪電流" },
+    { "color": "#4DA3FF", "label": "電網電流" },
+    { "label": "波形帶包絡＝電流振幅（載波已放慢）· 軸系扭轉已放大 · 拖曳旋轉" }
+  ],
+  "kpis": [
+    { "label": "電網電流動態範圍 ΔI / I（5 s）", "value": "{dIg:1}", "unit": "%", "sub": "負載端 {dIl:0}% · 範例規範 10%（論文）", "color": "#4DA3FF" },
+    { "label": "最大間諧波（電網電流）", "value": "{ihMax:0}", "unit": "dBc", "sub": "位於 60 ± {ihF:2} Hz · 負載端 {ihMaxL:0} dBc", "color": "#4DA3FF" },
+    { "label": "0.1–20 Hz 頻帶 RMS ／平均電流", "value": "{bandG:2}", "unit": "%", "sub": "負載端 {bandL:1}%", "color": "#4DA3FF" },
+    { "label": "機組模態響應（無補償＝100%）", "value": "軸系 {tor:0}% · 區域 {loc:0}%", "sub": "絕對振幅 軸系 {torAbs:1} · 區域 {locAbs:1}（迭代 1.0 s 會共振）", "color": "#3DDC97",
+      "cases": [{ "if": [{ "f": "tor", "op": ">", "v": 30 }], "color": "#FF8A8A" }, { "if": [{ "f": "loc", "op": ">", "v": 30 }], "color": "#FF8A8A" }] },
+    { "label": "額外耗電", "value": "0.0", "unit": "%", "sub": "不補償：漣波全數送上電網", "color": "#FF9F43", "cases": [
+      { "if": [{ "f": "mode", "op": "==", "v": "gpu" }], "label": "GPU 空轉額外耗電", "value": "{wastePct:1}", "sub": "功率地板＋ramp 限制把 GPU 墊到接近 TDP" },
+      { "if": [{ "f": "mode", "op": "==", "v": "fw" }], "label": "飛輪補償電流（161 kV 側）", "value": "{ifw:0}", "unit": "A", "sub": "≈ {pf:1} MW · SoE {soe|pct:0}%" } ] }
+  ],
+  "side": { "type": "spec", "alt": "電流頻譜 20–100 Hz，標示 60 Hz 兩側間諧波與軸系模態耦合點" },
+  "footer": "示意參數：AIDC 100 MW、PCC 161 kV（I_base ≈ 359 A）；GPU 計算 64%／通訊 22%、邊緣 5 ms；GPU 韌體平滑＝功率地板 90% TDP＋2 MW/s；飛輪 80 MW，PCS 電流環頻寬可選；模態：1 Hz ζ5%、12 Hz ζ1%。",
+  "sources": [{ "label": "arXiv 2508.14318", "url": "https://arxiv.org/abs/2508.14318" }],
+  "engineOpts": { "mode": "fw", "Titer": 1.4, "bw": 500 }
+}

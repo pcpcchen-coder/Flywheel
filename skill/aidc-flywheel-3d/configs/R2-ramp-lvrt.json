@@ -1,0 +1,42 @@
+{
+  "engine": "ripple",
+  "kind": "ramp",
+  "eyebrow": "v2 · R2 · ramp-up／ramp-down 與 LVRT",
+  "title": "平常要慢（ramp 限制），故障後要快（1 秒回到 90%）",
+  "lede": "作業啟停讓負載在毫秒內跳 50–70 MW，平常必須壓在電網 ramp 限值內；但 ERCOT NOGRR282 又要求電壓回到 0.9 pu 後 1 秒內恢復 ≥90% 用電。傳統 UPS 的 walk-in 只能顧一邊，飛輪兩邊都顧得到；ramp 限值很嚴時，再配合 GPU 韌體共享 SoE。",
+  "viewAlt": "作業啟停與電網故障時，發電廠、輸電線、PCC、AIDC 與飛輪的 3D 模型",
+  "controls": [
+    [{ "type": "segmented", "key": "mode", "default": "fw", "options": [
+      { "label": "無對策", "value": "none" },
+      { "label": "GPU 韌體", "value": "gpu", "accent": "#B48CFF" },
+      { "label": "飛輪", "value": "fw", "accent": "#FF9F43" },
+      { "label": "飛輪＋GPU 協同", "value": "hyb", "accent": "#FFC07A" } ] }],
+    [{ "type": "segmented", "key": "ramp", "label": "ramp 限值", "default": 2, "small": true, "alsoResetMode": true, "options": [
+      { "label": "20 MW/min", "value": 0.3333 }, { "label": "2 MW/s", "value": 2 }, { "label": "10 MW/s", "value": 10 } ] },
+     { "type": "button", "action": "trigger", "arg": "fault", "label": "⚡ 故障", "variant": "danger" },
+     { "type": "cycle", "key": "speed", "default": 2, "values": [1, 2, 5] },
+     { "type": "button", "action": "pause" }]
+  ],
+  "status": { "label": "叢集狀態", "position": "left", "text": "{job|map:off=閒置;train=訓練中;ckpt=寫入 checkpoint}", "color": "#3DDC97", "cases": [
+    { "if": [{ "f": "ups", "op": "==", "v": true }], "text": "UPS 轉供 · walk-in 中", "color": "#B48CFF" },
+    { "if": [{ "f": "job", "op": "==", "v": "off" }], "color": "#8C99A8" },
+    { "if": [{ "f": "job", "op": "==", "v": "ckpt" }], "color": "#FFC07A" } ] },
+  "legend": [
+    { "label": "140 s 循環：啟動 → 訓練 70 s → checkpoint → 故障（0.3 pu、150 ms）→ 異常中止 · 線路閃紅＝電壓驟降 · 紫色機房＝UPS 轉供" }
+  ],
+  "kpis": [
+    { "label": "電網 ramp 最大值（1 s 平均，排除故障恢復窗）", "value": "{rampMax:2}", "unit": "MW/s", "sub": "限值 {ramp:2} MW/s · 累計超限 {viol:1} s", "color": "#3DDC97",
+      "cases": [{ "if": [{ "f": "viol", "op": ">", "v": 0.5 }], "color": "#FF8A8A" }] },
+    { "label": "LVRT：V > 0.9 pu 後恢復到 90% 用電", "value": "{rec|cap:98;> 8;2}", "unit": "s", "sub": "不符合「1 s 內 ≥90%」", "color": "#FF8A8A", "cases": [
+      { "if": [{ "f": "rec", "op": "null" }], "value": "—", "sub": "等待第一次故障（約第 100 秒，或按「故障」）", "color": "#8C99A8" },
+      { "if": [{ "f": "rec", "op": "<=", "v": 1 }], "sub": "符合「1 s 內 ≥90%」", "color": "#3DDC97" } ] },
+    { "label": "故障期間最大電流（約一週期 RMS）", "value": "{imax:2}", "unit": "pu", "sub": "NOGRR282 草案上限 1.25 pu（後續修訂中）", "color": "#3DDC97",
+      "cases": [{ "if": [{ "f": "imax", "op": ">", "v": 1.25 }], "color": "#FF8A8A" }] },
+    { "label": "GPU 額外耗電 ／ 算力被限速", "value": "{wastePct:1}% ／ {thrPct:1}%", "sub": "占負載能量；本模式切換後累計" },
+    { "label": "飛輪 SoE", "value": "{soe|pct:0}", "unit": "%", "sub": "20 MW/min 時能量不夠 → 要靠 GPU 協同", "color": "#FF9F43" }
+  ],
+  "side": { "type": "lvrt", "alt": "LVRT 檢查視窗：故障後 3.5 秒內的電壓、功率恢復與穿越邊界" },
+  "footer": "LVRT 邊界取自 ERCOT NOGRR282（<0.2 pu 0.15 s、0.2–0.5 pu 0.25 s、0.5–0.8 pu 0.5 s、0.8–0.9 pu 2 s）；20 MW/min 為 Southern Company 公開限值；UPS walk-in 10%/s；飛輪 80 MW / 0.8 MWh，故障恢復窗內 ramp 豁免（90 MW/s）。",
+  "sources": [{ "label": "NOGRR282", "url": "https://www.ercot.com/mktrules/issues/NOGRR282" }, { "label": "arXiv 2601.12686", "url": "https://arxiv.org/abs/2601.12686" }],
+  "engineOpts": { "mode": "fw", "ramp": 2, "speed": 2 }
+}

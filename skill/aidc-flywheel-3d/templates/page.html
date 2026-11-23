@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0E13;--panel:#111821;--panel2:#0D131A;--line:#1F2A36;--line2:#2A3644;--text:#E6EAF0;--muted:#8C99A8;--soft:#A7B2BF;--grid:#4DA3FF;--fw:#FF9F43;--bat:#B48CFF;--red:#FF8A8A;--green:#3DDC97;
+--sans:'Noto Sans TC',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans)}
+a{color:#7DBBFF}a:hover{color:#B5D8FF}
+.board{width:1440px;min-height:1120px;margin:0 auto;padding:28px 36px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:28px}
+.intro{display:flex;flex-direction:column;gap:8px;max-width:760px}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--fw)}
+h1{margin:0;font-size:31px;font-weight:700;line-height:1.25}
+.lede{margin:0;font-size:15px;line-height:1.65;color:var(--soft)}
+.controls{display:flex;flex-direction:column;align-items:flex-end;gap:10px;flex-shrink:0}
+.ctlrow{display:flex;gap:8px;align-items:center}
+.ctllabel{font-size:12px;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--line2);border-radius:10px;overflow:hidden}
+.seg button{min-height:44px;padding:0 12px;border:0;font:600 14px var(--sans);cursor:pointer;background:transparent;color:#C9D2DC}
+.seg.small button{padding:0 9px;font:400 12px var(--mono)}
+.seg button[aria-pressed="true"]{color:#0A0E13}
+.btn{min-height:44px;padding:0 12px;border:1px solid var(--line2);border-radius:10px;background:transparent;color:#C9D2DC;font:13px var(--sans);cursor:pointer}
+.btn.danger{border-color:#FF5D5D;background:rgba(255,93,93,.12);color:#FF9A9A;font-weight:600}
+main{display:flex;gap:16px}
+.view{position:relative;width:1020px;height:520px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--bg)}
+#view{display:block;width:1020px;height:520px;cursor:grab;touch-action:none}
+#overlay{position:absolute;left:0;top:0;width:1020px;height:520px;pointer-events:none}
+.status{position:absolute;top:14px;padding:10px 14px;border-radius:10px;background:rgba(10,14,19,.85);border:1px solid var(--line2);display:flex;flex-direction:column;gap:2px}
+.status[hidden]{display:none}.status.left{left:14px}.status.right{right:16px;align-items:flex-end}
+.status .k{font-size:12px;color:#C9D2DC}.status .v{font-size:19px;font-weight:700}
+.legend{position:absolute;left:14px;bottom:12px;display:flex;gap:14px;align-items:center;padding:8px 12px;border-radius:8px;background:rgba(10,14,19,.82);font-size:12px;color:var(--soft)}
+.legend i{display:inline-block;width:14px;height:3px;margin-right:6px;vertical-align:middle}
+aside{width:332px;display:flex;flex-direction:column;gap:9px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:3px}
+.card .l{font-size:12px;color:var(--muted)}
+.card .v{font-family:var(--mono);font-size:26px;font-weight:600}
+.card .v small{font-size:14px;color:var(--muted);margin-left:6px;font-weight:400}
+.card .s{font-size:12px;color:var(--soft)}
+.card.note{border-style:dashed;font-size:12px;line-height:1.6;color:var(--soft);flex:1}
+.bottom{display:flex;gap:16px}
+.panel{height:300px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 16px 8px}
+.chartp{width:996px}.sidep{width:356px;padding:12px}
+#chart{display:block;width:962px;height:278px}
+.sidep canvas{display:block;width:330px;height:278px}
+.sidetext{font-size:12px;line-height:1.65;color:var(--soft);display:flex;flex-direction:column;gap:6px}
+.sidetext b{color:var(--text)}
+footer{display:flex;justify-content:space-between;gap:24px;font-size:12px;line-height:1.5;color:var(--muted)}
+footer span:last-child{flex-shrink:0}
+</style>
+<script>/*__THREE__*/</script>
+<script>/*__ENGINE__*/</script>
+<script type="application/json" id="cfg">__CONFIG__</script>
+</head>
+<body>
+<div class="board">
+  <header>
+    <div class="intro"><div class="eyebrow" id="eyebrow"></div><h1 id="title"></h1><p class="lede" id="lede"></p></div>
+    <div class="controls" id="controls"></div>
+  </header>
+  <main>
+    <div class="view">
+      <canvas id="view" width="1020" height="520" role="img"></canvas>
+      <canvas id="overlay" width="1020" height="520" aria-hidden="true"></canvas>
+      <div class="status" id="status" hidden><span class="k"></span><span class="v"></span></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside id="kpis"></aside>
+  </main>
+  <section class="bottom">
+    <div class="panel chartp"><canvas id="chart" width="962" height="278" role="img"></canvas></div>
+    <div class="panel sidep" id="side"></div>
+  </section>
+  <footer><span id="foot"></span><span id="src"></span></footer>
+</div>
+<script>
+(function () {
+  'use strict';
+  var cfg = JSON.parse(document.getElementById('cfg').textContent);
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+
+  // ---------- tiny formatter: {f}, {f:2}, {f|pct:1}, {f|int}, {f|sign:2}, {f|map:a=x;b=y}, {f|bool:yes;no}, {f|cap:98;> 8;2}, {f|div:1000;0}, {f|sci7}
+  function fmt(t, k) {
+    if (t == null) return '';
+    return String(t).replace(/\{([A-Za-z0-9_]+)(?::(\d+))?(?:\|([a-z0-9]+)(?::([^}]*))?)?\}/g, function (m, f, d, op, arg) {
+      var v = k[f];
+      if (v === undefined || v === null || (typeof v === 'number' && !isFinite(v))) return '—';
+      var a = arg != null ? arg.split(';') : [];
+      switch (op) {
+        case 'pct': return (v * 100).toFixed(+(a[0] || 0));
+        case 'int': return Math.round(v).toLocaleString('en-US');
+        case 'sign': return (v >= 0 ? '+' : '') + Number(v).toFixed(+(a[0] || 1));
+        case 'map': { var mp = {}; a.forEach(function (p) { var i = p.indexOf('='); mp[p.slice(0, i)] = p.slice(i + 1); }); return mp[String(v)] != null ? mp[String(v)] : String(v); }
+        case 'bool': return v ? a[0] : a[1];
+        case 'cap': return v > +a[0] ? a[1] : Number(v).toFixed(+(a[2] || 1));
+        case 'div': return (v / +a[0]).toFixed(+(a[1] || 0));
+        case 'sci7': return (v / 1e7).toFixed(1) + '×10⁷';
+        default: return typeof v === 'number' ? v.toFixed(d != null ? +d : 1) : String(v);
+      }
+    });
+  }
+  // ---------- condition cases: {if:[{f,op,v}], ...overrides}
+  function test(c, k) {
+    var v = k[c.f];
+    if (c.op === 'null') return v === undefined || v === null;
+    if (v === undefined || v === null) return false;
+    switch (c.op) { case '>': return v > c.v; case '<': return v < c.v; case '>=': return v >= c.v; case '<=': return v <= c.v; case '==': return v === c.v; case '!=': return v !== c.v; }
+    return false;
+  }
+  function resolve(node, k) {
+    var out = Object.assign({}, node);
+    (node.cases || []).some(function (cs) { if ((cs.if || []).every(function (c) { return test(c, k); })) { Object.assign(out, cs); return true; } return false; });
+    return out;
+  }
+
+  // ---------- static text
+  document.title = cfg.title;
+  $('eyebrow').textContent = cfg.eyebrow || '';
+  $('title').textContent = cfg.title;
+  $('lede').textContent = cfg.lede || '';
+  $('foot').textContent = cfg.footer || '';
+  (cfg.sources || []).forEach(function (s, i) { if (i === 0) $('src').append('依據：'); else $('src').append('、'); var a = el('a', null, s.label); a.href = s.url; a.target = '_blank'; a.rel = 'noopener'; $('src').append(a); });
+  $('view').setAttribute('aria-label', cfg.viewAlt || cfg.title);
+  (cfg.legend || []).forEach(function (g) { var s = el('span'); if (g.color) { var i = el('i'); i.style.background = g.color; s.append(i); } s.append(g.label); $('legend').append(s); });
+
+  // ---------- controls
+  var state = {}, app = null, paused = false, pauseBtns = [];
+  var segs = [];
+  function paint() { segs.forEach(function (sg) { sg.buttons.forEach(function (b) { var on = String(state[sg.item.key]) === b.dataset.v; b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.style.background = on ? (b.dataset.accent || '#E6EAF0') : 'transparent'; }); }); }
+  function apply(item, v) {
+    state[item.key] = v; paint();
+    if (!app) return;
+    if (item.key === 'mode') app.setMode(v); else if (item.key === 'speed') app.setSpeed(v); else { app.set(item.key, v); if (item.alsoResetMode) app.setMode(state.mode); }
+  }
+  (cfg.controls || []).forEach(function (row) {
+    var r = el('div', 'ctlrow');
+    row.forEach(function (it) {
+      if (it.label && it.type !== 'button') r.append(el('span', 'ctllabel', it.label));
+      if (it.type === 'segmented') {
+        var sg = el('div', 'seg' + (it.small ? ' small' : '')), bs = [];
+        it.options.forEach(function (o) { var b = el('button', null, o.label); b.type = 'button'; b.dataset.v = String(o.value); if (o.accent) b.dataset.accent = o.accent; b.onclick = function () { apply(it, o.value); }; sg.append(b); bs.push(b); });
+        state[it.key] = it.default; segs.push({ item: it, buttons: bs }); r.append(sg);
+      } else if (it.type === 'cycle') {
+        state[it.key] = it.default; var cb = el('button', 'btn', it.default + '×'); cb.type = 'button';
+        cb.onclick = function () { var i = it.values.indexOf(state[it.key]); var nv = it.values[(i + 1) % it.values.length]; cb.textContent = nv + '×'; apply(it, nv); }; r.append(cb);
+      } else if (it.type === 'button') {
+        var b = el('button', 'btn' + (it.variant ? ' ' + it.variant : ''), it.label); b.type = 'button';
+        if (it.action === 'pause') { pauseBtns.push(b); b.textContent = 'Ⅱ 暫停'; b.onclick = function () { paused = !paused; if (app) app.setPaused(paused); pauseBtns.forEach(function (x) { x.textContent = paused ? '▶ 繼續' : 'Ⅱ 暫停'; }); }; }
+        else b.onclick = function () { if (app) app.trigger(it.arg); };
+        r.append(b);
+      }
+    });
+    $('controls').append(r);
+  });
+  paint();
+
+  // ---------- KPI cards
+  var cards = (cfg.kpis || []).map(function (c) {
+    var d = el('div', 'card' + (c.note ? ' note' : ''));
+    if (c.note) { d.textContent = c.note; $('kpis').append(d); return null; }
+    var l = el('div', 'l'), v = el('div', 'v'), s = el('div', 's'); d.append(l, v, s); $('kpis').append(d);
+    return { c: c, l: l, v: v, s: s };
+  }).filter(Boolean);
+  var st = cfg.status ? cfg.status : null;
+  if (st) { $('status').hidden = false; $('status').classList.add(st.position || 'left'); $('status').querySelector('.k').textContent = st.label; }
+  function onKpi(k) {
+    cards.forEach(function (x) {
+      var r = resolve(x.c, k);
+      x.l.textContent = fmt(r.label, k);
+      x.v.textContent = fmt(r.value, k); if (r.unit) { var u = el('small', null, fmt(r.unit, k)); x.v.append(u); }
+      x.v.style.color = r.color || '#E6EAF0';
+      x.s.textContent = fmt(r.sub, k);
+    });
+    if (st) { var rs = resolve(st, k); var vv = $('status').querySelector('.v'); vv.textContent = fmt(rs.text, k); vv.style.color = rs.color || '#E6EAF0'; }
+  }
+
+  // ---------- side panel
+  var els = { view: $('view'), overlay: $('overlay'), chart: $('chart') };
+  var side = cfg.side || { type: 'none' };
+  if (side.type === 'spec' || side.type === 'lvrt') {
+    var c = el('canvas'); c.width = 330; c.height = 278; c.setAttribute('role', 'img'); c.setAttribute('aria-label', side.alt || ''); $('side').append(c); els[side.type] = c;
+  } else if (side.type === 'text') {
+    var t = el('div', 'sidetext'); if (side.title) t.append(el('b', null, side.title)); (side.lines || []).forEach(function (ln) { t.append(el('div', null, ln)); }); $('side').append(t);
+  } else $('side').style.display = 'none';
+
+  // ---------- mount engine (waits until fonts + scripts are ready)
+  function boot(n) {
+    var E = cfg.engine === 'ripple' ? window.AIDCRipple : window.AIDCSim;
+    if (!E || !window.THREE) { if (n < 100) return setTimeout(function () { boot(n + 1); }, 100); return; }
+    var opts = Object.assign({}, cfg.engineOpts || {});
+    Object.keys(state).forEach(function (k) { if (state[k] !== undefined) opts[k === 'efcRated' ? 'efcRated' : k] = state[k]; });
+    app = E.mount(cfg.kind, els, onKpi, opts);
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { boot(0); }); else boot(0);
+})();
+</script>
+</body>
+</html>
