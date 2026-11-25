@@ -1,0 +1,25 @@
+<section id="risks" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">01 · 問題</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">對電網的三種風險，第三種正在變成法規</h2>
+</div>
+<div style="display:flex;gap:32px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #1F64B5;border-radius:16px;padding:40px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.25;color:#16202B">共振與機組疲勞</h3>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">電網共振頻率約 0.16 Hz 到 60 Hz 以上；機組軸系扭振在 7 Hz 以上。週期性擺盪會誘發次同步共振、區間振盪與電壓閃變。</p>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">2019 年佛州曾出現約 200 MW 的振盪源事件，AI 叢集的擺盪規模可以更大。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #A85508;border-radius:16px;padding:40px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.25;color:#16202B">電壓擾動下集體脫網</h3>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">2024/7/10 北維吉尼亞：230 kV 避雷器故障，82 秒內 6 次故障，約 60 座資料中心、1,500 MW 同時轉供備援。</p>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">重複故障後不自動回接，負載離網數小時；調度只能緊急降低發電。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #6A43B0;border-radius:16px;padding:40px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.25;color:#16202B">法規快速收緊</h3>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">NERC 2026/5/4 發布 Level 3 必要行動警示（計算型負載），要求建模、穩定度研究與通訊。</p>
+<p style="font-size:26px;line-height:1.55;color:#4A5562">ERCOT NOGRR282 訂定大型計算負載電壓／頻率穿越要求，2026/6 董事會通過、待 PUCT 核定。台電規範是否跟進：[待確認]</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">來源：arXiv 2508.14318；NERC 事件回顧（DCD 2025/3 報導）；Renewable Energy World 2026/5；ERCOT NOGRR282 頁面　·　4</p>
+<aside>風險有三層。第一層是頻率：擺盪落在電網共振頻段，長期會讓汽輪機軸系疲勞，論文舉了 2019 年佛州 200 MW 振盪源的例子。第二層是故障：北維吉尼亞那次是一條 230 kV 線路的避雷器壞掉，82 秒內重合閘失敗 6 次，60 座資料中心的 UPS 一起切走，1,500 MW 負載憑空消失，調度只能緊急降發電。第三層是法規：NERC 今年 5 月發了 Level 3 警示，ERCOT 的穿越要求也已經過董事會。台灣這邊台電會不會跟進還要確認，但趨勢很清楚：能穿越、能平滑的 AIDC，併網會更容易。</aside>
+</section>

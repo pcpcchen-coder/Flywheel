@@ -1,0 +1,25 @@
+<section id="ff" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 控制邏輯 · 前饋與守門</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">向排程器要訊號，在併接點盯頻譜</h2>
+</div>
+<div style="display:flex;gap:32px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #1F64B5;border-radius:16px;padding:36px 40px">
+<h3 style="font-size:36px;font-weight:700;color:#16202B">排程前饋（L2）</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>輸入：</b>作業啟動、checkpoint、預定停機（叢集排程 API，提前數十秒通知）</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>動作：</b>啟動前把 SoE 目標拉到 0.85；訓練中降到 0.40，留空間吸收當機</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>效果：</b>降低飛輪飽和風險，容量有機會再縮小（PoC 量化）</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>不可預測的當機：</b>靠保留裕度與 L1 自然吸收</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #A85508;border-radius:16px;padding:36px 40px">
+<h3 style="font-size:36px;font-weight:700;color:#16202B">頻譜守門（最後防線）</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>監測：</b>PCC 10 kHz 取樣，滑動 FFT 依 0.1–20 Hz 分箱比對門檻</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>一級：</b>超標即降低 L1 轉角、提高平滑強度</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>二級：</b>持續超標，透過 NVIDIA SMI／Redfish 要求 GPU 開啟功率地板</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562"><b>三級：</b>仍超標，依與調度的約定降載或切負載</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.5;color:#16202B">原則：飛輪先吸收，GPU 地板只當備援——平常不燒電，緊急時仍有退路。</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">來源：arXiv 2508.14318 建議高速遙測＋FFT 分箱＋分級回應；GB300 功率平滑參數可經 NVIDIA SMI 或 Redfish 設定（NVIDIA 技術部落格）　·　12</p>
+<aside>這頁講兩個讓系統更聰明、也更安全的機制。左邊是前饋：AI 叢集的作業是排程出來的，啟動、checkpoint、停機，排程器都事先知道。我們跟排程 API 接，提前把飛輪轉速備好：要開訓練了就先充飽，訓練中留一半空間吸收當機。右邊是守門：在併接點做高速 FFT，盯 0.1 到 20 Hz，超標就分三級處理，第一級調我們自己的控制，第二級才去叫 GPU 開功率地板，第三級才降載。這也是微軟那篇論文建議的架構。重點是：GPU 空轉燒電只當最後手段，不是常態。</aside>
+</section>

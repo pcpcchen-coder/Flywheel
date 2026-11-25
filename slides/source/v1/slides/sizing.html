@@ -1,0 +1,32 @@
+<section id="sizing" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">05 · 容量</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">容量怎麼估：功率看擺幅，能量看斜率</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#1F64B5">功率 ← 擺幅</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;line-height:1.5;color:#16202B">P ≥ 85 MW × (1 − 0.22) ≈ 66 MW → 取 80 MW</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#A85508">能量 ← ramp 限值</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;line-height:1.5;color:#16202B">E ≥ ΔP² / 2R = 52² / 4 ≈ 0.19 MWh</p>
+<p style="font-size:24px;line-height:1.5;color:#4A5562">最壞 ΔP＝75 MW 時 0.39 MWh；ramp 限值減半，能量需求加倍</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#6A43B0">能量 ← 故障穿越</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;line-height:1.5;color:#16202B">E ≥ 80 MW × 0.3 s ≈ 7 kWh（可忽略）</p>
+</div>
+</div>
+<div style="width:620px;display:flex;flex-direction:column;gap:18px;background:#101820;border-radius:16px;padding:40px">
+<p style="font-size:26px;color:#B8C4CF">建議配置（100 MW AIDC）</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:56px;font-weight:700;line-height:1.15;color:#FF9F43">80 MW<br>0.8 MWh</p>
+<p style="font-size:26px;line-height:1.5;color:#E8ECEF">160 × 500 kW / 5 kWh 單元，4 × 20 MW PCS</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">最壞情況用掉約一半能量，另一半留給當機吸收</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">需分鐘～小時級備援：沿用 UPS／柴發，或另配 LFP 成混合系統</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">ΔP＝訓練平均負載 − 閒置負載（約 76 − 25 MW）；R＝電網 ramp 限值 2 MW/s（假設）　·　15</p>
+<aside>容量估算有一個很簡單的直覺：功率看擺幅，能量看斜率。功率要大於 GPU 擺動的幅度，85 MW 乘上 78% 大約 66 MW，我們取 80 MW。能量則由電網允許的斜率決定：負載瞬間跳 52 MW，電網只准每秒爬 2 MW，中間那個三角形就是飛輪要補的能量，ΔP 平方除以 2R，大約 0.19 MWh；最壞情況 75 MW 跳變是 0.39 MWh。故障穿越反而只要幾度電，可以忽略。所以 80 MW、0.8 MWh 的配置，最壞也只用一半。要注意的是 ramp 限值如果變嚴格一半，能量就要加倍，這是跟台電確認規範的關鍵參數。</aside>
+</section>

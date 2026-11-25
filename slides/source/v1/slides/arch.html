@@ -1,0 +1,51 @@
+<section id="arch" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">02 · 方案</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">系統架構：飛輪掛在中壓匯流排，與機房並聯</h2>
+</div>
+<div style="position:relative;width:1664px;height:620px">
+<div style="position:absolute;left:0px;top:240px;width:210px;height:120px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#FCFCFA;border:2px solid #1F64B5;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#1F64B5">電網</h3>
+<p style="font-size:24px;color:#4A5562">161 kV</p>
+</div>
+<div style="position:absolute;left:270px;top:240px;width:230px;height:120px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#FCFCFA;border:2px solid #8A949E;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#16202B">主變壓器</h3>
+<p style="font-size:24px;color:#4A5562">161 / 22.8 kV</p>
+</div>
+<div style="position:absolute;left:560px;top:30px;width:18px;height:540px;background:#16202B;border-radius:4px"></div>
+<p style="position:absolute;left:470px;top:578px;width:220px;font-size:24px;font-weight:700;color:#16202B">22.8 kV 匯流排</p>
+<div style="position:absolute;left:640px;top:30px;width:560px;height:210px;display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:2px solid #8A949E;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#16202B">AIDC 機房 100 MW</h3>
+<p style="font-size:24px;color:#4A5562">變壓器 → UPS／800 VDC → GPU 機櫃</p>
+<p style="font-size:24px;color:#4A5562">饋線 CT 量測 P_load（前饋用）</p>
+</div>
+<div style="position:absolute;left:640px;top:330px;width:560px;height:240px;display:flex;flex-direction:column;gap:6px;background:#FBEBDC;border:2px solid #A85508;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#A85508">飛輪儲能 80 MW / 0.8 MWh</h3>
+<p style="font-size:24px;color:#4A5562">4 × 20 MW grid-forming PCS</p>
+<p style="font-size:24px;color:#4A5562">DC link ↔ 160 × 500 kW 飛輪單元</p>
+<p style="font-size:24px;color:#4A5562">磁浮軸承 · 真空腔 · 7,500–15,000 rpm</p>
+</div>
+<div style="position:absolute;left:1280px;top:30px;width:384px;height:140px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#FCFCFA;border:2px solid #6A43B0;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#6A43B0">EMS（L3）</h3>
+<p style="font-size:24px;color:#4A5562">排程 · 電價 · 輔助服務</p>
+</div>
+<div style="position:absolute;left:1280px;top:230px;width:384px;height:160px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#101820;border-radius:14px;padding:20px">
+<h3 style="font-size:30px;font-weight:700;color:#FF9F43">飛輪主控制器</h3>
+<p style="font-size:24px;color:#B8C4CF">L1 平滑／穿越 · L2 SoE 管理</p>
+</div>
+<div style="position:absolute;left:1280px;top:440px;width:384px;height:160px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#FCFCFA;border:2px solid #8A949E;border-radius:14px;padding:20px">
+<h3 style="font-size:28px;font-weight:700;color:#16202B">量測與訊號</h3>
+<p style="font-size:24px;color:#4A5562">PCC P/Q/V/f 10 kHz</p>
+<p style="font-size:24px;color:#4A5562">叢集排程 API</p>
+</div>
+<x-connector x1="210" y1="300" x2="270" y2="300" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="500" y1="300" x2="560" y2="300" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="578" y1="135" x2="640" y2="135" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="578" y1="450" x2="640" y2="450" head="both" style="color:#A85508;border-width:4px"></x-connector>
+<x-connector x1="1280" y1="370" x2="1200" y2="430" head="end" style="color:#A85508;border-width:3px;border-style:dashed"></x-connector>
+<x-connector x1="1472" y1="170" x2="1472" y2="230" head="end" style="color:#6A43B0;border-width:3px;border-style:dashed"></x-connector>
+<x-connector x1="1472" y1="440" x2="1472" y2="390" head="end" style="color:#4A5562;border-width:3px;border-style:dashed"></x-connector>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">實線＝功率流（橘色雙向＝飛輪充放電）；虛線＝控制與量測訊號。電壓等級為台灣常見配置示意　·　7</p>
+<aside>架構很單純：飛輪不串在機房裡，而是跟機房並聯掛在 22.8 kV 中壓匯流排上，這樣不用動客戶的 UPS 和機櫃設計，也可以一套飛輪服務多棟機房。160 台 500 kW 的飛輪單元經由 DC link 接到 4 台 20 MW 的 grid-forming PCS。控制器吃三種訊號：併接點的高速量測、機房饋線的負載量測，以及叢集排程器的 API，知道什麼時候要開訓練、寫 checkpoint。上面還有 EMS 負責電價、需量和輔助服務。這是我們 EMS 團隊本來就熟的分層架構。</aside>
+</section>

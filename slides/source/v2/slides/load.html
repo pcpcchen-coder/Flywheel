@@ -1,0 +1,36 @@
+<section id="load" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">01 · 問題機理</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">GPU 訓練負載：同步方波，邊緣只有幾毫秒</h2>
+</div>
+<div style="display:flex;gap:56px;align-items:start">
+<div style="position:relative;width:860px;height:500px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:16px">
+<svg aria-label="示意：訓練負載在計算與通訊階段間切換，並有作業啟動、checkpoint、中止等階躍" width="820" height="440" viewBox="0 0 820 440" style="position:absolute;left:20px;top:30px;width:820px;height:440px"><path d="M30 30 V380 H800" fill="none" stroke="#B9C0B8" stroke-width="2"/><path d="M30 330 H90 V90 H160 V250 H195 V90 H265 V250 H300 V90 H370 V230 H470 V90 H540 V250 H575 V90 H645 V250 H680 V90 H720 V330 H800" fill="none" stroke="#16202B" stroke-width="4" stroke-linejoin="round"/><path d="M90 340 V360 M370 240 V260 M720 340 V360" stroke="#A85508" stroke-width="4"/><rect x="152" y="70" width="52" height="200" fill="none" stroke="#1F64B5" stroke-width="2" stroke-dasharray="6 5"/></svg>
+<p style="position:absolute;left:70px;top:396px;width:160px;font-size:24px;font-weight:700;color:#A85508">作業啟動</p>
+<p style="position:absolute;left:330px;top:290px;width:190px;font-size:24px;font-weight:700;color:#A85508">checkpoint</p>
+<p style="position:absolute;left:660px;top:396px;width:170px;font-size:24px;font-weight:700;color:#A85508">異常中止</p>
+<p style="position:absolute;left:120px;top:44px;width:300px;font-size:24px;font-weight:700;color:#1F64B5">邊緣 t_r ≈ 數 ms</p>
+<p style="position:absolute;left:40px;top:14px;width:260px;font-size:24px;color:#4A5562">計算 ≈ TDP</p>
+<p style="position:absolute;left:560px;top:300px;width:200px;font-size:24px;color:#4A5562">通訊 ≈ idle</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">週期性擺盪</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">計算時接近 TDP、all-reduce 時接近 idle；約每秒一次到每數十秒一次，視作業規模而定。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">規模</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">GPU 占伺服器功率 >50%（GB200）；單一作業可超過 10 萬張 GPU，一座機房擺盪可達數十 MW。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">尖峰與階躍</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">約 50 ms 的 EDP 尖峰可達 1.1×TDP；啟停、checkpoint、故障恢復造成作業級階躍。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#E4EEF9;border-radius:12px;padding:18px 22px">
+<p style="font-size:26px;line-height:1.5;color:#16202B"><b>工程含意：</b>邊緣 t_r 決定諧波延伸，轉角約 1／(π·t_r)；5 ms 邊緣 → 約 64 Hz，已涵蓋軸系扭振頻段。</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">來源：Choukse et al., Power Stabilization for AI Training Datacenters（arXiv 2508.14318）　·　3</p>
+<aside>論文把 GPU 的行為講得很清楚：計算階段 tensor core 滿載接近 TDP，通訊階段做 all-reduce 或 checkpoint 時接近 idle，週期從一秒一次到幾十秒一次。GB200 上 GPU 占伺服器功率一半以上，單一作業可超過十萬張卡。還有 50 毫秒等級的 EDP 尖峰，以及啟停和故障恢復的階躍。我特別加了一個工程觀點：方波的邊緣時間決定諧波延伸到多高，5 毫秒的邊緣，諧波一路延伸到 60 幾 Hz，已經涵蓋汽輪機軸系扭振的頻段。所以不只看擺盪週期，也要看邊緣多陡。</aside>
+</section>

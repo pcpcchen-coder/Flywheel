@@ -1,0 +1,34 @@
+<section id="modes" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 運轉模式</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">四種模式，一套控制器同時守住 ramp 與 LVRT</h2>
+</div>
+<div style="display:flex;gap:20px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #1F64B5;border-radius:14px;padding:26px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#1F64B5">M1</p>
+<p style="font-size:30px;font-weight:700;color:#16202B">正常</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">抵銷漣波；電網電流 ramp ≤ R；SoE 目標依排程 0.4／0.85。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #C0392B;border-radius:14px;padding:26px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#A3261B">M2</p>
+<p style="font-size:30px;font-weight:700;color:#16202B">驟降</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">V &lt; 0.85 pu：負載照常運轉，電網電流 ≤ 1.25 pu，q 軸注入無功。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #6A43B0;border-radius:14px;padding:26px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6A43B0">M3</p>
+<p style="font-size:30px;font-weight:700;color:#16202B">恢復</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">V &gt; 0.9 pu：電網電流約 90 MW/s 回升，1 s 內 ≥ 90%；ramp 豁免窗。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #A85508;border-radius:14px;padding:26px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#A85508">M4</p>
+<p style="font-size:30px;font-weight:700;color:#16202B">能量邊界</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">SoE 接近 0／100%：請 GPU 韌體限功率或 burn，維持 ramp 合規。</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#101820;border-radius:16px;padding:28px 40px">
+<p style="font-size:28px;font-weight:700;line-height:1.5;color:#F2F4F5">畫布 R2 模擬：恢復 0.64 s、故障電流 0.77 pu</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">20 MW/min 時純飛輪 ramp 超限 57 s／2 循環 → 加上 M4 協同後 0 s，代價是 GPU 限速約 9%。</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">M4 即論文建議的「GPU 平滑＋儲能共享 SoC」協同；介面可走 NVIDIA SMI／Redfish 與叢集排程 API　·　15</p>
+<aside>運轉模式分四種。M1 正常：抵銷漣波，電網電流的變化率壓在限值內，SoE 目標依排程器訊號調整，要開訓練前先充到 85%。M2 驟降：電壓掉到 0.85 以下，負載照常運轉不轉供，電網側電流限制在 1.25 倍以內，q 軸注入無功幫忙撐電壓。M3 恢復：電壓回到 0.9 以上，電網電流以每秒 90 MW 左右回升，1 秒內達到 90%，這段時間 ramp 豁免。M4 是能量邊界：飛輪快滿或快空的時候，請 GPU 韌體限功率或開 burner，這就是論文建議的共享 SoC 協同。模擬結果：恢復 0.64 秒、電流 0.77 pu；最嚴的每分鐘 20 MW 限值下，純飛輪會超限，加上 M4 就零超限，代價是 GPU 限速約 9%。</aside>
+</section>

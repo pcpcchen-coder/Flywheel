@@ -1,0 +1,20 @@
+<section id="results" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">04 · 模擬結果</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">四個情境的模擬結果（示意模型）</h2>
+</div>
+<table style="font-family:'Noto Sans TC', Arial, sans-serif;font-size:26px;color:#16202B">
+<tr style="background:#E6E9E3"><th style="width:17%">情境</th><th style="width:33%">指標</th><th style="width:25%">基準</th><th style="width:25%">飛輪</th></tr>
+<tr><td>01 同步擺盪</td><td>電網側峰谷差</td><td>66.5 MW</td><td><b>0.7 MW</b></td></tr>
+<tr><td>01 同步擺盪</td><td>最大變化率（100 ms）</td><td>661 MW/s</td><td><b>1.8 MW/s</b></td></tr>
+<tr style="background:#FCFCFA"><td>02 故障穿越</td><td>持續失載（15 座）</td><td>1,201 MW</td><td><b>0 MW</b></td></tr>
+<tr style="background:#FCFCFA"><td>02 故障穿越</td><td>區域頻率峰值偏差</td><td>0.26 Hz</td><td><b>0.11 Hz</b></td></tr>
+<tr><td>03 作業啟停</td><td>ramp 超限時間（3 循環）</td><td>39 s</td><td><b>0 s</b></td></tr>
+<tr><td>03 作業啟停</td><td>額外耗能（基準＝GPU 地板）</td><td>1.97 MWh</td><td><b>約 0.10 MWh</b></td></tr>
+<tr style="background:#FCFCFA"><td>04 20 年壽命</td><td>儲能整批更換（基準＝LFP）</td><td>9 次（5–17）</td><td><b>0 次</b></td></tr>
+<tr style="background:#FCFCFA"><td>04 20 年壽命</td><td>20 年累積損耗</td><td>177 GWh</td><td>197 GWh（多 11%）</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">互動版本與參數切換：<a href="https://claude.ai/artifact/TVgVCpgsfsCamGuiWR5MyG">3D 模擬情境畫布</a>（按 Play 可切換模式、觸發故障、調整 ramp 限值）</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">100 MW AIDC、飛輪 80 MW / 0.8 MWh、區域系統 40 GW；情境 03 的啟停密度刻意壓縮；LFP 20 MWh、額定 6,000 次、淺循環折減 0.5　·　13</p>
+<aside>這是四個情境的數字總表，全部來自我們自己寫的示意模型，畫布上都可以互動。重點看粗體：擺盪、變化率、故障失載、ramp 超限，飛輪都幾乎歸零。最後一行我刻意放上來：20 年累積損耗飛輪比鋰電多 11%，因為飛輪有待機損耗。但跟 GPU 地板那種白燒電比，這個損耗小了約 20 倍；而鋰電在這個工況要換 9 次，換電池的成本要放進 20 年 TCO 跟多出來的電費一起比，這是 PoC 要量化的項目。下一頁講這些代價怎麼處理。</aside>
+</section>

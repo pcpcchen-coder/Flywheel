@@ -1,0 +1,26 @@
+<section id="conflict" data-transition="fade" style="background:#101820;color:#E8ECEF;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#FF9F43">01 · 衝突點</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#F2F4F5">規範的兩端：平常要慢，故障後要快</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#1A2530;border:1px solid #2A3644;border-radius:16px;padding:36px 40px">
+<p style="font-size:28px;color:#B8C4CF">平常（作業啟停、checkpoint）</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;color:#4DA3FF">dP/dt ≤ R</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">R ≈ 2 MW/s，最嚴可到 20 MW/min（0.33 MW/s）</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#1A2530;border:1px solid #2A3644;border-radius:16px;padding:36px 40px">
+<p style="font-size:28px;color:#B8C4CF">故障清除後（LVRT 恢復）</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;color:#FF9F43">≥ 90% ／ 1 s</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">等效 70–90 MW/s，且電流 ≤ 1.25 pu</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;line-height:1.5;color:#E8ECEF"><b>UPS walk-in：</b>夠慢，但違反 1 秒恢復（模擬 3.0 s）</p>
+<p style="font-size:28px;line-height:1.5;color:#E8ECEF"><b>瞬間回接：</b>夠快，但違反 ramp 與電流上限</p>
+<p style="font-size:28px;line-height:1.5;color:#E8ECEF"><b>GPU 功率地板：</b>壓得住 ramp，救不了電壓驟降，還要空轉燒電</p>
+</div>
+<p style="font-size:30px;font-weight:700;line-height:1.5;color:#FF9F43">→ 需要 PCC 上一個雙向、毫秒級、有足夠能量的電流源</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#8C99A8">故障恢復窗內的 ramp 通常視為豁免，但仍受 125% 電流上限約束（NOGRR282 草案）　·　8</p>
+<aside>這頁是整份簡報的轉折。您提到 ramp-up、ramp-down 要符合 LVRT 的規範，實際上規範有兩端，而且方向相反。平常作業啟停時，電網要求變化率要慢，每秒 2 MW，最嚴的每分鐘 20 MW。可是故障清除後，ERCOT 又要求 1 秒內恢復 90% 用電，等於每秒 70 到 90 MW，還不能超過 1.25 倍電流。負載本身做不到兩全：UPS walk-in 慢，就違反恢復時間；瞬間回接，就違反 ramp 和電流；GPU 地板可以壓 ramp，但對電壓驟降無能為力，還要燒電。所以我們需要的是在 PCC 上一個雙向、毫秒級、有足夠能量的可控電流源，這就是飛輪 PCS 的角色。</aside>
+</section>

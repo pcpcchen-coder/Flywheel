@@ -1,0 +1,20 @@
+<section id="landscape" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">02 · 解法盤點</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">解法分布在五個層級，各自只蓋住一段</h2>
+</div>
+<table style="font-family:'Noto Sans TC', Arial, sans-serif;font-size:25px;color:#16202B">
+<tr style="background:#E6E9E3"><th style="width:38%">方案</th><th style="width:16%">時間尺度</th><th style="width:46%">主要限制</th></tr>
+<tr><td>軟體填充（Firefly）</td><td>≥ 50 ms</td><td>空轉耗能；與主作業故障域耦合</td></tr>
+<tr style="background:#FCFCFA"><td>GPU 韌體（GB200 地板＋ramp）</td><td>ms–分</td><td>耗能 10–30%；GPU 層動態範圍 ≥ 20% TDP</td></tr>
+<tr><td>機櫃電容（GB300，65 J/GPU）</td><td>ms–s</td><td>削峰約 30%；撐不住作業啟停</td></tr>
+<tr style="background:#FCFCFA"><td>機櫃電池＋LC（EasyRider）</td><td>s–分</td><td>每櫃改造；電池循環老化</td></tr>
+<tr><td>超級電容 E-STATCOM（±75 MW）</td><td>ms–s</td><td>能量小（秒級）；75 MW 占地約 90×30 m</td></tr>
+<tr style="background:#FCFCFA"><td>設施級 BESS</td><td>s–h</td><td>微循環衰減、熱失控與消防</td></tr>
+<tr style="background:#FBEBDC"><td><b>設施級飛輪（本提案）</b></td><td>ms–分</td><td>待機損耗較高、每 kWh 較貴</td></tr>
+<tr><td>同步調相機／跨站錯相排程</td><td>—</td><td>只移動共振點，或需跨站協調</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">論文建議：GPU 層平滑＋儲能「共享 SoC」協同；NVIDIA 800 VDC 架構把短時（電容）與長時（BESS）儲能分層配置。</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">來源：arXiv 2508.14318；arXiv 2604.15522；NVIDIA 技術部落格（GB300、800 VDC）；Siemens Energy E-STATCOM 型錄；arXiv 2609.27698　·　9</p>
+<aside>解法我整理成五個層級、八種方案。最靠近 GPU 的是軟體和韌體：Firefly 在空檔塞運算，GB200 有功率地板和 ramp 控制，便宜但都要燒電。機櫃層有 GB300 的電容，每張卡 65 焦耳，削峰 30%，但撐不了作業啟停；EasyRider 論文用機櫃電池加 LC 濾波，效果好但每個機櫃都要改。設施層有三種：西門子的 E-STATCOM 用超級電容，正負 75 MW 加無功，是我們最直接的競品，但能量是秒級；鋰電 BESS 能量大，但微循環會衰減；飛輪是我們的提案。最後是電網側的同步調相機，以及跨機房錯相排程，論文說錯開半個週期可以把振盪降到約 3%。論文的結論是 GPU 層和儲能要協同、共享 SoC，我們的設計會照這個原則。</aside>
+</section>

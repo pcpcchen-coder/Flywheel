@@ -1,0 +1,30 @@
+<section id="bw" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 頻寬設計</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">PCS 頻寬是成敗關鍵：100 Hz 不夠，要到 500 Hz</h2>
+</div>
+<table style="font-family:'Noto Sans TC', Arial, sans-serif;font-size:26px;color:#16202B">
+<tr style="background:#E6E9E3"><th style="width:28%">方案</th><th style="width:16%">ΔI／I</th><th style="width:20%">0.1–20 Hz RMS</th><th style="width:18%">12 Hz 軸系</th><th style="width:18%">1 s ramp</th></tr>
+<tr><td>無補償</td><td>84%</td><td>38.6%</td><td>100%</td><td>29 MW/s</td></tr>
+<tr style="background:#FCFCFA"><td>飛輪 PCS 10 Hz</td><td>100%</td><td>7.0%</td><td>54%</td><td>2.9 MW/s</td></tr>
+<tr><td>飛輪 PCS 100 Hz</td><td>24.5%</td><td>1.5%</td><td>7.3%</td><td>1.0 MW/s</td></tr>
+<tr style="background:#FBEBDC"><td><b>飛輪 PCS 500 Hz</b></td><td><b>1.1%</b></td><td><b>0.41%</b></td><td><b>0.8%</b></td><td><b>0.86 MW/s</b></td></tr>
+<tr><td>GPU 韌體（地板 90%）</td><td>1.1%</td><td>0.34%</td><td>0.8%</td><td>0.51 MW/s</td></tr>
+</table>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#16202B">為什麼 10 Hz 反而更差</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">補償落後邊緣，殘差變成正負尖峰，正好打在軸系頻段。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#16202B">怎麼做到 500 Hz</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">多電平／交錯並聯（等效 ≥ 5 kHz）、量測延遲 ≤ 100 µs、負載電流前饋。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 28px">
+<p style="font-size:26px;font-weight:700;color:#16202B">和機櫃電容分工</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">GB300 電容吃掉 &lt; 1 ms 尖峰，飛輪不必追最陡的邊緣。</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">畫布 R1 模擬：100 MW、迭代 1.4 s、GPU 邊緣 5 ms；GPU 韌體列的代價是額外耗電約 30%　·　14</p>
+<aside>這張是我認為最重要的工程結論。我在模擬裡把 PCS 電流環頻寬當參數掃：10 Hz 的時候，電網電流的動態範圍反而比不補償還大，因為補償永遠慢半拍，殘差變成一正一負的尖峰，頻譜正好落在軸系扭振頻段，軸系響應還有 54%。100 Hz 好很多，但動態範圍還有 24%。到 500 Hz，動態範圍 1.1%，軸系響應 0.8%，跟 GPU 韌體平滑一樣好，但不用多燒 30% 的電。要在中壓做到 500 Hz，需要多電平或交錯並聯把等效開關頻率拉到 5 kHz 以上，量測延遲壓在 100 微秒內，加上負載電流前饋。另外可以和 GB300 的機櫃電容分工，毫秒以下的尖峰交給電容。這會是我們跟飛輪和 PCS 供應商談規格的第一條。</aside>
+</section>

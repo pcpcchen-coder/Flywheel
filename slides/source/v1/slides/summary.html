@@ -1,0 +1,32 @@
+<section id="summary" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">一頁結論</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">飛輪是 AIDC 與電網之間的「減震器」</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:16px;padding:40px">
+<p style="font-size:26px;color:#4A5562">電網側功率峰谷差</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#1F64B5">66 → 0.7</p>
+<p style="font-size:26px;color:#4A5562">MW（10 秒視窗）</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">0.1 Hz 以上振盪衰減 34 dB；最大變化率 661 → 1.8 MW/s</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:16px;padding:40px">
+<p style="font-size:26px;color:#4A5562">230 kV 故障後持續失載</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#A85508">1,200 → 0</p>
+<p style="font-size:26px;color:#4A5562">MW（15 座 × 80 MW）</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">負載不再集體轉供 UPS；區域頻率偏差 0.26 → 0.11 Hz</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:16px;padding:40px">
+<p style="font-size:26px;color:#4A5562">20 年儲能整批更換</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#6A43B0">9 → 0</p>
+<p style="font-size:26px;color:#4A5562">次（LFP → 飛輪）</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">LFP 每年約 5,100 次等效循環、約 2 年衰減到 80%；飛輪容量不衰減</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#101820;border-radius:16px;padding:32px 40px">
+<p style="font-size:30px;font-weight:700;line-height:1.45;color:#F2F4F5">建議：核准 6 個月 PoC（量測校正 → HIL 驗證 → 1–2 MW 示範）</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">代價：待機損耗較高、每 kWh 單價較高——以「小能量、大功率」配置（80 MW / 0.8 MWh）化解。</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">數字來自自建示意模型（100 MW AIDC、80 MW / 0.8 MWh 飛輪），參數與互動模擬見 3D 畫布　·　2</p>
+<aside>先講結論。三個數字對應三個痛點：第一是平常就在發生的同步擺盪，飛輪把電網側的峰谷差從 66 MW 壓到不到 1 MW；第二是電網故障時的集體脫網，北維吉尼亞 2024 年就發生過 1,500 MW 的案例，飛輪讓負載留在網上；第三是壽命，同樣工況下鋰電大約兩年就要換一次，20 年換 9 次，飛輪不衰減。這些是示意模型，不是廠商數據，所以我們要做 PoC 用真實波形校正。代價我也會誠實講：飛輪待機損耗比較高，每 kWh 也比較貴，所以我們只讓它做它擅長的事——秒級、高功率。</aside>
+</section>

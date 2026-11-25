@@ -1,0 +1,30 @@
+<section id="layers" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 控制邏輯</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">控制分四層，時間尺度各差約三個數量級</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:32px;align-items:center;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 32px">
+<div style="width:220px;display:flex;flex-direction:column;gap:2px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:44px;font-weight:700;color:#4A5562">L0</p><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#4A5562">10 µs – 1 ms</p></div>
+<p style="width:330px;font-size:32px;font-weight:700;color:#16202B">電力電子內環</p>
+<p style="flex:1;font-size:26px;line-height:1.5;color:#4A5562">馬達／發電機向量控制（FOC）、PCS 電流環與 DC link 電壓、磁浮軸承位置控制</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FBEBDC;border:2px solid #A85508;border-radius:14px;padding:22px 32px">
+<div style="width:220px;display:flex;flex-direction:column;gap:2px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:44px;font-weight:700;color:#A85508">L1</p><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#A85508">1 ms – 10 s</p></div>
+<p style="width:330px;font-size:32px;font-weight:700;color:#16202B">功率平滑與故障穿越</p>
+<p style="flex:1;font-size:26px;line-height:1.5;color:#4A5562">低通＋斜率限制產生電網功率參考；V &lt; 0.85 pu 時 2 ms 內切換 grid-forming 並注入無功</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 32px">
+<div style="width:220px;display:flex;flex-direction:column;gap:2px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:44px;font-weight:700;color:#1F64B5">L2</p><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#1F64B5">1 s – 10 min</p></div>
+<p style="width:330px;font-size:32px;font-weight:700;color:#16202B">能量與單元管理</p>
+<p style="flex:1;font-size:26px;line-height:1.5;color:#4A5562">SoE／轉速回中、依各單元 SoE 加權分配功率、排程前饋預先調整 SoE 目標</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:22px 32px">
+<div style="width:220px;display:flex;flex-direction:column;gap:2px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:44px;font-weight:700;color:#6A43B0">L3</p><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6A43B0">分鐘 – 小時</p></div>
+<p style="width:330px;font-size:32px;font-weight:700;color:#16202B">EMS 與電網服務</p>
+<p style="flex:1;font-size:26px;line-height:1.5;color:#4A5562">需量與電價、快速頻率響應（FFR）等輔助服務、預測維護、與調度通訊</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">橘框 L1 是本提案的核心，下一頁展開；L2 在第 10 頁，故障穿越狀態機在第 11 頁　·　8</p>
+<aside>控制分四層，這跟我們做換電站 EMS 的分層邏輯是一樣的，只是時間尺度更快。L0 是電力電子內環，微秒到毫秒，主要靠 PCS 和飛輪廠商。L1 是我們的核心價值：決定電網應該看到什麼功率，以及電壓掉下來時怎麼接手，毫秒到秒級。L2 管能量：轉速別撞到上下限、160 台之間怎麼分工、排程器說要開訓練了就先把能量備好。L3 就是 EMS 本行：電價、需量、輔助服務、預測維護。我們團隊真正要寫的是 L1 到 L3。</aside>
+</section>

@@ -1,0 +1,18 @@
+<section id="compare" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">02 · 解法盤點</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">針對兩個問題逐項比：飛輪是唯一四項都過的</h2>
+</div>
+<table style="font-family:'Noto Sans TC', Arial, sans-serif;font-size:25px;color:#16202B">
+<tr style="background:#E6E9E3"><th style="width:20%">需求</th><th style="width:20%">GPU 韌體</th><th style="width:20%">超級電容 E-STATCOM</th><th style="width:20%">鋰電 BESS</th><th style="width:20%">飛輪 FESS</th></tr>
+<tr><td>電流漣波 0.1–60 Hz</td><td>可，但要空轉燒電</td><td>可</td><td>可</td><td><b>可（PCS ≥ 500 Hz）</b></td></tr>
+<tr style="background:#FCFCFA"><td>ramp（要能量）</td><td>可，限速＋燒電</td><td>不足：能量僅秒級</td><td>可</td><td><b>可；更嚴時與 GPU 協同</b></td></tr>
+<tr><td>LVRT 支撐與 1 s 恢復</td><td>不能</td><td>可，含無功</td><td>可，含無功</td><td><b>可，含無功</b></td></tr>
+<tr style="background:#FCFCFA"><td>每年約 1,800 萬次微循環</td><td>GPU 磨耗待驗證</td><td>可</td><td>1–3 年衰減到 80%</td><td><b>容量不衰減</b></td></tr>
+<tr><td>額外能耗</td><td>10–30%</td><td>低</td><td>低（往返 ~92%）</td><td>低（往返 ~91%＋待機）</td></tr>
+<tr style="background:#FCFCFA"><td>安全</td><td>—</td><td>低風險</td><td>熱失控、需消防</td><td>無化學風險；需轉子圍阻</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">結論：漣波與 LVRT 三種儲能都做得到；差別在 ramp 的能量需求與每年千萬次的循環——這兩項決定了飛輪。</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">GPU 韌體耗能：論文 10.5%（地板 90%）、本模擬在 2 MW/s 限制下約 30%；LFP 衰減與飛輪損耗見 v1 簡報與畫布 S4　·　11</p>
+<aside>這張是決策表。把四個需求逐項比：電流漣波，只要電力電子頻寬夠，三種儲能都做得到，GPU 韌體也行但要燒電。ramp 需要能量，超級電容只有秒級，作業啟停那種幾十秒到幾分鐘的事件撐不住。LVRT 三種儲能都能做，含無功注入。真正分出勝負的是循環次數：每年大約 1,800 萬次微循環，鋰電一到三年就衰減到 80%，飛輪容量不衰減。所以結論很清楚：飛輪是唯一四項都過的方案，代價是待機損耗和轉子圍阻，這些我們在 v1 簡報已經量化過。</aside>
+</section>

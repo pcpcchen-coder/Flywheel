@@ -1,5 +1,11 @@
 # 版本紀錄
 
+## 2026-11-25
+
+- 新增 `CLAUDE.md`：claude.ai 對話交接（脈絡、偏好、指令、待辦、已定案觀點），供 Claude Code 接續。
+- 新增簡報原始碼 `slides/source/v1`、`v2` 與匯出流程 `slides/tools/`（render → extract → python-pptx → PDF → 逐頁 PNG／講稿）；已驗證重建 v2 PPTX 與現有版本一致。
+- 待辦新增：v2 第 10 頁 BESS 時間尺度下緣、第 11 頁飛輪「容量不衰減」措辭（待確認後修正）。
+
 ## 2026-11-23
 
 - 新增 `research/flywheel-raiba-2026/`：24 頁飛輪儲能 × RAIBA 技術研發立項完整報告（DOCX）、24 頁可編輯簡報（PPTD）、全頁與逐頁預覽、生成器、技術圖、19 項來源登錄與驗證紀錄。

@@ -1,0 +1,39 @@
+<section id="timescale" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">02 · 解法盤點</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">時間尺度對照：誰能從毫秒一路蓋到分鐘</h2>
+</div>
+<div style="position:relative;width:1664px;height:250px">
+<p style="position:absolute;left:0px;top:0px;width:600px;font-size:26px;font-weight:700;color:#A85508">需求：問題發生的時間尺度</p>
+<p style="position:absolute;left:0px;top:56px;width:230px;font-size:24px;color:#16202B">GPU 邊緣／EDP</p>
+<div style="position:absolute;left:240px;top:54px;width:363px;height:34px;background:#FBEBDC;border:2px solid #E07B1F;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:104px;width:230px;font-size:24px;color:#16202B">迭代擺盪</p>
+<div style="position:absolute;left:769px;top:102px;width:427px;height:34px;background:#FBEBDC;border:2px solid #E07B1F;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:152px;width:230px;font-size:24px;color:#16202B">LVRT 驟降＋恢復</p>
+<div style="position:absolute;left:705px;top:150px;width:240px;height:34px;background:#FBEBDC;border:2px solid #E07B1F;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:200px;width:230px;font-size:24px;color:#16202B">作業啟停 ramp</p>
+<div style="position:absolute;left:1094px;top:198px;width:380px;height:34px;background:#FBEBDC;border:2px solid #E07B1F;border-radius:8px"></div>
+</div>
+<div style="position:relative;width:1664px;height:360px">
+<p style="position:absolute;left:0px;top:0px;width:600px;font-size:26px;font-weight:700;color:#1F64B5">供給：各方案的有效範圍</p>
+<p style="position:absolute;left:0px;top:56px;width:230px;font-size:24px;color:#16202B">機櫃電容</p>
+<div style="position:absolute;left:240px;top:54px;width:640px;height:34px;background:#8A949E;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:104px;width:230px;font-size:24px;color:#16202B">GPU 韌體（耗能）</p>
+<div style="position:absolute;left:453px;top:102px;width:1021px;height:34px;background:#E4E0F4;border:2px dashed #6A43B0;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:152px;width:230px;font-size:24px;color:#16202B">超級電容</p>
+<div style="position:absolute;left:240px;top:150px;width:854px;height:34px;background:#5E93D1;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:200px;width:230px;font-size:24px;font-weight:700;color:#A85508">飛輪（本提案）</p>
+<div style="position:absolute;left:304px;top:198px;width:1170px;height:34px;background:#E07B1F;border-radius:8px"></div>
+<p style="position:absolute;left:0px;top:248px;width:230px;font-size:24px;color:#16202B">BESS（循環受限）</p>
+<div style="position:absolute;left:667px;top:246px;width:973px;height:34px;background:#C9CED3;border:2px solid #8A949E;border-radius:8px"></div>
+<p style="position:absolute;left:222px;top:304px;width:80px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">1 ms</p>
+<p style="position:absolute;left:640px;top:304px;width:90px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">0.1 s</p>
+<p style="position:absolute;left:866px;top:304px;width:60px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">1 s</p>
+<p style="position:absolute;left:1070px;top:304px;width:80px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">10 s</p>
+<p style="position:absolute;left:1232px;top:304px;width:90px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">1 分</p>
+<p style="position:absolute;left:1440px;top:304px;width:100px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">10 分</p>
+<p style="position:absolute;left:1590px;top:304px;width:80px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#6B7682">1 h</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">定性示意：飛輪下限取決於 PCS 電流環頻寬（500 Hz ≈ 2 ms），上限取決於能量（0.8 MWh 滿載約 36 s、部分功率可達數分鐘）　·　10</p>
+<aside>把需求和供給都放到同一條時間軸上。上面橘色是問題：GPU 邊緣和 EDP 尖峰在毫秒級，迭代擺盪在 0.3 到 30 秒，LVRT 驟降加恢復在 0.15 到 2 秒，作業啟停的 ramp 依限值從 10 秒到 10 分鐘。下面是方案：機櫃電容只蓋毫秒到 1 秒；超級電容蓋毫秒到 10 秒；BESS 從 0.1 秒到小時，但微循環會老化；GPU 韌體範圍很廣，但代價是燒電。飛輪從 2 毫秒一直蓋到十分鐘等級，剛好跟四個需求重疊，這就是我們選飛輪的核心理由。下限取決於 PCS 頻寬，上限取決於能量。</aside>
+</section>

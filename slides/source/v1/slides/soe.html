@@ -1,0 +1,41 @@
+<section id="soe" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 控制邏輯 · L2</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">L2：用轉速管理能量，160 台單元分工</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="width:760px;display:flex;flex-direction:column;gap:24px;background:#101820;border-radius:16px;padding:40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:64px;font-weight:700;color:#FF9F43">E = ½ J ω²</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:28px;line-height:1.5;color:#E8ECEF">SoE = (ω² − ω²min) / (ω²max − ω²min)</p>
+<div style="position:relative;width:680px;height:130px">
+<div style="position:absolute;left:0px;top:40px;width:170px;height:44px;background:#3A4654;border-radius:8px 0px 0px 8px"></div>
+<div style="position:absolute;left:170px;top:40px;width:510px;height:44px;background:#FF9F43;border-radius:0px 8px 8px 0px"></div>
+<p style="position:absolute;left:0px;top:0px;width:170px;font-size:24px;color:#B8C4CF">不可用 25%</p>
+<p style="position:absolute;left:180px;top:0px;width:500px;font-size:24px;color:#FFC07A">可用 75% 動能（0.8 MWh）</p>
+<p style="position:absolute;left:0px;top:94px;width:300px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#B8C4CF">7,500 rpm</p>
+<p style="position:absolute;left:420px;top:94px;width:260px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;text-align:right;color:#B8C4CF">15,000 rpm</p>
+</div>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">SoE 由轉速直接算出，沒有鋰電 SOC 估算漂移；接近上下限 5% 內線性降額。</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:20px 28px">
+<h3 style="font-size:32px;font-weight:700;color:#16202B">回中</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">SoE 偏離目標時，在電網參考加入慢速修正，維持雙向裕度。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:20px 28px">
+<h3 style="font-size:32px;font-weight:700;color:#16202B">分配</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">放電依 SoE 加權、充電依 1 − SoE 加權，自動均衡；4 台故障仍有 78 MW。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:20px 28px">
+<h3 style="font-size:32px;font-weight:700;color:#16202B">停放</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">長時間閒置時降速停放，降低風阻與軸承損耗。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:14px;padding:20px 28px">
+<h3 style="font-size:32px;font-weight:700;color:#16202B">健康</h3>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">振動、軸承溫度、真空度趨勢上傳 L3 做預測維護。</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">示意配置：160 × 500 kW / 5 kWh 單元；轉速範圍為假設值，依廠商轉子設計調整　·　10</p>
+<aside>L2 管能量。飛輪最大的好處之一是 SoE 不用猜：能量就是二分之一 J omega 平方，轉速量得到就知道還剩多少，不像鋰電要靠模型估，越老越不準。我們讓轉速在 7,500 到 15,000 轉之間運作，可以用掉 75% 的動能。160 台之間怎麼分工也很簡單：放電時轉得快的多出力，充電時轉得慢的多吃電，自然會均衡；壞掉 4 台還有 78 MW。閒置時降速停放可以省待機損耗，振動和真空度的趨勢則交給 L3 做預測維護。</aside>
+</section>

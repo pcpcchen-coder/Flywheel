@@ -32,6 +32,7 @@ AI 訓練機房（AIDC）的用電不是一條平線：數萬張 GPU 在「計�
 | [`docs/`](docs/) | 技術文件：問題機理、電網規範、解法盤點、控制設計、容量估算、模擬結果、飛輪 SOH、營運風險、名詞詳解、參考資料 |
 | [`slides/v1/`](slides/v1/) | v1 簡報〈飛輪儲能穩定 AIDC 動態負載：控制邏輯與導入效益〉16 頁：PPTX、PDF、逐頁講稿 |
 | [`slides/v2/`](slides/v2/) | v2 簡報〈AIDC 電流漣波與 ramp／LVRT：飛輪主動電流補償方案〉18 頁：PPTX、PDF、逐頁講稿 |
+| [`slides/source/`](slides/source/)、[`slides/tools/`](slides/tools/) | 簡報 HTML 原始碼與匯出流程（`slides/tools/build.sh v1\|v2` 重建 PPTX／PDF／PNG／講稿） |
 | [`sim/`](sim/) | 6 個互動 3D 情境（單一 HTML，可離線開啟）＋截圖 |
 | [`skill/aidc-flywheel-3d/`](skill/) | 給其他 LLM（qwen3.8-27b-fp8）重製 3D 模型的 skill：引擎、模板、設定、腳本 |
 | [`data/`](data/) | 營運風險比較與事故案例 CSV |
@@ -57,6 +58,10 @@ AI 訓練機房（AIDC）的用電不是一條平線：數萬張 GPU 在「計�
 - [研究說明與證據口徑](research/flywheel-landscape-2026/README.md)｜[報告預覽](research/flywheel-landscape-2026/preview/報告全頁總覽.png)｜[簡報全頁預覽](research/flywheel-landscape-2026/preview/簡報全頁總覽.jpg)。
 
 核心結論：飛輪最明確的價值是 **UPS、調頻與高循環功率型應用**；飛輪－鋰電已有多國商業部署，飛輪－氫能則仍以微電網示範與模擬為主。所有產品規格保留來源、年份、單位與量測邊界，不把廠商宣稱當成第三方實證。
+
+## 接續開發
+
+用 Claude Code 開這個 repo 會自動讀取 [`CLAUDE.md`](CLAUDE.md)：內含專案脈絡、工作偏好、build 指令與待辦清單。
 
 ## 快速開始
 

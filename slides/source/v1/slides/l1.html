@@ -1,0 +1,61 @@
+<section id="l1" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">03 · 控制邏輯 · L1</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">L1 核心：電網只看到「慢、且斜率有上限」的負載</h2>
+</div>
+<div style="position:relative;width:1664px;height:300px">
+<div style="position:absolute;left:0px;top:60px;width:190px;height:100px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#FCFCFA;border:2px solid #16202B;border-radius:12px;padding:14px">
+<p style="font-size:24px;color:#4A5562">負載量測</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;font-weight:700;color:#16202B">P_load</p>
+</div>
+<div style="position:absolute;left:250px;top:60px;width:250px;height:100px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#FCFCFA;border:2px solid #8A949E;border-radius:12px;padding:14px">
+<p style="font-size:24px;color:#4A5562">二階低通 LPF₂</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;font-weight:700;color:#16202B">τ₁ = τ₂ = 2.5 s</p>
+</div>
+<x-shape kind="ellipse" style="position:absolute;left:560px;top:85px;width:50px;height:50px;background:#FCFCFA;border:2px solid #16202B"></x-shape>
+<p style="position:absolute;left:560px;top:90px;width:50px;font-size:28px;font-weight:700;text-align:center;color:#16202B">Σ</p>
+<div style="position:absolute;left:670px;top:60px;width:250px;height:100px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#FCFCFA;border:2px solid #8A949E;border-radius:12px;padding:14px">
+<p style="font-size:24px;color:#4A5562">斜率限制</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;font-weight:700;color:#16202B">±R = 2 MW/s</p>
+</div>
+<div style="position:absolute;left:980px;top:60px;width:200px;height:100px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#E4EEF9;border:2px solid #1F64B5;border-radius:12px;padding:14px">
+<p style="font-size:24px;color:#1F64B5">電網功率參考</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;font-weight:700;color:#1F64B5">P_grid*</p>
+</div>
+<div style="position:absolute;left:1240px;top:60px;width:424px;height:100px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#FBEBDC;border:2px solid #A85508;border-radius:12px;padding:14px">
+<p style="font-size:24px;color:#A85508">飛輪功率指令</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;font-weight:700;color:#A85508">P_fw* = P_load − P_grid*</p>
+</div>
+<div style="position:absolute;left:420px;top:200px;width:330px;height:90px;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#FCFCFA;border:2px dashed #8A949E;border-radius:12px;padding:12px">
+<p style="font-size:24px;color:#4A5562">SoE 回中項</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;font-weight:700;color:#16202B">K·(SoE* − SoE)·P_max</p>
+</div>
+<div style="position:absolute;left:1240px;top:200px;width:424px;height:90px;display:flex;flex-direction:column;justify-content:center;background:#FCFCFA;border:2px solid #8A949E;border-radius:12px;padding:12px">
+<p style="font-size:24px;color:#16202B">SoE 視窗限幅 → PCS 電流環 → 飛輪</p>
+</div>
+<x-connector x1="190" y1="110" x2="250" y2="110" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="500" y1="110" x2="560" y2="110" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="610" y1="110" x2="670" y2="110" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="920" y1="110" x2="980" y2="110" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="1180" y1="110" x2="1240" y2="110" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="585" y1="200" x2="585" y2="135" head="end" style="color:#4A5562;border-width:3px"></x-connector>
+<x-connector x1="1452" y1="160" x2="1452" y2="200" head="end" style="color:#A85508;border-width:3px"></x-connector>
+</div>
+<div style="display:flex;gap:48px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px">
+<p style="font-size:26px;line-height:1.5;color:#16202B"><b>轉角 0.064 Hz：</b>0.2 Hz 處 −21 dB，0.7 Hz（迭代頻率）處 −42 dB</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B"><b>斜率限制：</b>直接對應電網 ramp 規範，可依併網要求設定</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B"><b>回中項慢於 0.1 Hz：</b>不會把擺盪「漏」回電網</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B"><b>故障安全：</b>飛輪飽和時，差額自動回到電網，不會斷電</p>
+</div>
+<table style="width:760px;font-family:'Noto Sans TC', Arial, sans-serif;font-size:24px;color:#16202B">
+<tr style="background:#E6E9E3"><th style="width:22%">參數</th><th style="width:30%">示意值</th><th style="width:48%">依據</th></tr>
+<tr><td>τ₁, τ₂</td><td>2.5 s</td><td>轉角低於 0.1 Hz 敏感頻段</td></tr>
+<tr style="background:#FCFCFA"><td>R</td><td>2 MW/s</td><td>電網 ramp 規範（假設值）</td></tr>
+<tr><td>K</td><td>0.25</td><td>SoE 偏差 0.3 時修正 6 MW</td></tr>
+<tr style="background:#FCFCFA"><td>SoE*</td><td>0.5（前饋 0.4／0.85）</td><td>保留雙向裕度</td></tr>
+</table>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">對應畫布情境 01、03：切換「無儲能／飛輪」即可看到電網側曲線與頻譜變化　·　9</p>
+<aside>這是整個控制的心臟，其實只有三個方塊。負載量測進來，先過一個二階低通，時間常數 2.5 秒，轉角大約 0.06 Hz，所以 0.7 Hz 的迭代擺盪會被壓 42 dB。再加上一個很慢的 SoE 回中項，讓飛輪不會一直往同一邊漂。最後過斜率限制，這個數字就是電網的 ramp 規範。出來的就是電網該看到的功率；負載減掉它，就是飛輪要出的功率。這個架構有一個很重要的特性：飛輪如果滿了或空了，差額會自然回到電網，最壞情況就是退化成沒有儲能，不會讓機房斷電。</aside>
+</section>

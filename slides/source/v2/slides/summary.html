@@ -1,0 +1,29 @@
+<section id="summary" data-transition="fade" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">一頁結論</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">同一套飛輪 PCS，同時解電流漣波、ramp 與 LVRT</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #1F64B5;border-radius:16px;padding:36px 40px">
+<p style="font-size:26px;color:#4A5562">AC 電流漣波（ΔI／I）</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#1F64B5">84 → 1.1%</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">最大間諧波 −13 → −55 dBc；12 Hz 軸系模態響應降到 1% 以下</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #A85508;border-radius:16px;padding:36px 40px">
+<p style="font-size:26px;color:#4A5562">ramp-up／down（1 s 平均）</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#A85508">66 → 2.0</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">MW/s；2 MW/s 限值下 0 秒超限，GPU 不必空轉燒電</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FCFCFA;border:1px solid #DDE1DA;border-top:8px solid #6A43B0;border-radius:16px;padding:36px 40px">
+<p style="font-size:26px;color:#4A5562">LVRT 故障後恢復 90%</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:72px;font-weight:700;line-height:1.1;color:#6A43B0">3.0 → 0.64</p>
+<p style="font-size:26px;line-height:1.5;color:#16202B">秒（要求 ≤ 1 s）；故障電流 0.77 pu，低於 1.25 pu 上限</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#101820;border-radius:16px;padding:30px 40px">
+<p style="font-size:30px;font-weight:700;line-height:1.45;color:#F2F4F5">兩個設計條件決定成敗：PCS 頻寬與能量</p>
+<p style="font-size:26px;line-height:1.5;color:#B8C4CF">電流環頻寬 ≥ 500 Hz 才蓋得住 GPU 毫秒級邊緣；能量由 ramp 限值決定——2 MW/s 用 0.8 MWh 足夠，20 MW/min 需與 GPU 韌體協同或加大到約 2.3 MWh。</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">數字來自自建示意模型（100 MW AIDC、PCC 161 kV、飛輪 80 MW / 0.8 MWh），互動版見 3D 畫布 v2 頁　·　2</p>
+<aside>先講結論。兩個問題可以用同一套飛輪 PCS 處理，因為本質上都是「電網側電流應該長什麼樣子」的問題。電流漣波：負載電流的動態範圍 84%，補償後 1.1%，最大間諧波從 −13 dBc 壓到 −55 dBc，連 12 Hz 軸系模態的響應都降到 1% 以下。ramp：電網看到的變化率從 66 MW/s 壓到 2 MW/s，而且不需要讓 GPU 空轉。LVRT：電壓恢復後 0.64 秒就回到 90% 用電，符合 ERCOT 的 1 秒要求，傳統 UPS walk-in 要 3 秒。成敗看兩個參數：PCS 電流環頻寬要到 500 Hz 等級，能量大小要看電網給的 ramp 限值。</aside>
+</section>

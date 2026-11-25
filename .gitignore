@@ -3,3 +3,9 @@ skill/aidc-flywheel-3d/work/
 __pycache__/
 .DS_Store
 node_modules/
+slides/tools/node_modules/
+slides/tools/pages/
+slides/tools/png/
+slides/tools/notes.json
+slides/tools/shapes.json
+slides/tools/*.pptx

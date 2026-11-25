@@ -1,0 +1,35 @@
+<section id="problem" data-transition="fade" data-section="問題：AI 訓練負載為何傷電網，現有解法的代價" style="background:#F5F6F2;color:#16202B;font-family:'Noto Sans TC', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#A85508">01 · 問題</p>
+<h2 style="font-size:56px;font-weight:700;line-height:1.2;color:#16202B">AI 訓練負載：數十 MW、每秒來回一次的方波</h2>
+</div>
+<div style="display:flex;gap:56px;align-items:start">
+<div style="position:relative;width:860px;height:480px;background:#FCFCFA;border:1px solid #DDE1DA;border-radius:16px">
+<svg aria-label="示意：AIDC 功率在 100 MW 與 35 MW 之間以約 1.4 秒週期切換，平均約 76 MW" width="820" height="420" viewBox="0 0 820 420" style="position:absolute;left:20px;top:30px;width:820px;height:420px"><path d="M40 40 V360 H800" fill="none" stroke="#B9C0B8" stroke-width="2"/><path d="M40 290 V90 H130 V290 H180 V90 H270 V290 H320 V90 H410 V290 H460 V90 H550 V290 H600 V90 H690 V290 H740 V90 H800" fill="none" stroke="#16202B" stroke-width="4" stroke-linejoin="round"/><path d="M40 162 H800" fill="none" stroke="#1F64B5" stroke-width="5" stroke-dasharray="14 10"/><path d="M180 330 H320" stroke="#A85508" stroke-width="3"/><path d="M180 318 V342 M320 318 V342" stroke="#A85508" stroke-width="3"/></svg>
+<p style="position:absolute;left:72px;top:62px;width:240px;font-size:24px;font-weight:700;color:#16202B">計算 100 MW</p>
+<p style="position:absolute;left:330px;top:150px;width:330px;font-size:24px;font-weight:700;color:#1F64B5;background:#FCFCFA;padding:2px 8px">平均 ≈ 76 MW（電網想看到的）</p>
+<p style="position:absolute;left:72px;top:326px;width:200px;font-size:24px;font-weight:700;color:#16202B">通訊 35 MW</p>
+<p style="position:absolute;left:206px;top:380px;width:200px;font-size:24px;font-weight:700;color:#A85508">≈ 1.4 s</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">同步切換</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">數萬張 GPU 同時在計算／通訊間切換；單張 H100 約 700 W ↔ 140 W。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">規模放大</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">5 萬張 GPU 的作業約 35 MW ↔ 7 MW，每次迭代都重複。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">頻段危險</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">頻譜能量集中在 0.2–3 Hz，正落在電網共振的敏感頻段。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#16202B">還有階躍</p>
+<p style="font-size:26px;line-height:1.5;color:#4A5562">作業啟動、寫 checkpoint、當機，會在數十毫秒內跳 50–70 MW。</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7682">來源：Choukse et al., Power Stabilization for AI Training Datacenters（arXiv 2508.14318）；EasyRider（arXiv 2604.15522）　·　3</p>
+<aside>AI 訓練跟一般雲端機房最大的差別是「同步」。所有 GPU 一起算、一起交換梯度，所以整座機房的功率就像一個方波。單卡 H100 從 700 瓦掉到 140 瓦，五萬張卡就是 35 MW 掉到 7 MW。微軟、OpenAI、NVIDIA 聯名的論文量到主要頻譜在 0.2 到 3 Hz，剛好是電網最怕的頻段。除了週期擺盪，還有作業啟動、checkpoint、當機這種一次性的階躍。藍色虛線是電網希望看到的：一條平均值。我們的工作就是把黑線變成藍線。</aside>
+</section>
